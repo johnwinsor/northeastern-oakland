@@ -6,7 +6,7 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 
 export default function Social() {
   return (
-    <main className="flex flex-col rounded-b-md h-10 pr-5">
+    <div className="flex flex-col rounded-b-md h-10 pr-5">
         <Flex gap="2" justify="end" className="items-center h-10">
             <div className="myminerva text-slate-100">
                 <a href="https://onesearch.library.northeastern.edu/discovery/account?vid=01NEU_INST:NU_Olin&amp;section=overview&amp;lang=en">My Library Account</a>
@@ -18,6 +18,6 @@ export default function Social() {
                 <FaInstagram size="22px" className="text-orange-600 bg-white rounded p-0.5 align-middle" />
              </Link>
         </Flex>
-    </main>
+    </div>
   )
 }

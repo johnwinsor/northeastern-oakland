@@ -4,7 +4,6 @@ import { ChatBubbleIcon } from '@radix-ui/react-icons'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 rounded-t-md bg-teal-50">
       <Container size="1">
         <Flex direction="column" pb="4">
           <Heading>Home Page</Heading>
@@ -70,6 +69,5 @@ export default function Home() {
           </Card>
         </Flex>
       </Container>
-    </main>
   )
 }

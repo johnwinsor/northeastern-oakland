@@ -8,6 +8,6 @@ body {
   @apply px-6;
 }
 
-section {
+main {
 min-height: calc(100vh - 242px);
 }

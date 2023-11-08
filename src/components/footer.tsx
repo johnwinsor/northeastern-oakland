@@ -5,7 +5,7 @@ import { ChatBubbleIcon } from '@radix-ui/react-icons'
 
 export default function Footer() {
   return (
-    <main className="flex flex-col items-center justify-between rounded-b-md h-10 bg-teal-50">
+    <div className="flex flex-col items-center justify-between rounded-b-md h-10 bg-teal-50">
       <Container size="1">
         <Flex direction="column" pb="4">
         <Link
@@ -18,6 +18,6 @@ export default function Footer() {
           </Link>
         </Flex>
       </Container>
-    </main>
+    </div>
   )
 }
