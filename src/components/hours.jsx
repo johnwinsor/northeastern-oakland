@@ -1,4 +1,5 @@
 import React from 'react';
+import { Badge, Card, Container, Flex, Heading, Text} from '@radix-ui/themes'
 import { FaRegClock } from "react-icons/fa";
 
 const today = new Date()
@@ -6,7 +7,8 @@ const tomorrow = new Date(today)
 tomorrow.setDate(tomorrow.getDate() + 1)
 
 async function getLibraryHours() {
-  const res = await fetch('https://www.googleapis.com/calendar/v3/calendars/c_b1631bcb3580a6cd93875bf2848dad1ea09747e99edcd4cc778301e7bb47a0ec@group.calendar.google.com/events?key=AIzaSyDGL-YEYrMZg_2pI-7jRsPvGwY5KSjuqVA' + '&maxResults=1' + '&timeMin=' + today.toISOString() + '&timeMax=' + tomorrow.toISOString() + '&orderBy=startTime' + '&singleEvents=True', {
+  console.log(process.env.GOOGLE_KEY)
+  const res = await fetch(`https://www.googleapis.com/calendar/v3/calendars/c_b1631bcb3580a6cd93875bf2848dad1ea09747e99edcd4cc778301e7bb47a0ec@group.calendar.google.com/events?key=${process.env.GOOGLE_KEY}&maxResults=1&timeMin=${today.toISOString()}&timeMax=${tomorrow.toISOString()}&orderBy=startTime&singleEvents=True`, {
         method: 'GET',
     });
  
@@ -19,7 +21,7 @@ async function getLibraryHours() {
 }
 
 async function getScHours() {
-  const res = await fetch('https://www.googleapis.com/calendar/v3/calendars/c_b1631bcb3580a6cd93875bf2848dad1ea09747e99edcd4cc778301e7bb47a0ec@group.calendar.google.com/events?key=AIzaSyDGL-YEYrMZg_2pI-7jRsPvGwY5KSjuqVA' + '&maxResults=1' + '&timeMin=' + today.toISOString() + '&timeMax=' + tomorrow.toISOString() + '&orderBy=startTime' + '&singleEvents=True', {
+  const res = await fetch(`https://www.googleapis.com/calendar/v3/calendars/c_6aa7be8d89dd7ebf573e717768faa890164256d38c823f7f5c5112dd0312cb8b@group.calendar.google.com/events?key=${process.env.GOOGLE_KEY}&maxResults=1&timeMin=${today.toISOString()}&timeMax=${tomorrow.toISOString()}&orderBy=startTime&singleEvents=True`, {
         method: 'GET',
     });
  
@@ -37,21 +39,17 @@ export async function Hours() {
     const scData = await getScHours()
 
     return (
-      <div className="justify-self-end mr-4">
-			  <div className="grid grid-cols-1 gap-0">
-          <div className='flex justify-end'>
-            <div className='pr-5 align-middle'>
-              <p className='pt-1'>
-                <FaRegClock className="text-red-900 h-4 w-4 md:h-6 md:w-6" />
-              </p>    
-            </div>
-            <div>
-              <p className="text-sm md:text-lg font-semibold underline text-end">Today's Hours</p>
-            </div>
-          </div>
-          <div className="col-span-2"><p className='md:text-sm text-xs text-end'>Library: {libraryData.items[0].summary}</p></div>
-          <div className="col-span-2"><p className='md:text-sm text-xs text-end'>Special Collections: {scData.items[0].summary}</p></div>
-        </div>
-      </div>
+      <Flex direction="column" align="end">
+        <Flex gap="2">
+          <FaRegClock className="text-red-900 h-4 w-4 md:h-6 md:w-6" />
+          <Text size="3">Today&apos;s Hours</Text>
+        </Flex>
+        <Flex gap="2">
+          <Text size="2">Library: {libraryData.items[0].summary}</Text>
+        </Flex>
+        <Flex gap="2">
+          <Text size="2">Special Collections: {scData.items[0].summary}</Text>
+        </Flex>
+      </Flex>
     )
   }
