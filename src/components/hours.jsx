@@ -7,7 +7,6 @@ const tomorrow = new Date(today)
 tomorrow.setDate(tomorrow.getDate() + 1)
 
 async function getLibraryHours() {
-  console.log(process.env.GOOGLE_KEY)
   const res = await fetch(`https://www.googleapis.com/calendar/v3/calendars/c_b1631bcb3580a6cd93875bf2848dad1ea09747e99edcd4cc778301e7bb47a0ec@group.calendar.google.com/events?key=${process.env.GOOGLE_KEY}&maxResults=1&timeMin=${today.toISOString()}&timeMax=${tomorrow.toISOString()}&orderBy=startTime&singleEvents=True`, {
         method: 'GET',
     });
