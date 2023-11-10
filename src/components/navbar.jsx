@@ -76,7 +76,7 @@ export default function Navbar() {
                     </NavigationMenu.Item>
 
                     <NavigationMenu.Item>
-                    <NavigationMenu.Link className="NavigationMenuLink" href="https://github.com/radix-ui">
+                    <NavigationMenu.Link className="NavigationMenuLink" href="/calendar">
                         Hours
                     </NavigationMenu.Link>
                     </NavigationMenu.Item>
