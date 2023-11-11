@@ -59,7 +59,7 @@ export default function Navbar() {
                             <ListItem title="Course Reserves" href="https://library.mills.edu/reserves/">
                                 Place physical libray materials or electronic resources on reserve for your students.
                             </ListItem>
-                            <ListItem title="Departmental Liaisons" href="https://library.mills.edu/liaisons/">
+                            <ListItem title="Departmental Liaisons" href="/liaisons">
                                 Subject specialist librarians assigned to your departmenmt on the Oakland campus.
                             </ListItem>
                             <ListItem title="Purchase Requests" href="https://library.northeastern.edu/digital_production/recommend-a-purchase/">

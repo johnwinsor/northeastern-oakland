@@ -9,14 +9,14 @@ import Navbar from "@/components/navbar";
 
 export default function Header() {
   return (
-    <Flex direction="column" justify="between" className="rounded-b-md h-40 bg-teal-50 px-5">
+    <Flex direction="column" justify="between" className="rounded-b-md h-40 bg-teal-50 pr-5">
         <Flex gap="1" direction="column" justify="between">
           <Flex justify="between" pt="1">
-            <Flex align="center">
+            <Flex align="center" className="pl-3">
               <Link href={'/'}>
                   <Image
                       src={olinLogo}
-                      alt="Picture of the author"
+                      alt="Northeastern Oakland Library Logo"
                       height={100}
                       className="pb-3"
                   />

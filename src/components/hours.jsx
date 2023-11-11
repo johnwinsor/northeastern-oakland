@@ -38,16 +38,37 @@ export async function Hours() {
     const scData = await getScHours()
 
     return (
-      <Flex direction="column" align="end">
-        <Flex gap="2">
-          <FaRegClock className="text-red-900 h-4 w-4 md:h-6 md:w-6" />
-          <Text size="3">Today&apos;s Hours</Text>
-        </Flex>
-        <Flex gap="2">
-          <Text size="2">Library: {libraryData.items[0].summary}</Text>
-        </Flex>
-        <Flex gap="2">
-          <Text size="2">Special Collections: {scData.items[0].summary}</Text>
+      <Flex direction="column" align="end" className="w-40">
+        <Flex direction="column">
+          
+          <Flex gap="2">
+            <FaRegClock className="text-red-900 h-4 w-4 md:h-6 md:w-6 float-left" />
+            <Text 
+              size={{
+                initial: '1',
+                md: '4',
+                xl: '7',
+              }}>Today&apos;s Hours
+            </Text>
+          </Flex>
+          <Flex gap="2" className="justify-end">
+            <Text
+              size={{
+                initial: '1',
+                md: '2',
+                xl: '3',
+              }}>F.W. Olin: {libraryData.items[0].summary}
+            </Text>
+          </Flex>
+          <Flex gap="2" className="justify-end">
+            <Text
+              size={{
+                initial: '1',
+                md: '2',
+                xl: '3',
+              }}>Heller Room: {scData.items[0].summary}
+            </Text>
+          </Flex>
         </Flex>
       </Flex>
     )

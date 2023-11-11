@@ -5,12 +5,12 @@ export default function CalendarPage() {
 	return (
 		<Flex direction="column" align="center">
 			<Flex direction="column" pb="4">
-				<Heading size="8" className='py-5'>Library Calendar</Heading>
+				<Heading size="5" className='py-5'>Library Calendar</Heading>
 			</Flex>
 
 			<Flex gap="4">
 				<Card className="rounded-md p-1 bg-orange-100 mb-5 w-96">
-					<IoLibraryOutline size="56px" className="text-red-900 float-left mr-4" />
+					<IoLibraryOutline size="36px" className="text-red-900 float-left mr-4" />
 					<p className="text-md text-left">Special Collections hours are subject to change and there may be unscheduled closures. Please call 510-430-2047 to make an appointment.</p>
 				</Card>
 			</Flex>
