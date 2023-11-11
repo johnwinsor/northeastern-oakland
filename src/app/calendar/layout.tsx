@@ -4,7 +4,7 @@ export default function CalendarLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<div className="text-center justify-center">
+		<div className="text-center min-w-full">
 			{children}
 		</div>
 	);
