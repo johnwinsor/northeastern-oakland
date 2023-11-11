@@ -52,7 +52,7 @@ p {
   line-height: 1;
   border-radius: 4px;
   font-size: 15px;
-  color: var(--violet-11);
+  color: var(--black-alpha-11);
 }
 .NavigationMenuTrigger:focus,
 .NavigationMenuLink:focus {

@@ -4,10 +4,9 @@ import { ChatBubbleIcon } from '@radix-ui/react-icons'
 
 export default function Contact() {
     return (
-        <Container size="2">
+        <Container size="4">
           <Flex direction="column" pb="4">
-            <Heading>Contact Us</Heading>
-            <Text color='gray'>Here is some text</Text>
+            <Heading size="8" className='py-5'>Contact Us</Heading>
           </Flex>
           <Flex gap="4">
             <Card>
