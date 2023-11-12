@@ -9,7 +9,7 @@ import { CaretDownIcon } from '@radix-ui/react-icons'
 
 export default function Navbar() {
     return (
-        <Flex gap="5" className="text-sm md:text-base">
+        <Flex gap="5" className="text-sm md:text-base mt-auto">
             <NavigationMenu.Root className="NavigationMenuRoot">
                 <NavigationMenu.List className="NavigationMenuList">
                     <NavigationMenu.Item>

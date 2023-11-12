@@ -9,7 +9,7 @@ import Navbar from "@/components/navbar";
 
 export default function Header() {
   return (
-    <Flex direction="column" justify="between" className="rounded-b-md h-40 bg-teal-50 pr-5">
+    <Flex direction="column" className="rounded-b-md h-40 bg-teal-50 pr-5 justify-end">
         <Flex gap="1" direction="column" justify="between">
           <Flex justify="between" pt="1">
             <Flex align="center" className="pl-3">
@@ -17,7 +17,7 @@ export default function Header() {
                   <Image
                       src={olinLogo}
                       alt="Northeastern Oakland Library Logo"
-                      height={100}
+                      height={90}
                       className="pb-3"
                   />
               </Link>

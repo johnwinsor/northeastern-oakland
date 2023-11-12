@@ -41,13 +41,14 @@ export async function Hours() {
       <Flex direction="column" align="end" className="w-40">
         <Flex direction="column">
           
-          <Flex gap="2">
-            <FaRegClock className="text-red-900 h-4 w-4 md:h-6 md:w-6 float-left" />
+          <Flex gap="2" className="justify-end">
+            <FaRegClock className="text-red-900 h-4 w-4 lg:h-5 lg:w-5 float-left pt-1" />
             <Text 
+              weight="bold"
               size={{
                 initial: '1',
-                md: '4',
-                xl: '7',
+                sm: '2',
+                md: '3',
               }}>Today&apos;s Hours
             </Text>
           </Flex>
@@ -55,8 +56,7 @@ export async function Hours() {
             <Text
               size={{
                 initial: '1',
-                md: '2',
-                xl: '3',
+                md: '1',
               }}>F.W. Olin: {libraryData.items[0].summary}
             </Text>
           </Flex>
@@ -64,8 +64,7 @@ export async function Hours() {
             <Text
               size={{
                 initial: '1',
-                md: '2',
-                xl: '3',
+                md: '1',
               }}>Heller Room: {scData.items[0].summary}
             </Text>
           </Flex>
