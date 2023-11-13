@@ -13,11 +13,11 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
-import { CaretDownIcon } from '@radix-ui/react-icons'
+import { CaretDownIcon, ExternalLinkIcon } from '@radix-ui/react-icons'
 import { Flex, Card } from '@radix-ui/themes'
 
 const info = [
-  { name: 'Policies and Services', description: 'Access policies, Borrowing, Purchase Requests, and Interlibrary Loan.', href: 'https://library.northeastern.edu/oakland_campus/about-the-f-w-olin-library/policies-services/', icon: ChartPieIcon },
+  { name: 'Policies and Services', description: 'Access policies, Borrowing, Purchase Requests, and Interlibrary Loan.', href: 'https://library.northeastern.edu/oakland_campus/about-the-f-w-olin-library/policies-services/', icon: ExternalLinkIcon },
   { name: 'Questions & Feedback', description: 'Use this form to submit a new question or give us feedback.', href: 'https://library.mills.edu/forms/questions/libanswers-embed.php', icon: CursorArrowRaysIcon },
   { name: 'Staff Directory', description: 'Library staff at the F.W. Olin Library on the Oakland campus.', href: 'https://library.northeastern.edu/administration/library-staff-directory/?ul_filter_department=F.%20W.%20Olin%20Library', icon: FingerPrintIcon },
 ]
@@ -68,8 +68,9 @@ export default function Navbar() {
                                     </NavigationMenu.Link>
                                 </li>
 
-                                <ListItem href="https://library.northeastern.edu/oakland_campus/about-the-f-w-olin-library/policies-services/" title="Policies and Services">
+                                <ListItem href="https://library.northeastern.edu/oakland_campus/about-the-f-w-olin-library/policies-services/" title="Policies and Services" linkicon="ExternalLinkIcon">
                                     Access policies, Borrowing, Purchase Requests, and Interlibrary Loan.
+                                    <ExternalLinkIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
                                 </ListItem>
                                 <ListItem href="https://library.mills.edu/forms/questions/libanswers-embed.php" title="Questions & Feedback">
                                     Use this form to submit a new question or give us feedback.
@@ -265,6 +266,7 @@ export default function Navbar() {
                             className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                           >
                             {item.name}
+                            <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
                           </Disclosure.Button>
                         ))}
                       </Disclosure.Panel>
@@ -300,11 +302,11 @@ export default function Navbar() {
 }
 
 // eslint-disable-next-line react/display-name
-const ListItem = React.forwardRef(({ className, children, title, ...props }, forwardedRef) => (
+const ListItem = React.forwardRef(({ className, children, title, linkicon, ...props }, forwardedRef) => (
     <li>
         <NavigationMenu.Link asChild>
         <a className={classNames('ListItemLink', className)} {...props} ref={forwardedRef}>
-            <div className="ListItemHeading"><Flex>{title}</Flex></div>
+            <div className="ListItemHeading"><Flex>{title}{<linkicon />}</Flex></div>
             <p className="ListItemText">{children}</p>
         </a>
         </NavigationMenu.Link>
