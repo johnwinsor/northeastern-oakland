@@ -22,11 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className} suppressHydrationWarning>
       <body className="bg-red-700 {inter.className}">
-        <Theme appearance="light">
+        <Theme accentColor="crimson" grayColor="sand" radius="large" scaling="95%">
           <Flex direction="column">
             <Header />
             <Social />
-            <main className="flex flex-col items-center justify-between p-2 rounded-t-md bg-teal-50">
+            <main className="flex flex-col items-center justify-between rounded-t-lg bg-teal-50">
               {children}
             </main>
             <div className="h-0.5 bg-red-700"></div>

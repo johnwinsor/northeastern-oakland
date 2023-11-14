@@ -7,6 +7,7 @@
 @import '@radix-ui/colors/mauve.css';
 @import '@radix-ui/colors/purple.css';
 @import '@radix-ui/colors/violet.css';
+@import '@radix-ui/colors/green.css';
 
 html {
   color: rgb(var(--foreground-rgb));
@@ -29,7 +30,6 @@ min-height: calc(100vh - 242px);
 .backg {
   min-height: calc(100vh - 242px);
   @apply w-full;
-  @apply p-24;
   @apply relative;
   @apply overflow-hidden;
   @apply block;

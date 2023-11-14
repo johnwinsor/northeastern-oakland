@@ -4,16 +4,17 @@ import { ChatBubbleIcon, IdCardIcon, QuestionMarkCircledIcon, PersonIcon, Envelo
 import { FaPeopleArrows, FaMapMarkedAlt } from "react-icons/fa";
 import { IoInformationCircleOutline } from "react-icons/io5";
 import { AiOutlinePhone } from "react-icons/ai"
+import { ExternalLinkIcon } from '@radix-ui/react-icons'
 
 export default function Contact() {
     return (
-        <Flex direction="column" align="center">
+        <Flex direction="column" align="center" p="4">
             <Flex direction="column" pb="4">
                 <Heading size="8" className='py-5'>Contact Us</Heading>
             </Flex>
           
-            <Flex gap="4">
-                <Card className="rounded-md shadow-xl p-1 bg-orange-100 mb-5 w-56 md:w-96">
+            <Flex gap="4" justify="center">
+                <Card className="rounded-md shadow-xl p-1 bg-orange-100 mb-5 w-56 md:w-2/4">
                     <FaPeopleArrows size="36px" className="text-red-900 float-left mr-4" />
                     <Text as="p" size={{ initial: '2', md: '3' }}>Reference librarians are available every weekday to help you with your research or with other library questions! Make an appointment with a reference librarian <a href="https://nuoakland.libcal.com/appointments/">here.</a></Text>
                 </Card>
@@ -33,7 +34,7 @@ export default function Contact() {
                         <Flex pt="1">
                             <Flex align="center" gap="2">
                                 <EnvelopeClosedIcon />
-                                <Text size={{ initial: '2', md: '3' }}> Email: askalibmills@northeastern.libanswers.com</Text>
+                                <Text size={{ initial: '2', md: '3' }}> askalibmills@northeastern.libanswers.com</Text>
                             </Flex>
                         </Flex>
            
@@ -76,6 +77,7 @@ export default function Contact() {
                                 <Flex align="center" gap="2">
                                     <ChatBubbleIcon />
                                     <Text size={{ initial: '2', md: '3' }}>Live 24/7 Chat</Text>
+                                    <ExternalLinkIcon className="mt-0.5 ml-0.5" />
                                 </Flex>
                             </Flex>
                         </Link>
@@ -86,16 +88,18 @@ export default function Contact() {
                                 <Flex align="center" gap="2">
                                     <IdCardIcon />
                                     <Text size={{ initial: '2', md: '3' }}>Library Staff Directory</Text>
+                                    <ExternalLinkIcon className="mt-0.5 ml-0.5" />
                                 </Flex>
                             </Flex>
                         </Link>
 
                         <Link 
-                            href={'https://library.mills.edu/forms/questions/libanswers-embed.php'}>
+                            href={'https://library.northeastern.edu/research_instruction/ask-a-librarian/email-the-library/'}>
                             <Flex justify="between" pt="1">
                                 <Flex align="center" gap="2">
                                     <QuestionMarkCircledIcon />
                                     <Text size={{ initial: '2', md: '3' }}>Questions & Feedback</Text>
+                                    <ExternalLinkIcon className="mt-0.5 ml-0.5" />
                                 </Flex>
                             </Flex>
                         </Link>
