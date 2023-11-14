@@ -38,8 +38,6 @@ export default function Navbar() {
   return (
     <header className="bg-teal-50 z-50">
         <Flex gap="3" className="text-sm md:text-base mt-auto">
-        {/* <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global"> */}
-            {/* <div className="flex md:flex-1"></div> */}
             <div className="flex md:hidden">
                 <button
                 type="button"
@@ -157,7 +155,7 @@ export default function Navbar() {
 
                     <NavigationMenu.Item>
                         <NavigationMenu.Link className="NavigationMenuLink" href="/contact">
-                            Contact
+                            Contact Us
                         </NavigationMenu.Link>
                     </NavigationMenu.Item>
 

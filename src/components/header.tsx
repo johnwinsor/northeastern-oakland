@@ -10,22 +10,22 @@ import Navbar from "@/components/navbar";
 
 export default function Header() {
   return (
-    <Flex direction="column" className="rounded-b-md h-40 bg-teal-50 px-1 md:px-5 justify-end">
+    <Flex direction="column" className="rounded-b-md h-40 bg-teal-50 justify-end">
         <Flex gap="1" direction="column" justify="between">
-          <Flex justify="between" pt="1">
+          <Flex justify="between" pt="1" className="px-1 md:px-5">
             <Flex align="center" className="pl-1 md:pl-3 max-md">
               <Link href={'/'}>
                   <Image
                       src={olinLogo}
                       alt="Northeastern Oakland Library Logo"
                       height={90}
-                      className="pb-3 md:block hidden"
+                      className="pb-3 sm:block hidden"
                   />
                   <Image
                       src={olinLogoMobile}
                       alt="Northeastern Oakland Library Logo"
                       height={90}
-                      className="pb-3 md:hidden"
+                      className="pb-3 sm:hidden"
                   />
               </Link>
             </Flex>
