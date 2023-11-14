@@ -127,7 +127,7 @@ export default function Navbar() {
                     </NavigationMenu.Item>
 
                     <NavigationMenu.Item>
-                    <NavigationMenu.Link className="NavigationMenuLink" href="https://github.com/radix-ui">
+                    <NavigationMenu.Link className="NavigationMenuLink" href="https://library.mills.edu/newbooks/alma-newbooks.php">
                         New Books
                     </NavigationMenu.Link>
                     </NavigationMenu.Item>
