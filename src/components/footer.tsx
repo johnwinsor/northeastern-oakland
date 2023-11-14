@@ -5,19 +5,14 @@ import { ChatBubbleIcon } from '@radix-ui/react-icons'
 
 export default function Footer() {
   return (
-    <div className="flex flex-col items-center justify-between rounded-b-md h-10 bg-teal-50">
-      <Container size="1">
-        <Flex direction="column" pb="4">
-        <Link
-            className="flex items-center gap-1 text-current"
-            href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
-            title="nextui.org homepage"
-          >
-            <span className="text-default-600">Powered by</span>
-            <p className="text-primary">NextUI</p>
-          </Link>
-        </Flex>
-      </Container>
-    </div>
+    <Flex direction="column" className="rounded-b-md h-10 bg-teal-50 items-center">
+          <Text size="1">5000 MacArthur Blvd, Oakland, CA 94613 510.430.2196&nbsp;</Text>
+          <Link
+              href="mailto:askalibmills@northeastern.libanswers.com"
+              title="AskALib"
+            >
+              <Text size="1">&nbsp;Ask A Librarian</Text>
+            </Link>
+    </Flex>
   )
 }

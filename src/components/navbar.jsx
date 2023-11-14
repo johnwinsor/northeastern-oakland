@@ -39,7 +39,7 @@ export default function Navbar() {
     <header className="bg-teal-50">
         <Flex gap="5" className="text-sm md:text-base mt-auto">
         {/* <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global"> */}
-            <div className="flex md:flex-1"></div>
+            {/* <div className="flex md:flex-1"></div> */}
             <div className="flex md:hidden">
                 <button
                 type="button"
@@ -68,14 +68,18 @@ export default function Navbar() {
                                     </NavigationMenu.Link>
                                 </li>
 
-                                <ListItem href="https://library.northeastern.edu/oakland_campus/about-the-f-w-olin-library/policies-services/" title="Policies and Services" linkicon="ExternalLinkIcon">
-                                    Access policies, Borrowing, Purchase Requests, and Interlibrary Loan.
-                                    <ExternalLinkIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
-                                </ListItem>
-                                <ListItem href="https://library.mills.edu/forms/questions/libanswers-embed.php" title="Questions & Feedback">
+                                <Flex gap="4">
+                                    <ListItem href="https://library.northeastern.edu/oakland_campus/about-the-f-w-olin-library/policies-services/" title="Policies and Services" target="_blank" external>
+                                        <Flex gap="4">
+                                            Access policies, Borrowing, Purchase Requests, and Interlibrary Loan.
+                                        </Flex>
+                                     </ListItem>
+                                </Flex>
+                          
+                                <ListItem href="https://library.northeastern.edu/research_instruction/ask-a-librarian/email-the-library/" title="Questions & Feedback" target="_blank" external>
                                     Use this form to submit a new question or give us feedback.
                                 </ListItem>
-                                <ListItem href="https://library.northeastern.edu/administration/library-staff-directory/?ul_filter_department=F.%20W.%20Olin%20Library" title="Staff Directory">
+                                <ListItem href="https://library.northeastern.edu/administration/library-staff-directory/?ul_filter_department=F.%20W.%20Olin%20Library" title="Staff Directory" target="_blank" external>
                                     Library staff at the F.W. Olin Library on the Oakland campus.
                                 </ListItem>
                             </ul>
@@ -88,13 +92,13 @@ export default function Navbar() {
                     </NavigationMenu.Trigger>
                     <NavigationMenu.Content className="NavigationMenuContent">
                         <ul className="List two">
-                            <ListItem title="Circulation & Borrowing" href="https://library.northeastern.edu/oakland_campus/about-the-f-w-olin-library/borrowing-from-the-f-w-olin-library/">
-                                Where can I get library items? How Long Can I Have Library Items?
+                            <ListItem target="_blank" external title="Circulation & Borrowing" href="https://library.northeastern.edu/oakland_campus/about-the-f-w-olin-library/borrowing-from-the-f-w-olin-library/">
+                                Where can I get library items? How long can I have library items?
                             </ListItem>
-                            <ListItem title="Copyright Policy" href="https://library.northeastern.edu/research_instruction/theses-dissertations/what-is-fair-use/">
+                            <ListItem target="_blank" external title="Copyright Policy" href="https://library.northeastern.edu/research_instruction/theses-dissertations/what-is-fair-use/">
                                 What is Fair Use and when permission is required for use of a copyrighted work?
                             </ListItem>
-                            <ListItem title="Interlibrary Loans" href="https://library.northeastern.edu/ideas/interlibrary-loan/">
+                            <ListItem target="_blank" external title="Interlibrary Loans" href="https://library.northeastern.edu/ideas/interlibrary-loan/">
                                 About our ILL services. Signing up for an ILLiad account. Requesting items from ILL and having them delivered to the Oakland campus.
                             </ListItem>
                             <ListItem title="Course Reserves" href="https://library.mills.edu/reserves/">
@@ -103,7 +107,7 @@ export default function Navbar() {
                             <ListItem title="Departmental Liaisons" href="/liaisons">
                                 Subject specialist librarians assigned to your departmenmt on the Oakland campus.
                             </ListItem>
-                            <ListItem title="Purchase Requests" href="https://library.northeastern.edu/digital_production/recommend-a-purchase/">
+                            <ListItem target="_blank" external title="Purchase Requests" href="https://library.northeastern.edu/digital_production/recommend-a-purchase/">
                                 Suggest a book, journal, or license for an electronic resource for purchase by the Library.
                             </ListItem>
                         </ul>
@@ -205,7 +209,7 @@ export default function Navbar() {
                 </a>
             </div> */}
         </Flex>
-      <Dialog as="div" className="lg:hidden p-1" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+      <Dialog as="div" className="md:hidden p-1" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
@@ -266,7 +270,7 @@ export default function Navbar() {
                             className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                           >
                             {item.name}
-                            <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+                            {/* <item.icon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" /> */}
                           </Disclosure.Button>
                         ))}
                       </Disclosure.Panel>
@@ -302,11 +306,11 @@ export default function Navbar() {
 }
 
 // eslint-disable-next-line react/display-name
-const ListItem = React.forwardRef(({ className, children, title, linkicon, ...props }, forwardedRef) => (
+const ListItem = React.forwardRef(({ className, children, title, external, ...props }, forwardedRef) => (
     <li>
         <NavigationMenu.Link asChild>
         <a className={classNames('ListItemLink', className)} {...props} ref={forwardedRef}>
-            <div className="ListItemHeading"><Flex>{title}{<linkicon />}</Flex></div>
+            <div className="ListItemHeading"><Flex>{title}{external ? <ExternalLinkIcon className="mt-0.5 ml-0.5" /> : null}</Flex></div>
             <p className="ListItemText">{children}</p>
         </a>
         </NavigationMenu.Link>

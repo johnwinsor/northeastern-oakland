@@ -2,21 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '@radix-ui/colors/black-alpha.css';
+@import '@radix-ui/colors/indigo.css';
+@import '@radix-ui/colors/mauve.css';
+@import '@radix-ui/colors/purple.css';
+@import '@radix-ui/colors/violet.css';
+
 html {
   color: rgb(var(--foreground-rgb));
   background-color: #B4071F;
   @apply px-6;
 }
 
+a {
+  color: #B4071F;
+}
+
+a:hover {
+  color: black;
+}
+
 main {
 min-height: calc(100vh - 242px);
 }
 
-@import '@radix-ui/colors/black-alpha.css';
-@import '@radix-ui/colors/indigo.css';
-@import '@radix-ui/colors/mauve.css';
-@import '@radix-ui/colors/purple.css';
-@import '@radix-ui/colors/violet.css';
+.backg {
+  min-height: calc(100vh - 242px);
+  @apply w-full;
+  @apply p-24;
+  @apply relative;
+  @apply overflow-hidden;
+  @apply block;
+  @apply z-10;
+  @apply bg-[url('../../public/libraryOverhead.png')];
+  @apply bg-cover;
+  @apply bg-no-repeat;
+  @apply bg-center;
+  @apply before:content-[''];
+  @apply before:absolute;
+  @apply before:inset-0;
+  @apply before:block;
+  @apply before:bg-gradient-to-r;
+  @apply before:from-green-400;
+  @apply before:to-blue-500;
+  @apply before:opacity-75;
+  @apply before:z-[-5];
+}
 
 /* reset */
 button,
