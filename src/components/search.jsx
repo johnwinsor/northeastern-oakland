@@ -19,10 +19,13 @@ const Search = () => (
             <Tabs.Trigger className="TabsTrigger" value="tab2">
                 Search Articles
             </Tabs.Trigger>
+            <Tabs.Trigger className="TabsTrigger" value="tab3">
+                Journal Finder
+            </Tabs.Trigger>
         </Tabs.List>
         < Tabs.Content className="TabsContent" value="tab1">
             <fieldset className="Fieldset">
-                <input className="Input" id="name" defaultValue="Search..." />
+                <input className="Input" id="name" defaultValue="Search Books..." />
             </fieldset>
             <div style={{ display: 'flex', marginTop: 20, justifyContent: 'flex-end' }}>
                 <button className="Button green">Search</button>
@@ -30,7 +33,15 @@ const Search = () => (
         </Tabs.Content>
         <Tabs.Content className="TabsContent" value="tab2">
             <fieldset className="Fieldset">
-                <input className="Input" id="name" defaultValue="Search..." />
+                <input className="Input" id="name" defaultValue="Search Articles..." />
+            </fieldset>
+            <div style={{ display: 'flex', marginTop: 20, justifyContent: 'flex-end' }}>
+                <button className="Button green">Search</button>
+            </div>
+        </Tabs.Content>
+        <Tabs.Content className="TabsContent" value="tab3">
+            <fieldset className="Fieldset">
+                <input className="Input" id="name" defaultValue="Search Journal Finder..." />
             </fieldset>
             <div style={{ display: 'flex', marginTop: 20, justifyContent: 'flex-end' }}>
                 <button className="Button green">Search</button>
