@@ -36,7 +36,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-teal-50">
+    <header className="bg-teal-50 z-50">
         <Flex gap="5" className="text-sm md:text-base mt-auto">
         {/* <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global"> */}
             {/* <div className="flex md:flex-1"></div> */}
