@@ -5,7 +5,7 @@ import Search from "@/components/search";
 
 export default function Home() {
     return (
-    <div className="backg rounded-t-lg p-24">
+    <div className="backg rounded-t-lg pt-12 md:pt-24 px-1">
       <Container size="2">
         <Flex gap="4" direction="column">
           <Search />

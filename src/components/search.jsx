@@ -10,7 +10,7 @@ const Search = () => (
     <Tabs.Root className="TabsRoot" defaultValue="tab1">
         <Card>
             <Heading size="5" className='py-1'>Scholar One Search</Heading>
-            <Text>Search for Books, Articles, Videos, and other Library Materials</Text>
+            <Text className="hidden md:block">Search for Books, Articles, Videos, and other Library Materials</Text>
         </Card>
         <Tabs.List className="TabsList" aria-label="Manage your account">
             <Tabs.Trigger className="TabsTrigger" value="tab1">
