@@ -16,7 +16,7 @@ export default function Contact() {
             <Flex gap="4" justify="center">
                 <Card className="rounded-md shadow-xl p-1 bg-orange-100 mb-5 w-56 md:w-2/4">
                     <FaPeopleArrows size="36px" className="text-red-900 float-left mr-4" />
-                    <Text as="p" size={{ initial: '2', md: '3' }}>Reference librarians are available every weekday to help you with your research or with other library questions! Make an appointment with a reference librarian <a href="https://nuoakland.libcal.com/appointments/">here.</a></Text>
+                    <Text as="p" size={{ initial: '2', md: '3' }}>Reference librarians are available every weekday to help you with your research or with other library questions! Make an appointment with a reference librarian <a href="/appointments/">here.<ExternalLinkIcon className="ml-0.5 inline-block" /></a></Text>
                 </Card>
             </Flex>
           
@@ -34,7 +34,7 @@ export default function Contact() {
                         <Flex pt="1">
                             <Flex align="center" gap="2">
                                 <EnvelopeClosedIcon />
-                                <Text size={{ initial: '2', md: '3' }}> askalibmills@northeastern.libanswers.com</Text>
+                                <Text size={{ initial: '2', md: '3' }}><a href="mailto:askalibmills@northeastern.libanswers.com">askalibmills@northeastern.libanswers.com</a></Text>
                             </Flex>
                         </Flex>
            
@@ -72,17 +72,17 @@ export default function Contact() {
                         <Separator size="4" />
 
                         <Link 
-                            href={'https://northeastern.libanswers.com/chat/widget/8750838048d7579fb24d5596b2bfdc95'}>
+                            href={'/chat'}>
                             <Flex justify="between" pt="1">
                                 <Flex align="center" gap="2">
                                     <ChatBubbleIcon />
                                     <Text size={{ initial: '2', md: '3' }}>Live 24/7 Chat</Text>
-                                    <ExternalLinkIcon className="mt-0.5 ml-0.5" />
                                 </Flex>
                             </Flex>
                         </Link>
 
                         <Link 
+                            target="_blank"
                             href={'https://library.northeastern.edu/administration/library-staff-directory/?ul_filter_department=F.%20W.%20Olin%20Library'}>
                             <Flex justify="between" pt="1">
                                 <Flex align="center" gap="2">
@@ -94,6 +94,7 @@ export default function Contact() {
                         </Link>
 
                         <Link 
+                            target="_blank"
                             href={'https://library.northeastern.edu/research_instruction/ask-a-librarian/email-the-library/'}>
                             <Flex justify="between" pt="1">
                                 <Flex align="center" gap="2">

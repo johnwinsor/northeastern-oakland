@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.className} suppressHydrationWarning>
       <body className="bg-red-700 {inter.className}">
-        <Theme accentColor="crimson" grayColor="sand" radius="large" scaling="95%">
+        <Theme grayColor="sand" radius="large" scaling="95%">
           <Flex direction="column">
             <Header />
             <Social />
