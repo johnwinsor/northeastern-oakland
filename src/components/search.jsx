@@ -1,9 +1,19 @@
 'use client';
 import React from 'react';
-import { Badge, Card, Container, Flex, Heading, Text} from '@radix-ui/themes'
+import { Badge, Card, Container, Flex, Heading, Text, TextField} from '@radix-ui/themes'
+import { MagnifyingGlassIcon } from '@radix-ui/react-icons'
 import * as Tabs from '@radix-ui/react-tabs';
-
 import './search.css';
+
+const searchPrimo = () => {
+    document.getElementById("primoQuery").value = "any,contains," + document.getElementById("primoQueryTemp").value;
+    document.forms["searchForm"].submit();
+}
+
+const clearField = () => {
+    const field = document.getElementById("primoQueryTemp");
+    field.value = "";
+}
 
 
 const Search = () => (
@@ -24,28 +34,64 @@ const Search = () => (
             </Tabs.Trigger>
         </Tabs.List>
         < Tabs.Content className="TabsContent" value="tab1">
-            <fieldset className="Fieldset">
-                <input className="Input" id="name" defaultValue="Search Books..." />
-            </fieldset>
-            <div style={{ display: 'flex', marginTop: 20, justifyContent: 'flex-end' }}>
-                <button className="Button green">Search</button>
-            </div>
+            <form id="simple" name="searchForm" method="get" target="_self" action="https://onesearch.library.northeastern.edu/discovery/search" encType="application/x-www-form-urlencoded; charset=utf-8">
+                <input type="hidden" name="vid" value="01NEU_INST:NU_Olin" />
+                <input type="hidden" name="tab" value="Everything" />
+                <input type="hidden" name="search_scope" value="MillsCatalog" />
+                <input type="hidden" name="query" id="primoQuery" />
+                <fieldset className="Fieldset">
+                    {/* <input type="text" className="Input" id="primoQueryTemp" defaultValue="Search Books..." onClick={clearField} /> */}
+                    <TextField.Root>
+                        <TextField.Slot>
+                            <MagnifyingGlassIcon height="16" width="16" />
+                        </TextField.Slot>
+                        <TextField.Input size="3" id="primoQueryTemp" placeholder="Search Books..." onClick={clearField} />
+                    </TextField.Root>
+                </fieldset>
+                <div style={{ display: 'flex', marginTop: 20, justifyContent: 'flex-end' }}>
+                    <button type="submit" className="Button green" onClick={searchPrimo}>Search</button>
+                </div>
+            </form>
         </Tabs.Content>
         <Tabs.Content className="TabsContent" value="tab2">
-            <fieldset className="Fieldset">
-                <input className="Input" id="name" defaultValue="Search Articles..." />
-            </fieldset>
-            <div style={{ display: 'flex', marginTop: 20, justifyContent: 'flex-end' }}>
-                <button className="Button green">Search</button>
-            </div>
+            <form id="simple" name="searchForm" method="get" target="_self" action="https://onesearch.library.northeastern.edu/discovery/search" encType="application/x-www-form-urlencoded; charset=utf-8">
+                <input type="hidden" name="vid" value="01NEU_INST:NU_Olin" />
+                <input type="hidden" name="tab" value="Everything" />
+                <input type="hidden" name="search_scope" value="Mills_and_CI" />
+                <input type="hidden" name="query" id="primoQuery" />
+                <fieldset className="Fieldset">
+                    {/* <input type="text" className="Input" id="primoQueryTemp" defaultValue="Search Articles..." onClick={clearField} /> */}
+                    <TextField.Root>
+                        <TextField.Slot>
+                            <MagnifyingGlassIcon height="16" width="16" />
+                        </TextField.Slot>
+                        <TextField.Input size="3" id="primoQueryTemp" placeholder="Search Articles..." onClick={clearField} />
+                    </TextField.Root>
+                </fieldset>
+                <div style={{ display: 'flex', marginTop: 20, justifyContent: 'flex-end' }}>
+                    <button type="submit" className="Button green" onClick={searchPrimo}>Search</button>
+                </div>
+            </form>
         </Tabs.Content>
         <Tabs.Content className="TabsContent" value="tab3">
-            <fieldset className="Fieldset">
-                <input className="Input" id="name" defaultValue="Search Journal Finder..." />
-            </fieldset>
-            <div style={{ display: 'flex', marginTop: 20, justifyContent: 'flex-end' }}>
-                <button className="Button green">Search</button>
-            </div>
+        <form id="simple" name="searchForm" method="get" target="_self" action="https://onesearch.library.northeastern.edu/discovery/jsearch" encType="application/x-www-form-urlencoded; charset=utf-8">
+                <input type="hidden" name="vid" value="01NEU_INST:NU_Olin" />
+                <input type="hidden" name="tab" value="jsearch_slot" />
+                <input type="hidden" name="search_scope" value="Mills_and_CI" />
+                <input type="hidden" name="query" id="primoQuery" />
+                <fieldset className="Fieldset">
+                    {/* <input type="text" className="Input" id="primoQueryTemp" defaultValue="Search Journal Finder..." onClick={clearField} /> */}
+                    <TextField.Root>
+                        <TextField.Slot>
+                            <MagnifyingGlassIcon height="16" width="16" />
+                        </TextField.Slot>
+                        <TextField.Input size="3" id="primoQueryTemp" placeholder="Search Journal Finder..." onClick={clearField} />
+                    </TextField.Root>
+                </fieldset>
+                <div style={{ display: 'flex', marginTop: 20, justifyContent: 'flex-end' }}>
+                    <button type="submit" className="Button green" onClick={searchPrimo}>Search</button>
+                </div>
+            </form>
         </Tabs.Content>
     </Tabs.Root>
   );
