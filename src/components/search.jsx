@@ -24,7 +24,7 @@ const clearField = () => {
 
 const Search = () => (
     <Tabs.Root className="TabsRoot" defaultValue="tab1">
-        <Card>
+        <Card className="shadow-xl p-1 md:p-2 rounded-t-lg">
             <Heading size="8" color="crimson" className={oswald.className}>Scholar OneSearch</Heading>
             <Text className="hidden md:block">Search for Books, Articles, Videos, and other Library Materials</Text>
         </Card>
@@ -39,7 +39,7 @@ const Search = () => (
                 Journal Finder
             </Tabs.Trigger>
         </Tabs.List>
-        < Tabs.Content className="TabsContent" value="tab1">
+        <Tabs.Content className="TabsContent" value="tab1">
             <form id="simple" name="searchForm" method="get" target="_self" action="https://onesearch.library.northeastern.edu/discovery/search" encType="application/x-www-form-urlencoded; charset=utf-8">
                 <input type="hidden" name="vid" value="01NEU_INST:NU_Olin" />
                 <input type="hidden" name="tab" value="Everything" />
