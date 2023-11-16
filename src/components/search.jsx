@@ -4,6 +4,12 @@ import { Badge, Card, Container, Flex, Heading, Text, TextField} from '@radix-ui
 import { MagnifyingGlassIcon } from '@radix-ui/react-icons'
 import * as Tabs from '@radix-ui/react-tabs';
 import './search.css';
+import { Oswald } from 'next/font/google'
+
+const oswald = Oswald({
+    weight: '400',
+    subsets: ['latin'],
+  })
 
 const searchPrimo = () => {
     document.getElementById("primoQuery").value = "any,contains," + document.getElementById("primoQueryTemp").value;
@@ -19,7 +25,7 @@ const clearField = () => {
 const Search = () => (
     <Tabs.Root className="TabsRoot" defaultValue="tab1">
         <Card>
-            <Heading size="5" className='py-1'>Scholar One Search</Heading>
+            <Heading size="8" color="crimson" className={oswald.className}>Scholar OneSearch</Heading>
             <Text className="hidden md:block">Search for Books, Articles, Videos, and other Library Materials</Text>
         </Card>
         <Tabs.List className="TabsList" aria-label="Manage your account">
