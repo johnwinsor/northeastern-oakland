@@ -3,7 +3,7 @@ import React from 'react';
 import { Badge, Card, Container, Flex, Heading, Text, TextField} from '@radix-ui/themes'
 import { MagnifyingGlassIcon } from '@radix-ui/react-icons'
 import * as Tabs from '@radix-ui/react-tabs';
-import './search.css';
+import './css/search.css';
 import { Oswald } from 'next/font/google'
 
 const oswald = Oswald({
