@@ -5,7 +5,7 @@ import { Flex, Theme } from '@radix-ui/themes';
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import Social from "@/components/social"
-import './globals.css'
+import '../globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 

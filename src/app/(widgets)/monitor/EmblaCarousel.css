@@ -1,0 +1,12 @@
+.embla {
+    overflow: hidden;
+  }
+  
+  .caption {
+  max-width: 600px;
+  }
+  
+  img {
+    padding-top:2em;
+    padding-bottom: 2em;
+  }
