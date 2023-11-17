@@ -4,7 +4,7 @@ export default function MonitorLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<div className="text-center justify-center">
+		<div className="text-center justify-center max-h-screen">
 			{children}
 		</div>
 	);
