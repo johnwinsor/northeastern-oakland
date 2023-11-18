@@ -10,41 +10,41 @@
 @import '@radix-ui/colors/green.css';
 
 html {
-  color: rgb(var(--foreground-rgb));
-  background-color: #B4071F;
-  @apply px-6;
+    color: rgb(var(--foreground-rgb));
+    background-color: #B4071F;
+    @apply px-6;
 }
 
 a {
-  color: #B4071F;
+    color: #B4071F;
 }
 
 a:hover {
-  color: black;
+    color: black;
 }
 
 main {
-min-height: calc(100vh - 242px);
+    min-height: calc(100vh - 242px);
 }
 
 .backg {
-  min-height: calc(100vh - 242px);
-  @apply w-full;
-  @apply relative;
-  @apply overflow-hidden;
-  @apply block;
-  @apply z-10;
-  @apply bg-[url('../../public/libraryOverhead.png')];
-  @apply bg-cover;
-  @apply bg-no-repeat;
-  @apply bg-center;
-  @apply before:content-[''];
-  @apply before:absolute;
-  @apply before:inset-0;
-  @apply before:block;
-  @apply before:bg-gradient-to-r;
-  @apply before:from-green-400;
-  @apply before:to-blue-500;
-  @apply before:opacity-75;
-  @apply before:z-[-5];
+    min-height: calc(100vh - 242px);
+    @apply w-full;
+    @apply relative;
+    @apply overflow-hidden;
+    @apply block;
+    @apply z-10;
+    @apply bg-[url('../../public/libraryOverhead.png')];
+    @apply bg-cover;
+    @apply bg-no-repeat;
+    @apply bg-center;
+    @apply before:content-[''];
+    @apply before:absolute;
+    @apply before:inset-0;
+    @apply before:block;
+    @apply before:bg-gradient-to-r;
+    @apply before:from-green-400;
+    @apply before:to-blue-500;
+    @apply before:opacity-75;
+    @apply before:z-[-5];
 }

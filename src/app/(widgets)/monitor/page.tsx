@@ -1,7 +1,7 @@
 import Carousel from '@/components/EmblaCarousel';
 import Image from 'next/image'
 import './EmblaCarousel.css';
-import { Flex, Text, Heading } from '@radix-ui/themes';
+import { Flex, Text, Heading, Card } from '@radix-ui/themes';
 
 function shuffle(a: any) {
     var j, x, i;
@@ -14,7 +14,7 @@ function shuffle(a: any) {
     return a;
 }
 
-export default async function Monitor({ params }: { params: { id: string } }) {
+export default async function Monitor() {
     const res = await fetch(
         'https://library.mills.edu/data.json',
         { cache: 'no-store' },
@@ -23,11 +23,11 @@ export default async function Monitor({ params }: { params: { id: string } }) {
   const shuffled = shuffle(data)
 
   return (
-    <Flex direction="column" gap="3" className="text-slate-50 h-full">
-        <Flex className="h-12">
-            <Text size="9">New Arrivals</Text>
+    <Flex direction="column" gap="3" className="text-slate-50">
+        <Flex direction="column" className="h-12 p-5">
+            <Text as="p" className="text-center text-2xl">New Arrivals</Text>
         </Flex>
-        <Flex>
+        <Flex grow="1">
             <Carousel loop>
                 {shuffled.map((src:any, i:any) => {
                 let callnoStatus = src.callNo.replace(/Unknown/g, "In Processing");
@@ -38,22 +38,24 @@ export default async function Monitor({ params }: { params: { id: string } }) {
                     callnoStatus = src.location + ": " + callnoStatus
                 }
                 return (
-                    <Flex direction="column" className="w-auto h-full flex-[0_0_100%]" key={i}>
-                        <Flex className="h-4/5 relative">
+                    <Flex grow="1" direction="column" className="flex-[0_0_100%] pb-5 justify-center" key={i}>
+                        <Flex grow="1" className="relative">
                             <Image
                                 src={src.coverurl}
                                 fill={true}
-                                // width="400"
-                                // height="400"
                                 className="mx-auto object-contain"
                                 alt="alt"
                             />
                         </Flex>
-                        <Flex direction="column">
-                            <Heading size="9">{src.title}</Heading>
-                            <Text as="p" className="text-center">{src.author}</Text>
-                            <Text as="p" className="text-center">{callnoStatus}</Text>
-                            <Text as="p" className="text-center">Received: {src.recDate}</Text>
+                        <Flex className="justify-center">
+                            <Card className="rounded-md shadow-xl p-1 bg-slate-700 mb-5 w-96">
+                                <Flex direction="column" className="justify-center">
+                                    <Text as="p" className="text-xl text-center">{src.title}</Text>
+                                    <Text as="p" className="text-center">{src.author}</Text>
+                                    <Text as="p" className="text-center">{callnoStatus}</Text>
+                                    <Text as="p" className="text-center">Received: {src.recDate}</Text>
+                                </Flex>
+                            </Card>
                         </Flex>
                     </Flex>
                 );

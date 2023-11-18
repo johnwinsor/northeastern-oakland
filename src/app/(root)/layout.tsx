@@ -19,21 +19,21 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  return (
-    <html lang="en" className={inter.className} suppressHydrationWarning>
-      <body className="bg-red-700 {inter.className}">
-        <Theme grayColor="sand" radius="large" scaling="95%">
-          <Flex direction="column">
-            <Header />
-            <Social />
-            <main className="flex flex-col items-center justify-between rounded-t-lg bg-teal-50">
-              {children}
-            </main>
-            <div className="h-0.5 bg-red-700"></div>
-            <Footer />
-          </Flex>
-        </Theme>
-      </body>
-    </html>
-  )
+    return (
+        <html lang="en" className={inter.className} suppressHydrationWarning>
+            <body className="bg-red-700">
+                <Theme grayColor="sand" radius="large" scaling="95%">
+                    <Flex direction="column">
+                        <Header />
+                        <Social />
+                        <main className="flex flex-col items-center justify-between rounded-t-lg bg-teal-50">
+                            {children}
+                        </main>
+                        <div className="h-0.5 bg-red-700"></div>
+                        <Footer />
+                    </Flex>
+                </Theme>
+            </body>
+        </html>
+    )
 }

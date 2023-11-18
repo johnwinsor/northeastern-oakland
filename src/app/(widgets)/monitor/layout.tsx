@@ -1,11 +1,13 @@
+import { Flex, Heading } from '@radix-ui/themes';
+
 export default function MonitorLayout({
 	children,
 }: {
 	children: React.ReactNode;
 }) {
 	return (
-		<div className="text-center justify-center max-h-screen">
+		<Flex direction="column">
 			{children}
-		</div>
+		</Flex>
 	);
 }
