@@ -91,7 +91,7 @@ export default function Navbar() {
                                 <ListItem href="https://library.northeastern.edu/administration/library-staff-directory/?ul_filter_department=F.%20W.%20Olin%20Library" title="Staff Directory" target="_blank" external>
                                     Directory listings for library staff at the F.W. Olin Library on the Oakland campus.
                                 </ListItem>
-                                <ListItem href="https://library.mills.edu/newbooks/alma-newbooks.php" title="New Books">
+                                <ListItem href="/newbooks" title="New Books">
                                     New Arrivals.
                                 </ListItem>
                             </ul>

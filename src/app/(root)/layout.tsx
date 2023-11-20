@@ -26,7 +26,7 @@ export default function RootLayout({
                     <Flex direction="column">
                         <Header />
                         <Social />
-                        <main className="flex flex-col items-center justify-between rounded-t-lg bg-teal-50">
+                        <main className="items-center justify-between rounded-t-lg bg-teal-50">
                             {children}
                         </main>
                         <div className="h-0.5 bg-red-700"></div>
