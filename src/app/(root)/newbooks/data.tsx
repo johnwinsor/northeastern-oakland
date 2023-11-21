@@ -1,16 +1,10 @@
+'use client';
 import Carousel from '@/components/newbooksCarousel';
 import Image from 'next/image'
 import { Flex, Text } from '@radix-ui/themes';
 import * as HoverCard from '@radix-ui/react-hover-card';
 
-export default async function NewBooksCarousel() {
-    const res = await fetch(
-        'https://library.mills.edu/data.json',
-        { cache: 'no-store' },
-    );
-  const data = await res.json()
-//   console.log(data)
-
+export default function Home({ data }: {data: any}) {
   return (
     <Flex direction="column" gap="1" className="text-slate-50 h-[calc(100vh-242px)]">
         <Flex direction="column" className="h-12 p-5 text-slate-700">
@@ -28,16 +22,23 @@ export default async function NewBooksCarousel() {
                 }
                 const splitTitle = src.title.split(":")
                 return (
-                    <Flex gap="6" grow="1" direction="column" className="flex-[0_0_25%]" key={i}>
-                        <Flex grow="1" className="relative">
+                    // <Flex gap="6" grow="1" direction="column" className="flex-[0_0_100%] sm:flex-[0_0_50%] md:flex-[0_0_33%] lg:flex-[0_0_20%]" key={i}>
+                    <Flex gap="2" grow="1" direction="column" className="flex-[0_0_100%] sm:flex-[0_0_33%] md:flex-[0_0_20%]" key={i}>
+                        <Flex grow="1" className="relative justify-center">
                             <HoverCard.Root>
                                 <HoverCard.Trigger asChild>
-                                    <Image
-                                        src={src.coverurl}
-                                        fill={true}
-                                        className="mx-auto object-contain"
-                                        alt="alt"
-                                    />
+                                    <div style={{width: '100%', height: '100%', position: 'relative'}}>
+                                        <Image
+                                            src={src.coverurl}
+                                            fill={true}
+                                            className="object-contain p-0 md:p-3"
+                                            alt="alt"
+                                            loading="lazy"
+                                            sizes="(min-width: 60em) 24vw,
+                                                    (min-width: 28em) 45vw,
+                                                    100vw"
+                                        />
+                                    </div>
                                 </HoverCard.Trigger>
                                 <HoverCard.Portal>
                                     <HoverCard.Content className="HoverCardContent" sideOffset={5}>
@@ -47,12 +48,12 @@ export default async function NewBooksCarousel() {
                                 </HoverCard.Portal>
                             </HoverCard.Root>
                         </Flex>
-                        <Flex className="justify-center">
+                        <Flex className="justify-center pb-2">
                             <Flex direction="column" className="justify-center text-slate-700">
-                                <Text as="p" className="text-lg text-center">{splitTitle[0]}</Text>
-                                <Text as="p" className="text-sm text-center">{src.author}</Text>
-                                <Text as="p" className="text-sm text-center">{callnoStatus}</Text>
-                                <Text as="p" className="text-sm text-center">Received: {src.recDate}</Text>
+                                <Text as="p" className="text-sm md:text-md lg-text-xl text-center">{splitTitle[0]}</Text>
+                                <Text as="p" className="text-xs md:text-sm lg-text-lg text-center">{src.author}</Text>
+                                <Text as="p" className="text-xs md:text-sm lg-text-lg text-center">{callnoStatus}</Text>
+                                <Text as="p" className="text-xs md:text-sm lg-text-lg text-center">Received: {src.recDate}</Text>
                             </Flex>
                         </Flex>
                     </Flex>
