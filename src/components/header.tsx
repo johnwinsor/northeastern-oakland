@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image'
 import Link from 'next/link'
 import { Flex } from '@radix-ui/themes'
+import '@radix-ui/themes/styles.css';
 import olinLogo from '../../public/oaklandLibrary.png'
 import olinLogoMobile from '../../public/oaklandLibraryMobileCampus.png'
 import '../app/globals.css'

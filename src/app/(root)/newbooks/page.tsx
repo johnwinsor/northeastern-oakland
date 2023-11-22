@@ -1,5 +1,5 @@
-import NewBooksCarousel from './data'
-import './newbooksCarousel.css';
+import NewBooksCarousel from '@/components/newbooks'
+import '@/components/css/newbooksCarousel.css';
 
 export default async function Page() {
     const res = await fetch(

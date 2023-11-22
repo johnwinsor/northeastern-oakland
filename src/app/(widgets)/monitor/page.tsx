@@ -1,6 +1,6 @@
 import Carousel from '@/components/EmblaCarousel';
 import Image from 'next/image'
-import './EmblaCarousel.css';
+import './monitor.css';
 import { Flex, Text, Heading, Card } from '@radix-ui/themes';
 
 function shuffle(a: any) {

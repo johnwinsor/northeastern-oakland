@@ -1,5 +1,6 @@
 import React from 'react';
 import { Badge, Card, Container, Flex, Heading, Text} from '@radix-ui/themes'
+import '@radix-ui/themes/styles.css';
 import { FaRegClock } from "react-icons/fa";
 
 const today = new Date()
@@ -38,37 +39,36 @@ export async function Hours() {
     const scData = await getScHours()
 
     return (
-      <Flex direction="column" align="end" className="w-40">
-        <Flex direction="column">
-          
-          <Flex gap="2" className="justify-end">
-            <FaRegClock className="text-red-900 h-4 w-4 lg:h-5 lg:w-5 float-left pt-1" />
-            <Text 
-              weight="bold"
-              size={{
-                initial: '1',
-                sm: '2',
-                md: '3',
-              }}>Today&apos;s Hours
-            </Text>
-          </Flex>
-          <Flex gap="2" className="justify-end">
-            <Text
-              size={{
-                initial: '1',
-                md: '1',
-              }}>F.W. Olin: {libraryData.items[0].summary}
-            </Text>
-          </Flex>
-          <Flex gap="2" className="justify-end">
-            <Text
-              size={{
-                initial: '1',
-                md: '1',
-              }}>Heller Room: {scData.items[0].summary}
-            </Text>
-          </Flex>
+        <Flex direction="column" align="end" className="w-40">
+            <Flex direction="column">
+                <Flex justify="end" gap="2">
+                    <FaRegClock className="text-red-900 h-4 w-4 lg:h-5 lg:w-5 float-left pt-1" />
+                    <Text 
+                        weight="bold"
+                        size={{
+                        initial: '1',
+                        sm: '2',
+                        md: '3',
+                        }}>Today&apos;s Hours
+                    </Text>
+                </Flex>
+                <Flex justify="end" gap="2">
+                    <Text
+                        size={{
+                        initial: '1',
+                        md: '1',
+                        }}>F.W. Olin: {libraryData.items[0].summary}
+                    </Text>
+                </Flex>
+                <Flex justify="end" gap="2">
+                    <Text
+                        size={{
+                        initial: '1',
+                        md: '1',
+                        }}>Heller Room: {scData.items[0].summary}
+                    </Text>
+                </Flex>
+            </Flex>
         </Flex>
-      </Flex>
     )
   }
