@@ -4,8 +4,8 @@ import { PropsWithChildren } from "react";
 
 const autoplayOptions = {
   delay: 4000,
-  stopOnInteraction: false,
-  stopOnMouseEnter: true,
+  stopOnInteraction: true,
+  // stopOnMouseEnter: true,
 }
 
 // Define the props

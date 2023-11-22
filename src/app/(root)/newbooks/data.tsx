@@ -6,7 +6,7 @@ import * as HoverCard from '@radix-ui/react-hover-card';
 
 export default function Home({ data }: {data: any}) {
   return (
-    <Flex direction="column" gap="1" className="text-slate-50 h-[calc(100vh-242px)]">
+    <Flex direction="column" gap="1" className="text-slate-50 min-h-[calc(100vh-242px)]">
         <Flex direction="column" className="h-12 p-5 text-slate-700">
             <Text as="p" className="text-center text-2xl">New Arrivals</Text>
         </Flex>
@@ -23,19 +23,19 @@ export default function Home({ data }: {data: any}) {
                 const splitTitle = src.title.split(":")
                 return (
                     // <Flex gap="6" grow="1" direction="column" className="flex-[0_0_100%] sm:flex-[0_0_50%] md:flex-[0_0_33%] lg:flex-[0_0_20%]" key={i}>
-                    <Flex gap="2" grow="1" direction="column" className="flex-[0_0_100%] sm:flex-[0_0_33%] md:flex-[0_0_20%]" key={i}>
+                    <Flex gap="2" grow="1" direction="column" className="flex-[0_0_100%] md:flex-[0_0_33%] lg:flex-[0_0_20%]" key={i}>
                         <Flex grow="1" className="relative justify-center">
                             <HoverCard.Root>
                                 <HoverCard.Trigger asChild>
-                                    <div style={{width: '100%', height: '100%', position: 'relative'}}>
+                                    <div className="min-h-400 w-full relative">
                                         <Image
                                             src={src.coverurl}
                                             fill={true}
-                                            className="object-contain p-0 md:p-3"
+                                            className="object-contain py-0 px-0 md:px-3"
                                             alt="alt"
                                             loading="lazy"
                                             sizes="(min-width: 60em) 24vw,
-                                                    (min-width: 28em) 45vw,
+                                                    (min-width: 28em) 33vw,
                                                     100vw"
                                         />
                                     </div>
