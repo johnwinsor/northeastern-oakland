@@ -2,6 +2,7 @@
 import Carousel from '@/components/newbooksCarousel';
 import Image from 'next/image'
 import { Flex, Text } from '@radix-ui/themes';
+import '@radix-ui/themes/styles.css';
 import * as HoverCard from '@radix-ui/react-hover-card';
 
 export default function Home({ data }: {data: any}) {
@@ -22,26 +23,23 @@ export default function Home({ data }: {data: any}) {
                 }
                 const splitTitle = src.title.split(":")
                 return (
-                    // <Flex gap="6" grow="1" direction="column" className="flex-[0_0_100%] sm:flex-[0_0_50%] md:flex-[0_0_33%] lg:flex-[0_0_20%]" key={i}>
-                    <Flex gap="2" grow="1" direction="column" className="flex-[0_0_100%] md:flex-[0_0_33%] lg:flex-[0_0_20%]" key={i}>
-                        <Flex grow="1" className="relative justify-center">
+                    <Flex justify="center" gap="2" grow="1" direction="column" className="flex-[0_0_100%] md:flex-[0_0_33%] xl:flex-[0_0_20%] px-2" key={i}>
+                        <Flex justify="center" grow="1">
                             <HoverCard.Root>
                                 <HoverCard.Trigger asChild>
-                                    <div className="min-h-400 w-full relative">
+                                    <div>
                                         <Image
                                             src={src.coverurl}
-                                            fill={true}
-                                            className="object-contain py-0 px-0 md:px-3"
+                                            width={300}
+                                            height={200}
+                                            className="ImageTrigger p-2 border-2 border-slate-300 bg-slate-50"
                                             alt="alt"
                                             loading="lazy"
-                                            sizes="(min-width: 60em) 24vw,
-                                                    (min-width: 28em) 33vw,
-                                                    100vw"
                                         />
                                     </div>
                                 </HoverCard.Trigger>
                                 <HoverCard.Portal>
-                                    <HoverCard.Content className="HoverCardContent" sideOffset={5}>
+                                    <HoverCard.Content className="HoverCardContent text-xs md:text-sm" sideOffset={5} side="left">
                                         <div><p>{src.summary}</p></div>
                                         <HoverCard.Arrow className="HoverCardArrow" />
                                     </HoverCard.Content>
@@ -49,11 +47,11 @@ export default function Home({ data }: {data: any}) {
                             </HoverCard.Root>
                         </Flex>
                         <Flex className="justify-center pb-2">
-                            <Flex direction="column" className="justify-center text-slate-700">
-                                <Text as="p" className="text-sm md:text-md lg-text-xl text-center">{splitTitle[0]}</Text>
-                                <Text as="p" className="text-xs md:text-sm lg-text-lg text-center">{src.author}</Text>
-                                <Text as="p" className="text-xs md:text-sm lg-text-lg text-center">{callnoStatus}</Text>
-                                <Text as="p" className="text-xs md:text-sm lg-text-lg text-center">Received: {src.recDate}</Text>
+                            <Flex grow="1" direction="column" className="justify-center text-slate-700">
+                                <Text size="4" className="text-center">{splitTitle[0]}</Text>
+                                <Text className="text-xs md:text-sm lg-text-lg text-center">{src.author}</Text>
+                                <Text className="text-xs md:text-sm lg-text-lg text-center">{callnoStatus}</Text>
+                                <Text className="text-xs md:text-sm lg-text-lg text-center">Received: {src.recDate}</Text>
                             </Flex>
                         </Flex>
                     </Flex>

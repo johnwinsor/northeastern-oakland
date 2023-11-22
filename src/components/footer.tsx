@@ -5,7 +5,7 @@ import { ChatBubbleIcon } from '@radix-ui/react-icons'
 
 export default function Footer() {
   return (
-    <Flex gap="2" align="center" className="rounded-b-md h-10 bg-teal-50 justify-center">
+    <Flex gap="2" justify="center" align="center" className="rounded-b-md h-10 bg-teal-50">
         <Text size="1" className="p-0">5000 MacArthur Blvd, Oakland, CA 94613 510.430.2196</Text>
         <Link
             className="p-0"

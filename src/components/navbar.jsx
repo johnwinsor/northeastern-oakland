@@ -15,6 +15,7 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
 import { CaretDownIcon, ExternalLinkIcon } from '@radix-ui/react-icons'
 import { Flex, Card, Text } from '@radix-ui/themes'
+import '@radix-ui/themes/styles.css';
 import './css/navbar.css';
 
 const info = [
@@ -37,7 +38,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-teal-50 z-50">
+    <header className="bg-teal-50 z-50 pl-1">
         <Flex gap="3" className="text-sm md:text-base mt-auto">
             <div className="flex md:hidden">
                 <button

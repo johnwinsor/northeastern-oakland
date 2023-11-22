@@ -4,8 +4,8 @@ import { PropsWithChildren } from "react";
 
 const autoplayOptions = {
   delay: 4000,
-  stopOnInteraction: true,
-  // stopOnMouseEnter: true,
+  stopOnInteraction: false,
+  stopOnMouseEnter: true,
 }
 
 // Define the props
@@ -16,7 +16,7 @@ const Carousel = ({ children, ...options }: Props) => {
 
   return (
     <div className="mx-auto embla" ref={emblaRef}>
-      <div className="flex h-full">{children}</div>
+      <div className="flex min-h-400">{children}</div>
     </div>
   );
 };
