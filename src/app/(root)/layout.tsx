@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import '@radix-ui/themes/styles.css';
-import { Flex, Theme } from '@radix-ui/themes';
+import { Flex, Theme } from '@radix-ui/themes'
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import Social from "@/components/social"
+import '@radix-ui/themes/styles.css'
 import '../globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -22,7 +22,7 @@ export default function RootLayout({
     return (
         <html lang="en" className={inter.className} suppressHydrationWarning>
             <body className="bg-red-700">
-                <Theme grayColor="sand" radius="large" scaling="95%">
+                <Theme scaling="95%">
                     <Flex direction="column">
                         <Header />
                         <Social />

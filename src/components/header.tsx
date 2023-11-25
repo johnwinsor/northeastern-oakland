@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <Flex grow="1" direction="column" className="rounded-b-md h-40 bg-teal-50">
         <Flex gap="1" direction="column" justify="between">
-          <Flex justify="between" pt="1" pb="2" px="5">
+          <Flex justify="between" pt="1" pb="2" px={{initial:"2", sm:"5"}}>
             <Flex align="center" className="pl-1 md:pl-3 max-md">
               <Link href={'/'}>
                   <Image

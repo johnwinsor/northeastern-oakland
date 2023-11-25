@@ -39,7 +39,7 @@ export async function Hours() {
     const scData = await getScHours()
 
     return (
-        <Flex direction="column" align="end" className="w-40">
+        <Flex direction="column" align="end">
             <Flex direction="column">
                 <Flex justify="end" gap="2">
                     <FaRegClock className="text-red-900 h-4 w-4 lg:h-5 lg:w-5 float-left pt-1" />
