@@ -6,7 +6,7 @@ export default function MonitorLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<div className="parent">
+		<div className="parent h-full">
 			{children}
 		</div>
 	);

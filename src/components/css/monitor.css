@@ -10,8 +10,14 @@
 }
 
 .embla__slide {
-  flex: 0 0 200px; /* Slide covers 200px of the viewport */
+  flex: 0 0 auto;
   min-width: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0 !important;
+  right: 0 !important;
+  transition: opacity 0.5s;
 }
 
 .parent {
@@ -28,3 +34,13 @@
   0 3.5px 6px hsla(0, 0%, 0%, 0.09);
 }
 
+.parentgrid {
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: auto 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "."
+    "."; 
+  }

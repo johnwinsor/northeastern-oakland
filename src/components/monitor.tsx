@@ -9,11 +9,11 @@ import '@/components/css/monitor.css';
 export const EmblaCarousel = ({ data }: {data: any}) => {
     const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()])
     return (
-        <div>
-            <Flex direction="column" className="p-5 text-slate-50">
+        <div className="parentgrid">
+            <Flex direction="column" className="p-5 text-slate-50 div1">
                 <Text as="p" className="text-center text-2xl">New Arrivals</Text>
             </Flex>
-            <div className='overflow-hidden' ref={emblaRef}>
+            <div className='overflow-hidden h-full div2' ref={emblaRef}>
                 
                 <div className="embla__container">
                         {data.map((slide: any, index: any) => {
@@ -29,17 +29,17 @@ export const EmblaCarousel = ({ data }: {data: any}) => {
                             return (
                                 
                                 <div className="embla__slide justify-center" key={index}>
-                                    <Flex direction="column" className="items-center">
+                                    <Flex height="100%" direction="column" className="items-center">
                                         <Image
                                             src={slide.coverurl}
                                             width={400}
                                             height={400}
                                             alt='cover image'
-                                            className='boxshadow rounded-lg p-2 bg-slate-50 h-auto'
+                                            className='boxshadow rounded-lg p-2 bg-slate-50 h-4/5 w-auto'
                                             loading="lazy"
                                         />
-                                        <Flex direction="column" className="p-5 text-slate-50 items-center">
-                                            <Text as="p" className="text-center text-2xl">{ splitTitle }</Text>
+                                        <Flex width="4" height="auto" direction="column">
+                                            <Text as="p" color="grass" className="text-center text-2xl">{ splitTitle }</Text>
                                             <Text as="p" className="text-center text-lg">{authorArray[1]} {authorArray[0]}</Text>
                                             <Text as="p" className="text-xs md:text-sm lg-text-lg text-center">{callnoStatus}</Text>
                                             <Text as="p" className="text-xs md:text-sm lg-text-lg text-center">Received: {slide.recDate}</Text>
