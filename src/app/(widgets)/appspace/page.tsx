@@ -1,4 +1,5 @@
 import { EmblaCarousel } from '@/components/monitor'
+import { Theme } from '@radix-ui/themes';
 
 export default async function Page() {
     const res = await fetch(

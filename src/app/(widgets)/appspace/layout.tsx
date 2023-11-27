@@ -1,4 +1,4 @@
-import { Flex, Heading } from '@radix-ui/themes';
+import { Theme } from '@radix-ui/themes';
 
 export default function MonitorLayout({
 	children,
@@ -6,8 +6,11 @@ export default function MonitorLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<div className="parent h-full">
-			{children}
+		<div className="h-full">
+			
+				{children}
+
+			
 		</div>
 	);
 }

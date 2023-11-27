@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '@radix-ui/colors/gray.css';
 @import '@radix-ui/colors/black-alpha.css';
 @import '@radix-ui/colors/indigo.css';
 @import '@radix-ui/colors/mauve.css';
