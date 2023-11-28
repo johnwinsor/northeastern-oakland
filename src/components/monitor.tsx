@@ -27,9 +27,9 @@ export const EmblaCarousel = ({ data }: {data: any}) => {
                                 const splitTitle = slide.title.split(":")
                                 const authorArray = slide.author.split(",")
                                 return (             
-                                    <div className="embla__slide justify-center" key={index}>
+                                    <div className="embla__slide justify-center justify-items-center" key={index}>
 
-                                            <div id="image" className="relative rounded-lg h-full p-2 border-2 bg-slate-50">
+                                            <div id="image" className="relative rounded-lg h-full p-2 bg-slate-50 max-w-fit">
                                                 <Image
                                                     src={slide.coverurl}
                                                     width="0"
@@ -40,9 +40,9 @@ export const EmblaCarousel = ({ data }: {data: any}) => {
                                                     loading="lazy"
                                                 />
                                             </div>
-                                            <Flex grow="1" direction="column" id="bib" className="max-w-full justify-center">
-                                                <Text as="p" className="text-center text-2xl text-slate-50 justify-center max-w-md">{ splitTitle }</Text>
-                                                <Text as="p" className="text-center text-lg text-slate-50">{authorArray[1]} {authorArray[0]}</Text>
+                                            <Flex grow="1" direction="column" id="bib" className="justify-center text-center m-auto">
+                                                <Text as="p" className="text-center text-2xl text-slate-50 line-clamp-2 max-w-lg">{ splitTitle }</Text>
+                                                <Text as="p" className="text-center text-md text-slate-50">{authorArray[1]} {authorArray[0]}</Text>
                                                 <Text as="p" className="text-xs md:text-sm lg-text-lg text-center text-slate-50">{callnoStatus}</Text>
                                                 <Text as="p" className="text-xs md:text-sm lg-text-lg text-center text-slate-50">Received: {slide.recDate}</Text>
                                             </Flex>
