@@ -36,7 +36,6 @@ export default function Home({ data }: {data: any}) {
                                                 height={200}
                                                 className="ImageTrigger p-2 border-2 border-slate-300 bg-slate-50"
                                                 alt="alt"
-                                                loading="lazy"
                                             />
                                         </div>
                                     </HoverCard.Trigger>

@@ -37,7 +37,6 @@ export const EmblaCarousel = ({ data }: {data: any}) => {
                                                     sizes="100vw"
                                                     alt='cover image'
                                                     className='boxshadow w-auto h-full max-w-fit'
-                                                    loading="lazy"
                                                 />
                                             </div>
                                             <Flex grow="1" direction="column" id="bib" className="justify-center text-center m-auto">
