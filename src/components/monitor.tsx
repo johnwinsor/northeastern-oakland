@@ -1,5 +1,5 @@
 'use client';
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from 'next/image'
 import { Flex, Text } from '@radix-ui/themes';
 import useEmblaCarousel from 'embla-carousel-react'
@@ -7,7 +7,7 @@ import Autoplay from 'embla-carousel-autoplay'
 import '@/components/css/monitor.css';
 
 export const EmblaCarousel = ({ data }: {data: any}) => {
-    const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()])
+    const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 4000 }),])
     return (
             <div className="parentgrid">
                 <Flex direction="column" className="p-5 text-slate-50" id="item-0">
