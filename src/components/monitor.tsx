@@ -6,7 +6,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import '@/components/css/monitor.css';
 
-export const EmblaCarousel = ({ data }: {data: any}) => {
+export const Monitor = ({ data }: {data: any}) => {
     const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 4000 }),])
     return (
             <div className="parentgrid">

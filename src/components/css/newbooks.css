@@ -1,9 +1,18 @@
 @import '@radix-ui/colors/mauve.css';
 
-/* reset */
-Carousel a {
-  all: unset;
+.embla {
+  overflow: hidden;
 }
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  transition: opacity 0.5s;
+}
+
+/* HoverCard */
 
 .HoverCardContent {
   border-radius: 6px;

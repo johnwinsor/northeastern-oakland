@@ -1,5 +1,4 @@
-import NewBooksCarousel from '@/components/newbooks'
-import '@/components/css/newbooksCarousel.css';
+import { Newbooks } from '@/components/newbooks'
 
 export default async function Page() {
     const res = await fetch(
@@ -9,6 +8,6 @@ export default async function Page() {
     const data = await res.json()
 
     return (
-        <NewBooksCarousel data={data} />
+        <Newbooks data={data} />
   )
 }
