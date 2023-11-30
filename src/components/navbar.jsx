@@ -121,7 +121,7 @@ export default function Navbar() {
                                         Collect, organize and format citations according to frequently used style guides such as APA and MLA
                                     </ListItem>
                                     
-                                    <ListItem target="_blank" external title="Study Rooms" href="https://mills.libcal.com/reserve/StudyRooms">
+                                    <ListItem title="Study Rooms" href="/libcal">
                                         Reserve a study room in the library for a group of up to 6 people.
                                     </ListItem>
                                     
