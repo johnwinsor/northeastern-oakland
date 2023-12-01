@@ -20,12 +20,14 @@ export default function Header() {
                       src={olinLogo}
                       alt="Northeastern Oakland Library Logo"
                       height={90}
+                      priority
                       className="pb-3 sm:block hidden"
                   />
                   <Image
                       src={olinLogoMobile}
                       alt="Northeastern Oakland Library Logo"
                       height={90}
+                      priority
                       className="pb-3 sm:hidden"
                   />
               </Link>
