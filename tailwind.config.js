@@ -12,6 +12,10 @@ module.exports = {
         '14': '14.25%',
       },
       keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-3deg)" },
+          "50%": { transform: "rotate(3deg)" }
+        },
         slideUpAndFade: {
           '0%': { opacity: 0, transform: 'translateY(2px)' },
           '100%': { opacity: 1, transform: 'translateY(0)' },
@@ -30,6 +34,7 @@ module.exports = {
         },
       },
       animation: {
+        wiggle: "wiggle 200ms ease-in-out",
         slideUpAndFade: 'slideUpAndFade 300ms cubic-bezier(0.16, 0, 0.13, 1)',
         slideDownAndFade: 'slideDownAndFade 300ms cubic-bezier(0.16, 0, 0.13, 1)',
         slideRightAndFade: 'slideRightAndFade 300ms cubic-bezier(0.16, 0, 0.13, 1)',
