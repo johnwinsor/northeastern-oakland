@@ -42,7 +42,8 @@ export const Newbooks = ({ data }: {data: any}) => {
             <Flex grow="1" className="pt-5">
                 <div className="embla">
                     <div className="embla__viewport" ref={emblaRef}>
-                        <div className="embla__container h-full grid grid-flow-col auto-cols-100 md:auto-cols-33 lg:auto-cols-20 2xl:auto-cols-14">
+                        {/* <div className="embla__container h-full grid grid-flow-col auto-cols-100 md:auto-cols-33 lg:auto-cols-20 2xl:auto-cols-14"> */}
+                        <div className="embla__container h-full grid grid-flow-col auto-cols-100 sm:auto-cols-33 lg:auto-cols-20">
                             {data.map((src: any, i: any) => {
                                 let callnoStatus = src.callNo.replace(/Unknown/g, "In Processing");
                                 if (src.location == "On order") {
@@ -62,7 +63,7 @@ export const Newbooks = ({ data }: {data: any}) => {
                                                 <div id="image" className="relative">
                                                     <Image
                                                         src={src.coverurl}
-                                                        width="300"
+                                                        width="250"
                                                         height="0"
                                                         className="ImageTrigger p-2 border-2 border-slate-300 bg-slate-50"
                                                         alt="alt"
