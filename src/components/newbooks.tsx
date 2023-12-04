@@ -10,7 +10,10 @@ import Autoplay from 'embla-carousel-autoplay'
 import '@/components/css/newbooks.css';
 
 export const Newbooks = ({ data }: {data: any}) => {
+    
     const [effect, setEffect] = useState(false);
+    const [effectBack, setEffectBack] = useState(false);
+    const [effectForward, setEffectForward] = useState(false);
     
     const options: EmblaOptionsType = { dragFree: true, loop: true };
     const autoplay = [Autoplay({ delay: 3000, stopOnMouseEnter: true, stopOnInteraction: false })]
@@ -94,14 +97,14 @@ export const Newbooks = ({ data }: {data: any}) => {
                     
                     <Container size="1" pb="2">
                         <Flex justify="between" p="1">
-                            <button name={"scrollback"} className={`${ effect && "animate-wiggle" } playpause.scrollback text-slate-700`}
+                            <button className={`${ effectBack && "animate-wiggle" } playpause text-slate-700`}
                                 onClick={() => {
                                     scrollPause();
                                     scrollPrev();
-                                    setEffect(true);
+                                    setEffectBack(true);
                                   }
                                 }
-                                onAnimationEnd={() => setEffect(false)}
+                                onAnimationEnd={() => setEffectBack(false)}
                             >
                                 <FaAnglesLeft />
                             </button>
@@ -114,7 +117,7 @@ export const Newbooks = ({ data }: {data: any}) => {
                                 }
                                 onAnimationEnd={() => setEffect(false)}
                             >
-                                <FaRegCirclePause />
+                                <FaRegCirclePause color="red" />
                             </button>
 
                             <button className={`${ effect && "animate-wiggle" } playpause text-slate-700`}
@@ -125,17 +128,17 @@ export const Newbooks = ({ data }: {data: any}) => {
                                 }
                                 onAnimationEnd={() => setEffect(false)}
                             >
-                                <FaRegCirclePlay />
+                                <FaRegCirclePlay color="green" />
                             </button>
 
-                            <button className={`${ effect && "animate-wiggle" } playpause text-slate-700`}
+                            <button className={`${ effectForward && "animate-wiggle" } playpause text-slate-700`}
                                 onClick={() => {
                                     scrollPause();
                                     scrollNext();
-                                    setEffect(true);
+                                    setEffectForward(true);
                                   }
                                 }
-                                onAnimationEnd={() => setEffect(false)}
+                                onAnimationEnd={() => setEffectForward(false)}
                             >
                                 <FaAnglesRight />
                             </button>
