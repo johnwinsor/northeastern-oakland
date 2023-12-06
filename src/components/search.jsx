@@ -56,7 +56,7 @@ const Search = () => (
             </Tabs.Trigger>
         </Tabs.List>
         <Tabs.Content className="TabsContent" value="tab1">
-            <form id="simple" name="searchForm" method="get" target="_self" action="https://onesearch.library.northeastern.edu/discovery/search" encType="application/x-www-form-urlencoded; charset=utf-8">
+            <form id="simple" name="searchForm" method="get" target="_blank" action="https://onesearch.library.northeastern.edu/discovery/search" encType="application/x-www-form-urlencoded; charset=utf-8">
                 <input type="hidden" name="vid" value="01NEU_INST:NU_Olin" />
                 <input type="hidden" name="tab" value="Everything" />
                 <input type="hidden" name="search_scope" value="MillsCatalog" />
@@ -75,7 +75,7 @@ const Search = () => (
             </form>
         </Tabs.Content>
         <Tabs.Content className="TabsContent" value="tab2">
-            <form id="simple" name="searchForm" method="get" target="_self" action="https://onesearch.library.northeastern.edu/discovery/search" encType="application/x-www-form-urlencoded; charset=utf-8">
+            <form id="simple" name="searchForm" method="get" target="_blank" action="https://onesearch.library.northeastern.edu/discovery/search" encType="application/x-www-form-urlencoded; charset=utf-8">
                 <input type="hidden" name="vid" value="01NEU_INST:NU_Olin" />
                 <input type="hidden" name="tab" value="Everything" />
                 <input type="hidden" name="search_scope" value="Mills_and_CI" />
@@ -94,7 +94,7 @@ const Search = () => (
             </form>
         </Tabs.Content>
         <Tabs.Content className="TabsContent" value="tab3">
-        <form id="simple" name="searchForm" method="get" target="_self" action="https://onesearch.library.northeastern.edu/discovery/jsearch" encType="application/x-www-form-urlencoded; charset=utf-8">
+        <form id="simple" name="searchForm" method="get" target="_blank" action="https://onesearch.library.northeastern.edu/discovery/jsearch" encType="application/x-www-form-urlencoded; charset=utf-8">
                 <input type="hidden" name="vid" value="01NEU_INST:NU_Olin" />
                 <input type="hidden" name="tab" value="jsearch_slot" />
                 <input type="hidden" name="search_scope" value="Mills_and_CI" />
