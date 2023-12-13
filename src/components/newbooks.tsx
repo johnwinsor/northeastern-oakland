@@ -53,7 +53,7 @@ export const Newbooks = ({ data }: {data: any}) => {
                                     callnoStatus = src.location + ": " + callnoStatus
                                 }
                                 let callno = callnoStatus.replace(/ - 2nd Floor/g, "");
-                                const callnoDisplay = callno.replace(/Fiction: /g, "");
+                                const callnoDisplay = callno.replace(/Non-Fiction:|Fiction:/gi, "");
                                 const splitTitle = src.title.split(":")
                                 const authorArray = src.author.split(",")
                                 return (
