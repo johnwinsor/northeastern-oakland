@@ -60,7 +60,7 @@ export const Newbooks = ({ data }: {data: any}) => {
                                     <div className="embla__slide px-2" key={i}>
                                         <HoverCard.Root>
                                             <HoverCard.Trigger asChild>
-                                                <div id="image" className="relative">
+                                                <div id="image" className="relative mx-auto">
                                                     <Image
                                                         src={src.coverurl}
                                                         width="250"
