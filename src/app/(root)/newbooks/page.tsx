@@ -4,7 +4,7 @@ import { Flex, Text} from '@radix-ui/themes';
 export default async function newBooksPage() {
     
     const res = await fetch(
-        'https://oakland-library.vercel.app/api/newbooks',
+        'http://localhost:3000/api/newbooks',
         { cache: 'no-store' },
     );
     const data = await res.json()
