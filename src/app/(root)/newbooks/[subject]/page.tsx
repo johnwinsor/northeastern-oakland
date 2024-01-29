@@ -1,10 +1,10 @@
 import { Newbooks } from '@/components/newbooks'
-import { Flex, Text} from '@radix-ui/themes';
+import { Flex, Text } from '@radix-ui/themes';
 
-export default async function Page() {
+export default async function Page({ params }: { params: { subject: string } }) {
     
     const res = await fetch(
-        'http://localhost:3000/api/newbooks',
+        `http://localhost:3000/api/newbooks/${params.subject}`,
         { cache: 'no-store' },
     );
     const data = await res.json()
@@ -12,9 +12,10 @@ export default async function Page() {
     return (
         <Flex direction="column" gap="1" className="text-slate-50 min-h-[calc(100vh-242px)]">
             <Flex direction="column" className="h-12 p-5 text-slate-700">
-                <Text as="p" className="text-center text-2xl">New Arrivals</Text>
+                <Text as="p" className="text-center text-2xl">New Arrivals {params.subject}</Text>
             </Flex>
              <Newbooks data={data} />
         </Flex>
+        
   )
 }
