@@ -1,7 +1,7 @@
 import { Newbooks } from '@/components/newbooks'
 import { Flex, Text } from '@radix-ui/themes';
 
-export default async function Page({ params }: { params: { subject: string } }) {
+export default async function newBooksSubjectPage({ params }: { params: { subject: string } }) {
     
     const res = await fetch(
         `http://localhost:3000/api/newbooks/${params.subject}`,

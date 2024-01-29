@@ -1,7 +1,7 @@
 import { Newbooks } from '@/components/newbooks'
 import { Flex, Text} from '@radix-ui/themes';
 
-export default async function Page() {
+export default async function newBooksPage() {
     
     const res = await fetch(
         'http://localhost:3000/api/newbooks',
