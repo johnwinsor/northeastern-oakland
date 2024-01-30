@@ -5,7 +5,7 @@ export default async function newBooksPage() {
     
     const res = await fetch(
         // 'http://localhost:3000/api/newbooks',
-        'http://https://oakland-library.vercel.app/api/newbooks',
+        'https://oakland-library.vercel.app/api/newbooks',
         { cache: 'no-store' },
     );
     const data = await res.json()
