@@ -36,7 +36,7 @@ export const Newbooks = ({ data }: {data: any}) => {
     
     return (
         <Flex grow="1" className="pt-5">
-            <div className="embla m-auto">
+            <div className="embla m-auto min-w-full">
                 <div className="embla__viewport" ref={emblaRef}>
                     <div className="embla__container h-full grid grid-flow-col auto-cols-100 sm:auto-cols-33 lg:auto-cols-20">
                         {data.map((src: any, i: any) => {
