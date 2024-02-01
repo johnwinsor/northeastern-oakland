@@ -1,5 +1,7 @@
 import { Newbooks } from '@/components/newbooks'
 import { Flex, Text } from '@radix-ui/themes';
+import Subjects from '@/components/subjects'
+
 
 export default async function newBooksSubjectPage({ params }: { params: { subject: string } }) {
     
@@ -11,10 +13,11 @@ export default async function newBooksSubjectPage({ params }: { params: { subjec
 
     return (
         <Flex direction="column" gap="1" className="text-slate-50 min-h-[calc(100vh-242px)]">
-            <Flex direction="column" className="h-12 p-5 text-slate-700">
-                <Text as="p" className="text-center text-2xl">New Arrivals {params.subject}</Text>
+            <Flex direction="row" className="h-12 p-5 text-slate-700 justify-center">
+                <Text as="p" className="text-2xl">New Arrivals {params.subject}</Text>    
+                <Subjects />
             </Flex>
-             <Newbooks data={data} />
+            <Newbooks data={data} />
         </Flex>
         
   )
