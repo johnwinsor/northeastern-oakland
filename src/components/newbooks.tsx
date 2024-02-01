@@ -1,7 +1,7 @@
 'use client';
 import React, { useCallback, useState } from 'react'
 import Image from 'next/image'
-import { Flex, Text, Card, Container } from '@radix-ui/themes';
+import { Flex, Text, Card, Container, Button, DropdownMenu } from '@radix-ui/themes';
 import { FaAnglesRight, FaAnglesLeft, FaRegCirclePlay, FaRegCirclePause } from "react-icons/fa6";
 import * as HoverCard from '@radix-ui/react-hover-card';
 import Link from 'next/link';
@@ -37,6 +37,22 @@ export const Newbooks = ({ data }: {data: any}) => {
     return (
         <Flex grow="1" className="pt-5">
             <div className="embla m-auto min-w-full">
+                <Flex gap="3">
+                    <DropdownMenu.Root>
+                        <DropdownMenu.Trigger>
+                        <Button variant="soft" color="indigo">
+                            Options
+                            <FaRegCirclePlay width="12" height="12" />
+                        </Button>
+                        </DropdownMenu.Trigger>
+                        <DropdownMenu.Content variant="soft" color="indigo">
+                            <DropdownMenu.Item><Link href="/newbooks/Art">Art</Link></DropdownMenu.Item>
+                            <DropdownMenu.Item><Link href="/newbooks/History">History</Link></DropdownMenu.Item>
+                            <DropdownMenu.Item><Link href="/newbooks/Juvenile">Juvenile</Link></DropdownMenu.Item>
+                            <DropdownMenu.Item><Link href="/newbooks/Philosophy">Philosophy</Link></DropdownMenu.Item>
+                        </DropdownMenu.Content>
+                    </DropdownMenu.Root>
+                </Flex>
                 <div className="embla__viewport" ref={emblaRef}>
                     <div className="embla__container h-full grid grid-flow-col auto-cols-100 sm:auto-cols-33 lg:auto-cols-20">
                         {data.map((src: any, i: any) => {
