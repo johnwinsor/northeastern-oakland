@@ -1,45 +1,17 @@
 'use client';
-import React, { useCallback, useState } from 'react'
+import React from 'react'
 import Image from 'next/image'
 import { Flex, Text, Container } from '@radix-ui/themes';
-import { FaAnglesRight, FaAnglesLeft, FaRegCirclePlay, FaRegCirclePause } from "react-icons/fa6";
+// import { FaAnglesRight, FaAnglesLeft, FaRegCirclePlay, FaRegCirclePause } from "react-icons/fa6";
 import * as HoverCard from '@radix-ui/react-hover-card';
-import { EmblaPluginType } from 'embla-carousel'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import '@/components/css/newbooks.css';
 
-type PropType = {
-    plugins?: EmblaPluginType[]
-  }
-
-export const Newbooks = ({ data }: {data: any}) => {
+export const Newbooks = ({ data }: {data: any}, props: any) => {
     
-    const [effect, setEffect] = useState(false);
-    const [effectBack, setEffectBack] = useState(false);
-    const [effectForward, setEffectForward] = useState(false);
-    
-    
-    // const options: EmblaOptionsType = { dragFree: true, loop: true };
-    const autoplay = [Autoplay({ delay: 3000, stopOnMouseEnter: true, stopOnInteraction: false })]
-    // const [emblaRef, emblaApi]: any = useEmblaCarousel(options, autoplay)
-    // const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, props.plugins)
-    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()])
-
-    const scrollPrev = useCallback(() => {
-        if (emblaApi) emblaApi.scrollPrev()
-    }, [emblaApi])
-    
-    const scrollNext = useCallback(() => {
-        if (emblaApi) emblaApi.scrollNext()
-    }, [emblaApi])
-
-    const scrollPause = useCallback(() => {
-        if (emblaApi) emblaApi.plugins().autoplay.stop()
-    }, [emblaApi])
-    const scrollStart = useCallback(() => {
-        if (emblaApi) emblaApi.plugins().autoplay.play()
-    }, [emblaApi])
+    const [emblaRef] = useEmblaCarousel({ loop: true }, [
+        Autoplay({ delay: 4000, stopOnMouseEnter: true, stopOnInteraction: false })])
     
     return (
         <Flex grow="1" className="pt-5">
@@ -98,7 +70,7 @@ export const Newbooks = ({ data }: {data: any}) => {
                     </div>
                 </div>
                 
-                <Container size="1" pb="2">
+                {/* <Container size="1" pb="2">
                     <Flex justify="between" p="1">
                         <button className={`${ effectBack && "animate-wiggle" } playpause text-slate-700`}
                             onClick={() => {
@@ -146,7 +118,7 @@ export const Newbooks = ({ data }: {data: any}) => {
                             <FaAnglesRight />
                         </button>
                     </Flex>
-                </Container>
+                </Container> */}
 
             </div>
         </Flex>
