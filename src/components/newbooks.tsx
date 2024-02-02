@@ -4,9 +4,14 @@ import Image from 'next/image'
 import { Flex, Text, Container } from '@radix-ui/themes';
 import { FaAnglesRight, FaAnglesLeft, FaRegCirclePlay, FaRegCirclePause } from "react-icons/fa6";
 import * as HoverCard from '@radix-ui/react-hover-card';
-import useEmblaCarousel, { EmblaOptionsType } from 'embla-carousel-react'
+import { EmblaPluginType } from 'embla-carousel'
+import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import '@/components/css/newbooks.css';
+
+type PropType = {
+    plugins?: EmblaPluginType[]
+  }
 
 export const Newbooks = ({ data }: {data: any}) => {
     
@@ -14,9 +19,12 @@ export const Newbooks = ({ data }: {data: any}) => {
     const [effectBack, setEffectBack] = useState(false);
     const [effectForward, setEffectForward] = useState(false);
     
-    const options: EmblaOptionsType = { dragFree: true, loop: true };
+    
+    // const options: EmblaOptionsType = { dragFree: true, loop: true };
     const autoplay = [Autoplay({ delay: 3000, stopOnMouseEnter: true, stopOnInteraction: false })]
-    const [emblaRef, emblaApi]: any = useEmblaCarousel(options, autoplay)
+    // const [emblaRef, emblaApi]: any = useEmblaCarousel(options, autoplay)
+    // const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, props.plugins)
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()])
 
     const scrollPrev = useCallback(() => {
         if (emblaApi) emblaApi.scrollPrev()
