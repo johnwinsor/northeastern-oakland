@@ -1,6 +1,8 @@
 from flask import Flask
 from flask_cors import CORS
 import requests
+import urllib.parse
+import sys
 
 app = Flask(__name__)
 CORS(app)
@@ -18,7 +20,8 @@ def get_all_todo_items():
 def get_todo_item(subj):
     response = requests.get('https://library.mills.edu/data-all.json')
     data = response.json()
-    books = ([book for book in data if book["subject"] == subj], None)
+    subject = urllib.parse.unquote(subj)
+    books = ([book for book in data if book["subject"] == subject], None)
     if books:
         return books
     return {"error": "Books item not found"}, 404
