@@ -11,10 +11,12 @@ export default async function newBooksSubjectPage({ params }: { params: { subjec
     );
     const data = await res.json()
 
+    const subject = decodeURI(params.subject)
+
     return (
         <Flex direction="column" gap="1" className="text-slate-50 min-h-[calc(100vh-242px)]">
             <Flex direction="row" className="h-12 p-5 text-slate-700 justify-center">
-                <Text as="p" className="text-2xl">New Arrivals {params.subject}</Text>    
+                <Text as="p" className="text-2xl">New Arrivals: {subject}</Text>    
                 <Subjects />
             </Flex>
             <Newbooks data={data} />
