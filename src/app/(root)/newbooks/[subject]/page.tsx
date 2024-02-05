@@ -6,7 +6,7 @@ import Subjects from '@/components/subjects'
 export default async function newBooksSubjectPage({ params }: { params: { subject: string } }) {
     
     const res = await fetch(
-        `https://northeastern-oakland.vercel.app/api/newbooks/${params.subject}`,
+        `http://127.0.0.1/api/newbooks/${params.subject}`,
         { cache: 'no-store' },
     );
     const data = await res.json()
