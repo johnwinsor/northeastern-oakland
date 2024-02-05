@@ -1,8 +1,8 @@
 'use client';
-import React from 'react'
+import React, { useCallback } from 'react'
 import Image from 'next/image'
 import { Flex, Text, Container } from '@radix-ui/themes';
-// import { FaAnglesRight, FaAnglesLeft, FaRegCirclePlay, FaRegCirclePause } from "react-icons/fa6";
+import { FaAnglesRight, FaAnglesLeft } from "react-icons/fa6";
 import * as HoverCard from '@radix-ui/react-hover-card';
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
@@ -10,8 +10,16 @@ import '@/components/css/newbooks.css';
 
 export const Newbooks = ({ data }: {data: any}, props: any) => {
     
-    const [emblaRef] = useEmblaCarousel({ loop: true }, [
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
         Autoplay({ delay: 4000, stopOnMouseEnter: true, stopOnInteraction: false })])
+
+    const scrollPrev = useCallback(() => {
+        if (emblaApi) emblaApi.scrollPrev()
+        }, [emblaApi])
+    
+    const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext()
+    }, [emblaApi])
     
     return (
         <Flex grow="1" className="pt-5">
@@ -69,57 +77,16 @@ export const Newbooks = ({ data }: {data: any}, props: any) => {
                         })}
                     </div>
                 </div>
-                
-                {/* <Container size="1" pb="2">
+                <Container size="1" pb="2">
                     <Flex justify="between" p="1">
-                        <button className={`${ effectBack && "animate-wiggle" } playpause text-slate-700`}
-                            onClick={() => {
-                                scrollPause();
-                                scrollPrev();
-                                setEffectBack(true);
-                                }
-                            }
-                            onAnimationEnd={() => setEffectBack(false)}
-                        >
+                        <button className="embla__prev text-slate-700" onClick={scrollPrev}>
                             <FaAnglesLeft />
                         </button>
-
-                        <button className={`${ effect && "animate-wiggle" } playpause text-slate-700`}
-                            onClick={() => {
-                                scrollPause();
-                                setEffect(true);
-                                }
-                            }
-                            onAnimationEnd={() => setEffect(false)}
-                        >
-                            <FaRegCirclePause color="red" />
-                        </button>
-
-                        <button className={`${ effect && "animate-wiggle" } playpause text-slate-700`}
-                            onClick={() => {
-                                scrollStart();
-                                setEffect(true);
-                                }
-                            }
-                            onAnimationEnd={() => setEffect(false)}
-                        >
-                            <FaRegCirclePlay color="green" />
-                        </button>
-
-                        <button className={`${ effectForward && "animate-wiggle" } playpause text-slate-700`}
-                            onClick={() => {
-                                scrollPause();
-                                scrollNext();
-                                setEffectForward(true);
-                                }
-                            }
-                            onAnimationEnd={() => setEffectForward(false)}
-                        >
+                        <button className="embla__next text-slate-700" onClick={scrollNext}>
                             <FaAnglesRight />
                         </button>
                     </Flex>
-                </Container> */}
-
+                </Container>
             </div>
         </Flex>
     );
