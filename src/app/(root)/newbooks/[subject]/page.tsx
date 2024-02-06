@@ -1,6 +1,7 @@
 import { Newbooks } from '@/components/newbooks'
-import { Flex, Text } from '@radix-ui/themes';
+import { Flex, Text, Box } from '@radix-ui/themes';
 import Subjects from '@/components/subjects'
+import { wrap } from 'module';
 
 
 export default async function newBooksSubjectPage({ params }: { params: { subject: string } }) {
@@ -15,9 +16,10 @@ export default async function newBooksSubjectPage({ params }: { params: { subjec
 
     return (
         <Flex direction="column" gap="1" className="text-slate-50 min-h-[calc(100vh-242px)]">
-            <Flex direction="row" className="h-12 p-5 text-slate-700 justify-center">
-                <Text as="p" className="text-2xl">New Arrivals: {subject}</Text>    
-                <Subjects />
+            <Flex direction={{initial:"column", sm:"row"}} className="p-5 h-16 text-slate-700 justify-between self-center sm:self-stretch m-auto md:m-2">
+                <Box height="9" className="w-full md:w-1/5"></Box>
+                <Box height="9" className="w-full md:w-3/5 text-center grow"><Text as="p" className="text-base sm:text-lg md:text-2xl text-nowrap">New Arrivals: {subject}</Text></Box>
+                <Box height="9" className="w-full md:w-1/5 text-center md:text-end grow"><Subjects /></Box>
             </Flex>
             <Newbooks data={data} />
         </Flex>

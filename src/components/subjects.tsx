@@ -7,7 +7,7 @@ export default function Subjects() {
     return (
         <DropdownMenu.Root>
             <DropdownMenu.Trigger>
-            <Button className='bg-slate-700' variant="solid" highContrast>
+            <Button className='bg-slate-700 text-xs md:text-base text-nowrap' variant="solid" highContrast>
                 Choose Subject
                 <FaRegCirclePlay width="12" height="12" />
             </Button>
