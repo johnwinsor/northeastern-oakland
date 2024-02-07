@@ -18,7 +18,7 @@ export default function Subjects() {
                 <DropdownMenu.Item><Link href="/newbooks/Business">Business</Link></DropdownMenu.Item>
                 <DropdownMenu.Item><Link href="/newbooks/Chemistry">Chemistry</Link></DropdownMenu.Item>
                 <DropdownMenu.Item><Link href="/newbooks/Communications">Communications</Link></DropdownMenu.Item>
-                <DropdownMenu.Item><Link href="/newbooks/Computer Science ">Computer Science </Link></DropdownMenu.Item>
+                <DropdownMenu.Item><Link href="/newbooks/Computer Science ">Computer Science</Link></DropdownMenu.Item>
                 <DropdownMenu.Item><Link href="/newbooks/Cooking">Cooking</Link></DropdownMenu.Item>
                 <DropdownMenu.Item><Link href="/newbooks/Dance">Dance</Link></DropdownMenu.Item>
                 <DropdownMenu.Item><Link href="/newbooks/Education">Education</Link></DropdownMenu.Item>
