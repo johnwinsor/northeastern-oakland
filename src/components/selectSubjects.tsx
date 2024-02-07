@@ -14,32 +14,32 @@ export default function SelectSubjects() {
         }}
       >
         <option value=''>Select Subject</option>
-        <option value='Art'>Art</option>
-        <option value='Biology'>Biology</option>
-        <option value='Business'>Business</option>
-        <option value='Chemistry'>Chemistry</option>
-        <option value='Communications'>Communications</option>
-        <option value='Computer Science'>Computer Science</option>
-        <option value='Cooking'>Cooking</option>
-        <option value='Dance'>Dance</option>
-        <option value='Education'>Education</option>
-        <option value='English Language Studies'>English Language Studies</option>
-        <option value='Ethnic Studies'>Ethnic Studies</option>
-        <option value='Fiction'>Fiction</option>
-        <option value='Game Design'>Game Design</option>
-        <option value='General'>General</option>
-        <option value='General Science'>General Science</option>
-        <option value='Health Sciences'>Health Sciences</option>
-        <option value='History'>History</option>
-        <option value='Juvenile'>Juvenile</option>
-        <option value='Music'>Music</option>
-        <option value='Philosophy'>Philosophy</option>
-        <option value='Poetry'>Poetry</option>
-        <option value='Political Science'>Political Science</option>
-        <option value='Psychology'>Psychology</option>
-        <option value='Public Policy'>Public Policy</option>
-        <option value='Sociology'>Sociology</option>
-        <option value='WGSS'>WGSS</option>
+        <option value='/newbooks/Art'>Art</option>
+        <option value='/newbooks/Biology'>Biology</option>
+        <option value='/newbooks/Business'>Business</option>
+        <option value='/newbooks/Chemistry'>Chemistry</option>
+        <option value='/newbooks/Communications'>Communications</option>
+        <option value='/newbooks/Computer Science'>Computer Science</option>
+        <option value='/newbooks/Cooking'>Cooking</option>
+        <option value='/newbooks/Dance'>Dance</option>
+        <option value='/newbooks/Education'>Education</option>
+        <option value='/newbooks/English Language Studies'>English Language Studies</option>
+        <option value='/newbooks/Ethnic Studies'>Ethnic Studies</option>
+        <option value='/newbooks/Fiction'>Fiction</option>
+        <option value='/newbooks/Game Design'>Game Design</option>
+        <option value='/newbooks/General'>General</option>
+        <option value='/newbooks/General Science'>General Science</option>
+        <option value='/newbooks/Health Sciences'>Health Sciences</option>
+        <option value='/newbooks/History'>History</option>
+        <option value='/newbooks/Juvenile'>Juvenile</option>
+        <option value='/newbooks/Music'>Music</option>
+        <option value='/newbooks/Philosophy'>Philosophy</option>
+        <option value='/newbooks/Poetry'>Poetry</option>
+        <option value='/newbooks/Political Science'>Political Science</option>
+        <option value='/newbooks/Psychology'>Psychology</option>
+        <option value='/newbooks/Public Policy'>Public Policy</option>
+        <option value='/newbooks/Sociology'>Sociology</option>
+        <option value='/newbooks/WGSS'>WGSS</option>
       </select>
     </div>
   );
