@@ -6,7 +6,7 @@ import SelectSubjects from '@/components/selectSubjects'
 export default async function newBooksSubjectPage({ params }: { params: { subject: string } }) {
     
     const res = await fetch(
-        `${process.env.HOST_BASE_URL}/api/newbooks/${params.subject}`,
+        `${process.env.VERCEL_URL}/api/newbooks/${params.subject}`,
         { cache: 'no-store' },
     );
     const data = await res.json()
