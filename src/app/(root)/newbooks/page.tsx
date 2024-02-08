@@ -6,6 +6,7 @@ export default async function newBooksPage() {
     console.log(process.env.NODE_ENV)
     const res = await fetch(
         'http://localhost:8080/api/newbooks',
+        { cache: 'no-store' },
     );
     const data = await res.json()
 
