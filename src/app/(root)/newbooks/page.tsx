@@ -5,8 +5,7 @@ import SelectSubjects from '@/components/selectSubjects'
 export default async function newBooksPage() {
     console.log(process.env.NODE_ENV)
     const res = await fetch(
-        'https://northeastern-oakland.vercel.app/api/newbooks',
-        { cache: 'no-store' },
+        'http://localhost:8080/api/newbooks',
     );
     const data = await res.json()
 
