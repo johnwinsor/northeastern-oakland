@@ -2,15 +2,9 @@ import { Newbooks } from '@/components/newbooks'
 import { Flex, Text, Box} from '@radix-ui/themes';
 import SelectSubjects from '@/components/selectSubjects'
 
-const dev = process.env.NODE_ENV !== "production";
-const server = dev
-  ? "http://127.0.0.1:3000"
-  : `${process.env.HOST_BASE_URL}`;
-
 export default async function newBooksPage() {
-    console.log(process.env.NODE_ENV)
     const res = await fetch(
-        `${server}/api/newbooks`,
+        `${process.env.HOST_BASE_URL}/api/newbooks`,
         { cache: 'no-store' },
     );
     const data = await res.json()
