@@ -4,7 +4,6 @@ import SelectSubjects from '@/components/selectSubjects'
 
 
 export default async function newBooksSubjectPage({ params }: { params: { subject: string } }) {
-    
     const res = await fetch(
         `${process.env.VERCEL_URL}/api/newbooks/${params.subject}`,
         { cache: 'no-store' },
