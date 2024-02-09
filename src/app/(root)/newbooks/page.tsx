@@ -2,9 +2,23 @@ import { Newbooks } from '@/components/newbooks'
 import { Flex, Text, Box} from '@radix-ui/themes';
 import SelectSubjects from '@/components/selectSubjects'
 
-export default async function newBooksPage() {
+export default async function newBooksPage({
+    searchParams,
+}: {
+    searchParams: { [key: string]: string | string[] | undefined }
+}) {
+    
+    const date = searchParams['date']
+    let fetchURL = ''
+
+    if (typeof date !== 'undefined') {
+        fetchURL = `${process.env.HOST_BASE_URL}/api/newbooks?date=${date}`;
+    } else {
+        fetchURL = `${process.env.HOST_BASE_URL}/api/newbooks`;
+    }
+    
     const res = await fetch(
-        `${process.env.HOST_BASE_URL}/api/newbooks`,
+        fetchURL,
         { cache: 'no-store' },
     );
     const data = await res.json()
