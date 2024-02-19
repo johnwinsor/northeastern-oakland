@@ -3,6 +3,7 @@ from flask_cors import CORS
 import requests
 import urllib.parse
 from datetime import datetime
+import json
 
 app = Flask(__name__)
 CORS(app)
@@ -12,8 +13,13 @@ recDateFormat = '%M/%d/%Y'
 @app.route("/api/newbooks", methods=["GET"])
 def get_books():
     # response = requests.get('https://library.mills.edu/data.json')
-    response = requests.get('http://localhost:3000/newbooks.json')
-    data = response.json()
+    
+    # response = requests.get('http://localhost:3000/newbooks.json')
+    # data = response.json()
+    
+    with app.open_resource('static/newbooks.json') as f:
+        data = json.load(f)
+    
     if 'date' in request.args:
         date_limiter = request.args.get('date')
         date_obj = datetime.strptime(date_limiter, urlDateFormat)
@@ -24,8 +30,12 @@ def get_books():
 
 @app.route("/api//subjects", methods=["GET"])
 def get_subjects():
-    response = requests.get('http://localhost:3000/newbooks.json')
-    data = response.json()
+    # response = requests.get('http://localhost:3000/newbooks.json')
+    # data = response.json()
+    
+    with app.open_resource('static/newbooks.json') as f:
+        data = json.load(f)
+    
     subjects = [ sub['subject'] for sub in data ]
     subjects = list(set(subjects))
 
@@ -51,8 +61,12 @@ def get_subjects():
 @app.route("/api/newbooks/<lib>", defaults={'subj': None}, methods=["GET"])
 @app.route("/api/newbooks/<lib>/<subj>", methods=["GET"])
 def get_books_library(lib, subj):
-    response = requests.get('http://localhost:3000/newbooks.json')
-    data = response.json()
+    # response = requests.get('http://localhost:3000/newbooks.json')
+    # data = response.json()
+    
+    with app.open_resource('static/newbooks.json') as f:
+        data = json.load(f)
+    
     library = urllib.parse.unquote(lib)
     
     if library == "Global Campus":
