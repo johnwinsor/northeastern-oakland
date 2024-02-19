@@ -1,46 +1,36 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import { Listbox, Transition } from '@headlessui/react'
+import { usePathname } from 'next/navigation'
 
-export default function SelectSubjects() {
+export default function SelectSubjects({ subjformdata }: {subjformdata: any}, props: any) {
   const router = useRouter();
+  let library = ''
+
+  const pathname = usePathname()
+  const path = decodeURI(pathname)
+  // console.log(path)
+  const regex = /\/newbooks\/(.*?)(\/|$)/g;
+  const found = pathname.match(regex);
+  if (found && found[0]) {
+    // console.log(found[0])
+    library = decodeURI(found[0].replace(/\/$/, ""));
+    // console.log(library)
+  } else {library = '/newbooks/Global Campus'}
+
+  // console.log(library)
+
+  const Subjects = () => {
+    const subjects = subjformdata.map((subject: any, index: any)=>
+      <option key={index} value={`${library}/${subject}`}>{subject}</option>)
+    return <select name="selectedSubject" defaultValue={path} className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5' onChange={(e) => {router.push(e.target.value); }}><option value=''>Select Subject</option>{subjects}</select>
+  }
+
+
 
   return (
     <div>
-      <select className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5'
-        onChange={(e) => {
-            router.push(e.target.value);
-        }}
-      >
-        <option value=''>Select Subject</option>
-        <option value='/newbooks/Art'>Art</option>
-        <option value='/newbooks/Biology'>Biology</option>
-        <option value='/newbooks/Business'>Business</option>
-        <option value='/newbooks/Chemistry'>Chemistry</option>
-        <option value='/newbooks/Communications'>Communications</option>
-        <option value='/newbooks/Computer Science'>Computer Science</option>
-        <option value='/newbooks/Cooking'>Cooking</option>
-        <option value='/newbooks/Dance'>Dance</option>
-        <option value='/newbooks/Education'>Education</option>
-        <option value='/newbooks/English Language Studies'>English Language Studies</option>
-        <option value='/newbooks/Ethnic Studies'>Ethnic Studies</option>
-        <option value='/newbooks/Fiction'>Fiction</option>
-        <option value='/newbooks/Game Design'>Game Design</option>
-        <option value='/newbooks/General'>General</option>
-        <option value='/newbooks/General Science'>General Science</option>
-        <option value='/newbooks/Health Sciences'>Health Sciences</option>
-        <option value='/newbooks/History'>History</option>
-        <option value='/newbooks/Juvenile'>Juvenile</option>
-        <option value='/newbooks/Music'>Music</option>
-        <option value='/newbooks/Philosophy'>Philosophy</option>
-        <option value='/newbooks/Poetry'>Poetry</option>
-        <option value='/newbooks/Political Science'>Political Science</option>
-        <option value='/newbooks/Psychology'>Psychology</option>
-        <option value='/newbooks/Public Policy'>Public Policy</option>
-        <option value='/newbooks/Sociology'>Sociology</option>
-        <option value='/newbooks/WGSS'>WGSS</option>
-      </select>
+      <Subjects />
     </div>
   );
 }

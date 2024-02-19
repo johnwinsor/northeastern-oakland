@@ -27,6 +27,8 @@ export const Newbooks = ({ data }: {data: any}, props: any) => {
                 <div className="embla__viewport" ref={emblaRef}>
                     <div className="embla__container h-full grid grid-flow-col auto-cols-100 sm:auto-cols-33 lg:auto-cols-20">
                         {data.map((src: any, i: any) => {
+                            const library = src.library;
+                            const subject = src.subject;
                             let callnoStatus = src.callNo.replace(/Unknown/g, "In Processing");
                             if (src.location == "On order") {
                                 callnoStatus = "In Processing";
@@ -35,6 +37,10 @@ export const Newbooks = ({ data }: {data: any}, props: any) => {
                                 callnoStatus = src.location + ": " + callnoStatus
                             }
                             let callno = callnoStatus.replace(/ - 2nd Floor/g, "");
+                            const format = src.format;
+                            if (format == "E") {
+                                callno = "Ebook"
+                            }
                             const callnoDisplay = callno.replace(/Non-Fiction:|Fiction:/gi, "");
                             const splitTitle = src.title.split(":")
                             const authorArray = src.author.split(",")
@@ -68,8 +74,10 @@ export const Newbooks = ({ data }: {data: any}, props: any) => {
                                                 <Text size="4" className="text-center line-clamp-1">{splitTitle[0]}</Text>
                                             </a>
                                             <Text className="text-xs md:text-sm lg-text-lg text-center">{authorArray[1]} {authorArray[0]}</Text>
+                                            <Text className="text-xs md:text-sm lg-text-lg text-center">{library}</Text>
                                             <Text className="text-xs md:text-sm lg-text-lg text-center">{callnoDisplay}</Text>
-                                            <Text className="text-xs md:text-sm lg-text-lg text-center">Received: {src.recDate}</Text>
+                                            <Text className="text-xs md:text-sm lg-text-lg text-center">Subject: {subject}</Text>
+                                            {/* <Text className="text-xs md:text-sm lg-text-lg text-center">Received: {src.recDate}</Text> */}
                                         </Flex>
                                     </Flex>
                                 </div>

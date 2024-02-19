@@ -23,12 +23,15 @@ export default async function newBooksPage({
     );
     const data = await res.json()
 
+    const subjform = await fetch(`${process.env.HOST_BASE_URL}/api/subjects`);
+    const subjformdata = await subjform.json()
+
     return (
         <Flex direction="column" gap="1" className="text-slate-50 min-h-[calc(100vh-242px)]">
             <Flex direction={{initial:"column", sm:"row"}} className="p-5 h-16 text-slate-700 justify-between self-center sm:self-stretch m-auto md:m-2">
                 <Box height="9" className="w-full md:w-1/5"></Box>
                 <Box height="9" className="w-full md:w-3/5 text-center grow"><Text as="p" className="text-base sm:text-lg md:text-2xl text-nowrap">New Arrivals</Text></Box>
-                <Box height="9" className="w-full md:w-1/5 text-center md:text-end grow"><SelectSubjects /></Box>
+                <Box height="9" className="w-full md:w-1/5 text-center md:text-end grow"><SelectSubjects subjformdata={subjformdata} /></Box>
             </Flex>
             <Newbooks data={data} />
         </Flex>
