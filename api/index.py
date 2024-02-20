@@ -41,23 +41,6 @@ def get_subjects():
 
     return subjects
 
-# @app.route("/api/newbooks/<subj>", methods=["GET"])
-# def get_books_subject(subj):
-#     subject = urllib.parse.unquote(subj)
-#     response = requests.get('https://library.mills.edu/data-all.json')
-#     data = response.json()
-    
-#     books = [book for book in data if book["subject"] == subject]
-    
-#     if 'date' in request.args:
-#         date_limiter = request.args.get('date')
-#         date_obj = datetime.strptime(date_limiter, date_format)
-#         b = ([bk for bk in books if datetime.strptime(bk["recDate"] , date_format) > date_obj], None)
-#     else:
-#         b = books
-        
-#     return b
-
 @app.route("/api/newbooks/<lib>", defaults={'subj': None}, methods=["GET"])
 @app.route("/api/newbooks/<lib>/<subj>", methods=["GET"])
 def get_books_library(lib, subj):

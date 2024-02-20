@@ -1,0 +1,7 @@
+#Python
+.python-version
+env.py
+*out.txt
+*.csv
+*data.json:
+__pycache__/
