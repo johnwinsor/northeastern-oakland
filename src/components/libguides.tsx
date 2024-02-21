@@ -6,12 +6,12 @@ import { FaAnglesRight, FaAnglesLeft } from "react-icons/fa6";
 import * as HoverCard from '@radix-ui/react-hover-card';
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
-import '@/components/css/newbooks.css';
+import '@/components/css/libguides.css';
 
 export const Libguides = ({ data }: {data: any}, props: any) => {
     
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-        Autoplay({ delay: 4000, stopOnMouseEnter: true, stopOnInteraction: false })])
+        Autoplay({ delay: 4000, stopOnMouseEnter: true, stopOnInteraction: true })])
 
     const scrollPrev = useCallback(() => {
         if (emblaApi) emblaApi.scrollPrev()
