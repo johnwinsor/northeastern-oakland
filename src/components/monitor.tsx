@@ -43,7 +43,7 @@ export const Monitor = ({ data }: {data: any}) => {
                                                 <Text as="p" className="text-center text-2xl text-slate-50 line-clamp-2 max-w-lg">{ splitTitle }</Text>
                                                 <Text as="p" className="text-center text-md text-slate-50">{authorArray[1]} {authorArray[0]}</Text>
                                                 <Text as="p" className="text-xs md:text-sm lg-text-lg text-center text-slate-50">{callnoStatus}</Text>
-                                                <Text as="p" className="text-xs md:text-sm lg-text-lg text-center text-slate-50">Received: {slide.recDate}</Text>
+                                                <Text as="p" className="text-xs md:text-sm lg-text-lg text-center text-slate-50">Received: {slide.receivingDate}</Text>
                                             </Flex>
 
                                         

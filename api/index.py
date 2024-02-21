@@ -42,6 +42,16 @@ def get_books_monitor():
 
     return b
 
+@app.route("/api/libguides/<subj>", methods=["GET"])
+def get_books_libguides(subj):
+    
+    with app.open_resource('static/newbooks.json') as f:
+        data = json.load(f)
+    
+    books = [book for book in data if book["subject"] == subj]
+
+    return books
+
 @app.route("/api/subjects", methods=["GET"])
 def get_subjects():
     # response = requests.get('http://localhost:3000/newbooks.json')

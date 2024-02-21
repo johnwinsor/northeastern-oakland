@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# USAGE: ./processCSV.py AllNewBooks.csv ../api/static/newbooks.json
+# USAGE: ./processCSV.py AllNewBooks.csv ../api/static/newbooks.json > out.txt
 
 import sys
 import os
@@ -68,7 +68,8 @@ def titlecase(s):
         s)
 
 def getSummary(isbn):
-    googleUrl = f"https://www.googleapis.com/books/v1/volumes?q=isbn:{isbn}&key={googleKey}"
+    # googleUrl = f"https://www.googleapis.com/books/v1/volumes?q=isbn:{isbn}&key={googleKey}"
+    googleUrl = f"https://www.googleapis.com/books/v1/volumes?q=isbn:{isbn}"
     print(f"Getting response from {googleUrl}")
     response = requests.get(googleUrl)
     if response.status_code == 200:
@@ -183,8 +184,11 @@ def getBooks():
                     author = ""
                 book['author'] = author
                 
-                recStatus = row['Receiving Status']
-                book['recStatus'] = recStatus
+                receivingStatus = row['Receiving Status']
+                book['receivingStatus'] = receivingStatus
+                
+                receivingDate = row['Receiving Date (Latest in POL)']
+                book['receivingDate'] = receivingDate
                 
                 creationDate = row['PO Line Creation Date']
                 book['recDate'] = creationDate

@@ -6,11 +6,8 @@ export default function MonitorLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<div className="h-full">
-			
-				{children}
-
-			
+		<div className="bg-slate-700 h-screen">
+			{children}
 		</div>
 	);
 }
