@@ -11,7 +11,7 @@ import '@/components/css/libguides.css';
 export const Libguides = ({ data }: {data: any}, props: any) => {
     
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-        Autoplay({ delay: 4000, stopOnMouseEnter: true, stopOnInteraction: true })])
+        Autoplay({ delay: 4000, stopOnMouseEnter: true, stopOnInteraction: false })])
 
     const scrollPrev = useCallback(() => {
         if (emblaApi) emblaApi.scrollPrev()
