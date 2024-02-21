@@ -1,17 +1,9 @@
 import { Libguides } from '@/components/libguides'
 import { Flex } from '@radix-ui/themes';
 
-export default async function libguidesPage({
-    params,
-}: {
-    params: { library: string[] }
-    searchParams: { [key: string]: string | string[] | undefined }
-}) {
+export default async function libguidesPage() {
     
-    const library = params.library[0]
-    const subject = params.library[1]
-    
-    const fetchURL = `${process.env.HOST_BASE_URL}/api/libguides/${library}/${subject}`;
+    const fetchURL = `${process.env.HOST_BASE_URL}/api/libguides`;
     
     const res = await fetch(
         fetchURL,

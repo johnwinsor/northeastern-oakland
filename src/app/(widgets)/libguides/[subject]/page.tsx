@@ -1,7 +1,7 @@
 import { Libguides } from '@/components/libguides'
 import { Flex } from '@radix-ui/themes';
 
-export default async function libguidesPage({
+export default async function libguidesSubjectPage({
     params,
 }: {
     params: { subject: string }
