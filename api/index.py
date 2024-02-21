@@ -2,7 +2,7 @@ from flask import Flask, request, url_for
 from flask_cors import CORS
 import requests
 import urllib.parse
-from datetime import datetime
+from datetime import datetime, timedelta
 import json
 
 app = Flask(__name__)
@@ -28,7 +28,21 @@ def get_books():
         books = data
     return books
 
-@app.route("/api//subjects", methods=["GET"])
+@app.route("/api/appspace", methods=["GET"])
+def get_books_monitor():
+    
+    with app.open_resource('static/newbooks.json') as f:
+        data = json.load(f)
+    
+    books = [book for book in data if book["library"] == "F.W. Olin Library"]
+    
+    date_limiter = datetime.now() - timedelta(days=190, hours=-5)
+    print(date_limiter)
+    b = ([bk for bk in books if datetime.strptime(bk["recDate"] , recDateFormat) > date_limiter], None)
+
+    return b
+
+@app.route("/api/subjects", methods=["GET"])
 def get_subjects():
     # response = requests.get('http://localhost:3000/newbooks.json')
     # data = response.json()

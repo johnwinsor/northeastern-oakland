@@ -68,8 +68,7 @@ def titlecase(s):
         s)
 
 def getSummary(isbn):
-    # googleUrl = f"https://www.googleapis.com/books/v1/volumes?q=isbn:{isbn}&key={googleKey}"
-    googleUrl = f"https://www.googleapis.com/books/v1/volumes?q=isbn:{isbn}"
+    googleUrl = f"https://www.googleapis.com/books/v1/volumes?q=isbn:{isbn}&key={googleKey}"
     print(f"Getting response from {googleUrl}")
     response = requests.get(googleUrl)
     if response.status_code == 200:

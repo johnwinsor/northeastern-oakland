@@ -6,9 +6,10 @@ export default async function Page() {
         { cache: 'no-store' },
     );
     const data = await res.json()
-    //console.log(data)
+    const filtered = data.filter((d: { isbn: string; }) => d.isbn == '9781588346407');
+    console.log(filtered)
 
     return (
-        <Monitor data={data} />
+        <Monitor data={filtered} />
   )
 }
