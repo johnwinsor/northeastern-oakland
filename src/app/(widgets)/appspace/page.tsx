@@ -1,15 +1,16 @@
 import { Monitor } from '@/components/monitor'
 
 export default async function Page() {
+    const fetchURL = `${process.env.HOST_BASE_URL}/api/appspace`;
     const res = await fetch(
-        'https://library.mills.edu/data.json',
+        fetchURL,
         { cache: 'no-store' },
     );
     const data = await res.json()
-    const filtered = data.filter((d: { isbn: string; }) => d.isbn == '9781588346407');
-    console.log(filtered)
+    // const filtered = data.filter((d: { isbn: string; }) => d.isbn == '9781588346407');
+    // console.log(filtered)
 
     return (
-        <Monitor data={filtered} />
+        <Monitor data={data} />
   )
 }

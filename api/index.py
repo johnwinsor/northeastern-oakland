@@ -8,7 +8,7 @@ import json
 app = Flask(__name__)
 CORS(app)
 urlDateFormat = '%Y-%m-%d'
-recDateFormat = '%M/%d/%Y'
+recDateFormat = '%m/%d/%Y'
 
 @app.route("/api/newbooks", methods=["GET"])
 def get_books():
@@ -36,9 +36,9 @@ def get_books_monitor():
     
     books = [book for book in data if book["library"] == "F.W. Olin Library"]
     
-    date_limiter = datetime.now() - timedelta(days=190, hours=-5)
-    print(date_limiter)
+    date_limiter = datetime.now() - timedelta(days=90, hours=0)
     b = ([bk for bk in books if datetime.strptime(bk["recDate"] , recDateFormat) > date_limiter], None)
+    # app.logger.warning(books[1]["recDate"])
 
     return b
 
