@@ -37,7 +37,7 @@ def get_books_monitor():
     books = [book for book in data if book["library"] == "F.W. Olin Library"]
     
     date_limiter = datetime.now() - timedelta(days=90, hours=0)
-    b = ([bk for bk in books if datetime.strptime(bk["recDate"] , recDateFormat) > date_limiter], None)
+    b = ([bk for bk in books if datetime.strptime(bk["receivingDate"] , recDateFormat) > date_limiter], None)
     # app.logger.warning(books[1]["recDate"])
 
     return b
@@ -55,19 +55,6 @@ def get_books_libguides(subj):
         books = data
 
     return books
-
-@app.route("/api/subjects", methods=["GET"])
-def get_subjects():
-    # response = requests.get('http://localhost:3000/newbooks.json')
-    # data = response.json()
-    
-    with app.open_resource('static/newbooks.json') as f:
-        data = json.load(f)
-    
-    subjects = [ sub['subject'] for sub in data ]
-    subjects = list(set(subjects))
-
-    return subjects
 
 @app.route("/api/newbooks/<lib>", defaults={'subj': None}, methods=["GET"])
 @app.route("/api/newbooks/<lib>/<subj>", methods=["GET"])
@@ -102,6 +89,19 @@ def get_books_library(lib, subj):
         b = books
         
     return b
+
+@app.route("/api/subjects", methods=["GET"])
+def get_subjects():
+    # response = requests.get('http://localhost:3000/newbooks.json')
+    # data = response.json()
+    
+    with app.open_resource('static/newbooks.json') as f:
+        data = json.load(f)
+    
+    subjects = [ sub['subject'] for sub in data ]
+    subjects = list(set(subjects))
+
+    return subjects
 
 @app.route("/api/healthchecker", methods=["GET"])
 def healthchecker():
