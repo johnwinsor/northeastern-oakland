@@ -4,6 +4,8 @@ import { useRouter } from 'next/navigation';
 import { usePathname } from 'next/navigation'
 
 export default function SelectSubjects({ subjformdata }: {subjformdata: any}, props: any) {
+  const sortedSubjects = subjformdata.sort();
+  
   const router = useRouter();
   let library = ''
 
@@ -21,7 +23,7 @@ export default function SelectSubjects({ subjformdata }: {subjformdata: any}, pr
   // console.log(library)
 
   const Subjects = () => {
-    const subjects = subjformdata.map((subject: any, index: any)=>
+    const subjects = sortedSubjects.map((subject: any, index: any)=>
       <option key={index} value={`${library}/${subject}`}>{subject}</option>)
     return <select name="selectedSubject" defaultValue={path} className='bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5' onChange={(e) => {router.push(e.target.value); }}><option value=''>Select Subject</option>{subjects}</select>
   }
