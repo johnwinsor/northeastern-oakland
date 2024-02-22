@@ -54,6 +54,8 @@ export const Libguides = ({ data }: {data: any}, props: any) => {
                                                     width="250"
                                                     height="0"
                                                     className="ImageTrigger p-2 border-2 border-slate-300 bg-slate-50"
+                                                    placeholder="blur"
+                                                    priority
                                                     alt="alt"
                                                 />
                                             </div>
