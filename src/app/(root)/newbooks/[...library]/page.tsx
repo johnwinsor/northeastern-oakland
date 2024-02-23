@@ -16,11 +16,13 @@ export default async function newBooksSubjectPage({
     
     const date = searchParams['date']
     let fetchURL = ''
-    let libraryTitle = ''
     let subjectTitle = ''
+    let libraryTitle = decodeURI(params.library[0])
+    if (libraryTitle == 'all') {
+        libraryTitle = 'Global Campus'
+    }
 
     if (typeof subject !== 'undefined') {
-        libraryTitle = decodeURI(params.library[0])
         subjectTitle = decodeURI(params.library[1])
         if (typeof date !== 'undefined') {
             fetchURL = `${process.env.HOST_BASE_URL}/api/newbooks/${library}/${subject}?date=${date}`;
@@ -28,7 +30,6 @@ export default async function newBooksSubjectPage({
             fetchURL = `${process.env.HOST_BASE_URL}/api/newbooks/${library}/${subject}`;
         }
     } else {
-        libraryTitle = decodeURI(params.library[0])
         if (typeof date !== 'undefined') {
             fetchURL = `${process.env.HOST_BASE_URL}/api/newbooks/${library}?date=${date}`;
         } else {

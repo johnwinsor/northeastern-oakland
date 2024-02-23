@@ -48,14 +48,12 @@ export const Libguides = ({ data }: {data: any}, props: any) => {
                                 <div className="embla__slide px-2" key={i}>
                                     <HoverCard.Root>
                                         <HoverCard.Trigger asChild>
-                                            <div id="image" className="relative mx-auto">
+                                            <div id="image" className="relative mx-auto text-center">
                                                 <Image
                                                     src={src.coverurl}
                                                     width="250"
                                                     height="0"
                                                     className="ImageTrigger p-2 border-2 border-slate-300 bg-slate-50"
-                                                    placeholder="blur"
-                                                    priority
                                                     alt="alt"
                                                 />
                                             </div>

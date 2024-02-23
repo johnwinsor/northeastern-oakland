@@ -3,7 +3,7 @@ import { Flex } from '@radix-ui/themes';
 
 export default async function libguidesPage() {
     
-    const fetchURL = `${process.env.HOST_BASE_URL}/api/libguides`;
+    const fetchURL = `${process.env.HOST_BASE_URL}/api/newbooks`;
     
     const res = await fetch(
         fetchURL,

@@ -42,19 +42,19 @@ def get_books_monitor():
 
     return b
 
-@app.route("/api/libguides", defaults={'subj': None}, methods=["GET"])
-@app.route("/api/libguides/<subj>", methods=["GET"])
-def get_books_libguides(subj):
+# @app.route("/api/libguides", defaults={'subj': None}, methods=["GET"])
+# @app.route("/api/libguides/<subj>", methods=["GET"])
+# def get_books_libguides(subj):
     
-    with app.open_resource('static/newbooks.json') as f:
-        data = json.load(f)
+#     with app.open_resource('static/newbooks.json') as f:
+#         data = json.load(f)
     
-    if subj:
-        books = [book for book in data if book["subject"] == subj]
-    else:
-        books = data
+#     if subj:
+#         books = [book for book in data if book["subject"] == subj]
+#     else:
+#         books = data
 
-    return books
+#     return books
 
 @app.route("/api/newbooks/<lib>", defaults={'subj': None}, methods=["GET"])
 @app.route("/api/newbooks/<lib>/<subj>", methods=["GET"])
@@ -67,7 +67,7 @@ def get_books_library(lib, subj):
     
     library = urllib.parse.unquote(lib)
     
-    if library == "Global Campus":
+    if library == "all":
         if subj:
             subject = urllib.parse.unquote(subj)
             books = [book for book in data if book["subject"] == subject]

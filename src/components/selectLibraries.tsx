@@ -29,7 +29,7 @@ export default function SelectLibraries() {
                 }}
             >
                 <option value=''>Select Library</option>
-                <option value='/newbooks/Global%20Campus'>Global Campus</option>
+                <option value='/newbooks/all'>Global Campus</option>
                 <option value='/newbooks/F.W.%20Olin%20Library'>F.W. Olin Library</option>
                 <option value='/newbooks/School of Law Library'>School of Law Library</option>
                 <option value='/newbooks/Snell%20Library'>Snell Library</option>

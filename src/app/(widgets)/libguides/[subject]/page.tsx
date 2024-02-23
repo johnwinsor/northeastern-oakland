@@ -8,7 +8,7 @@ export default async function libguidesSubjectPage({
 }) {
     
     
-    const fetchURL = `${process.env.HOST_BASE_URL}/api/libguides/${params.subject}`;
+    const fetchURL = `${process.env.HOST_BASE_URL}/api/newbooks/all/${params.subject}`;
     
     const res = await fetch(
         fetchURL,

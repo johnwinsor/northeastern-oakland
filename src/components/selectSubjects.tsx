@@ -18,7 +18,7 @@ export default function SelectSubjects({ subjformdata }: {subjformdata: any}, pr
     // console.log(found[0])
     library = decodeURI(found[0].replace(/\/$/, ""));
     // console.log(library)
-  } else {library = '/newbooks/Global Campus'}
+  } else {library = '/newbooks/all'}
 
   // console.log(library)
 
