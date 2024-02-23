@@ -18,7 +18,9 @@ def get_books():
     # data = response.json()
     
     with app.open_resource('static/newbooks.json') as f:
-        data = json.load(f)
+        d = json.load(f)
+        
+    data = d[0 : 50]
     
     if 'date' in request.args:
         date_limiter = request.args.get('date')
