@@ -33,7 +33,7 @@ main {
     @apply overflow-hidden;
     @apply block;
     @apply z-10;
-    @apply bg-[url('../../public/libraryOverhead.png')];
+    @apply bg-[url('../../public/libraryOverhead_1920.png')];
     @apply bg-cover;
     @apply bg-no-repeat;
     @apply bg-center;
