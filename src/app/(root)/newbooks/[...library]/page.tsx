@@ -42,6 +42,7 @@ export default async function newBooksSubjectPage({
         { cache: 'no-store' },
     );
     const data = await res.json()
+    const imageCount = data.length;
 
     const subjform = await fetch(`${process.env.HOST_BASE_URL}/api/subjects`);
     const subjformdata = await subjform.json()
@@ -55,6 +56,7 @@ export default async function newBooksSubjectPage({
                 <Box height="9" className="w-full md:w-1/5"><SelectSubjects subjformdata={subjformdata} /></Box>
             </Flex>
             <Newbooks data={data} />
+            <Text as='p' color='orange' >{ imageCount }</Text>
         </Flex>
         
   )

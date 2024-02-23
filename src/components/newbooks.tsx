@@ -48,13 +48,19 @@ export const Newbooks = ({ data }: {data: any}, props: any) => {
                                 <div className="embla__slide px-2" key={i}>
                                     <HoverCard.Root>
                                         <HoverCard.Trigger asChild>
-                                            <div id="image" className="relative mx-auto">
+                                            {/* <div className="relative mx-auto"> */}
+                                            <div className="relative mx-auto" style={{ position: 'relative', width: '250px', height: '350px' }}>
                                                 <Image
                                                     src={src.coverurl}
-                                                    width="250"
-                                                    height="0"
                                                     className="ImageTrigger p-2 border-2 border-slate-300 bg-slate-50"
                                                     alt="alt"
+                                                    // width="250"
+                                                    // height="0"
+                                                    sizes="500px"
+                                                    fill
+                                                    style={{
+                                                    objectFit: 'contain',
+                                                    }}
                                                 />
                                             </div>
                                         </HoverCard.Trigger>
