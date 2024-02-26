@@ -1,4 +1,4 @@
-from flask import Flask, request, url_for
+from flask import Flask, request, jsonify
 from flask_cors import CORS
 import requests
 import urllib.parse
@@ -12,10 +12,6 @@ recDateFormat = '%m/%d/%Y'
 
 @app.route("/api/newbooks", methods=["GET"])
 def get_books():
-    # response = requests.get('https://library.mills.edu/data.json')
-    
-    # response = requests.get('http://localhost:3000/newbooks.json')
-    # data = response.json()
     
     with app.open_resource('static/newbooks.json') as f:
         d = json.load(f)
@@ -28,41 +24,11 @@ def get_books():
         books = ([book for book in data if datetime.strptime(book["recDate"], recDateFormat) > date_obj], None)
     else:
         books = data
-    return books
-
-@app.route("/api/appspace", methods=["GET"])
-def get_books_monitor():
-    
-    with app.open_resource('static/newbooks.json') as f:
-        data = json.load(f)
-    
-    books = [book for book in data if book["library"] == "F.W. Olin Library"]
-    
-    date_limiter = datetime.now() - timedelta(days=90, hours=0)
-    b = ([bk for bk in books if datetime.strptime(bk["receivingDate"] , recDateFormat) > date_limiter], None)
-    # app.logger.warning(books[1]["recDate"])
-
-    return b
-
-# @app.route("/api/libguides", defaults={'subj': None}, methods=["GET"])
-# @app.route("/api/libguides/<subj>", methods=["GET"])
-# def get_books_libguides(subj):
-    
-#     with app.open_resource('static/newbooks.json') as f:
-#         data = json.load(f)
-    
-#     if subj:
-#         books = [book for book in data if book["subject"] == subj]
-#     else:
-#         books = data
-
-#     return books
+    return jsonify(books)
 
 @app.route("/api/newbooks/<lib>", defaults={'subj': None}, methods=["GET"])
 @app.route("/api/newbooks/<lib>/<subj>", methods=["GET"])
 def get_books_library(lib, subj):
-    # response = requests.get('http://localhost:3000/newbooks.json')
-    # data = response.json()
     
     with app.open_resource('static/newbooks.json') as f:
         data = json.load(f)
@@ -90,12 +56,24 @@ def get_books_library(lib, subj):
     else:
         b = books
         
-    return b
+    return jsonify(b)
+
+@app.route("/api/appspace", methods=["GET"])
+def get_books_monitor():
+    
+    with app.open_resource('static/newbooks.json') as f:
+        data = json.load(f)
+    
+    books = [book for book in data if book["library"] == "F.W. Olin Library"]
+    
+    date_limiter = datetime.now() - timedelta(days=90, hours=0)
+    b = ([bk for bk in books if datetime.strptime(bk["receivingDate"] , recDateFormat) > date_limiter], None)
+    # app.logger.warning(books[1]["recDate"])
+
+    return jsonify(b)
 
 @app.route("/api/subjects", methods=["GET"])
 def get_subjects():
-    # response = requests.get('http://localhost:3000/newbooks.json')
-    # data = response.json()
     
     with app.open_resource('static/newbooks.json') as f:
         data = json.load(f)
@@ -103,7 +81,7 @@ def get_subjects():
     subjects = [ sub['subject'] for sub in data ]
     subjects = list(set(subjects))
 
-    return subjects
+    return jsonify(subjects)
 
 @app.route("/api/healthchecker", methods=["GET"])
 def healthchecker():

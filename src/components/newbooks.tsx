@@ -83,7 +83,7 @@ export const Newbooks = ({ data }: {data: any}, props: any) => {
                                             <Text className="text-xs md:text-sm lg-text-lg text-center">{library}</Text>
                                             <Text className="text-xs md:text-sm lg-text-lg text-center">{callnoDisplay}</Text>
                                             <Text className="text-xs md:text-sm lg-text-lg text-center">Subject: {subject}</Text>
-                                            {/* <Text className="text-xs md:text-sm lg-text-lg text-center">Received: {src.recDate}</Text> */}
+                                            <Text className="text-xs md:text-sm lg-text-lg text-center">Received: {src.recDate}</Text>
                                         </Flex>
                                     </Flex>
                                 </div>

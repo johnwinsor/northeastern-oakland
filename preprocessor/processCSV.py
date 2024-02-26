@@ -4,6 +4,7 @@
 
 import sys
 import os
+import operator
 import requests
 import json
 import time
@@ -14,9 +15,9 @@ import env
 googleKey = env.googleKey
 
 csvIN = sys.argv[1]
-jsonOUT = sys.argv[2]
+oldJsonFile = sys.argv[2]
 
-print(f"Writing data to {jsonOUT}")
+print(f"Reading data from {oldJsonFile}")
 
 def getImageSize(coverurl):
     print(f"Checking cover image URL: {coverurl}")
@@ -63,7 +64,7 @@ def checkOpenLibImage(isbn):
     
 def titlecase(s):
     return re.sub(
-        r"[A-Za-z]+('[A-Za-z]+)?",
+        r"(\S)+((\S)+)?",
         lambda word: word.group(0).capitalize(),
         s)
 
@@ -86,6 +87,7 @@ def getGoogleBigCover(url):
         
 def getGoogleCover(googleBook):
     if 'imageLinks' in googleBook['items'][0]['volumeInfo']:
+        print(googleBook['items'][0]['volumeInfo']['imageLinks'])
         smallThumbnail = googleBook['items'][0]['volumeInfo']['imageLinks']['smallThumbnail']
         googleSmallThumbnail = re.sub("http:", "https:", smallThumbnail)
         print(f"Checking googleSmallThumbnail size {googleSmallThumbnail}")
@@ -136,7 +138,7 @@ def getGoogleCover(googleBook):
 def getBooks():
     print("Opening current data file...")
     
-    with open(jsonOUT) as json_file:
+    with open(oldJsonFile) as json_file:
         jsonData = json.load(json_file)
         dataLength = len(jsonData)
         print(f"Found {dataLength} existing records")
@@ -148,9 +150,8 @@ def getBooks():
             rows = csv.DictReader(csv_file)
             for row in rows:
                 print("---------------------------")
-                print(row)
-                time.sleep(1)
                 book = {}
+                missingBook = {}
                 
                 mmsId = row['MMS Id']
                 if any(dictionary.get('mmsId') == mmsId for dictionary in jsonData):
@@ -158,7 +159,9 @@ def getBooks():
                     existingCount += 1
                     continue
                 else:
-                    print(f"{mmsId} NOT FOUND IN DATA")
+                    print(f"{mmsId} NOT FOUND IN DATA - CONTINUING...")
+                
+                time.sleep(1)
                 
                 book['mmsId'] = mmsId
                 
@@ -179,7 +182,6 @@ def getBooks():
                 
                 if 'Author' in row:
                     author = row['Author']
-                    author = titlecase(author)
                 else:
                     author = ""
                 book['author'] = author
@@ -245,6 +247,10 @@ def getBooks():
                         googleCover = getGoogleCover(googleBook)
                         if googleCover is None:
                             print(f"No Google cover - Skipping title")
+                            missingBook['mmsId'] = mmsId
+                            print(missingBook)
+                            jsonData.append(missingBook)
+                            newCount = newCount + 1
                             continue
                         else:
                             print(f"Using Google Cover: {googleCover}")
@@ -254,6 +260,10 @@ def getBooks():
                     googleCover = getGoogleCover(googleBook)
                     if googleCover is None:
                         print(f"No Google cover - Skipping title")
+                        missingBook['mmsId'] = mmsId
+                        print(missingBook)
+                        jsonData.append(missingBook)
+                        newCount = newCount + 1
                         continue
                     else:
                         print(f"Using Google Cover: {googleCover}")
@@ -264,19 +274,26 @@ def getBooks():
             
         return jsonData, newCount, existingCount, dataLength
     
-jsonOut, count, existingCount, dataLength = getBooks()
+newJsonOut, count, existingCount, dataLength = getBooks()
 
 print("---------------------------")
 print("---------------------------")
-print(f"Initial size of {jsonOUT}: {dataLength}")
-print(f"Found {existingCount} book(s) already in {jsonOUT}.")
-print(f"Appending {count} new book(s) to {jsonOUT}.")
+print(f"Initial size of {oldJsonFile}: {dataLength}")
+print(f"Found {existingCount} book(s) already in {oldJsonFile}.")
+print(f"Appending {count} new book(s) to {oldJsonFile}.")
 newCount = dataLength + count
-print(f"New size of {jsonOUT}: {newCount}")
+print(f"New size of {oldJsonFile}: {newCount}")
 
 print(f"Writing to new JSON file")
-with open(jsonOUT, "w") as j:
-    json.dump(jsonOut, j, indent=4)
+
+sortedNewJsonOut = sorted(newJsonOut, key=operator.itemgetter('mmsId'), reverse=True)
+filteredNewJsonOut = [book for book in sortedNewJsonOut if len(book) > 1]
+
+with open('newbooksAll.json', "w") as j:
+    json.dump(sortedNewJsonOut, j, indent=4)
+    
+with open('../api/static/newbooks.json', "w") as j:
+    json.dump(filteredNewJsonOut, j, indent=4)
 
 print("---------------------------")
 print('DONE')
