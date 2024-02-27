@@ -11,7 +11,7 @@ import '@/components/css/newbooks.css';
 export const Newbooks = ({ data }: {data: any}, props: any) => {
     
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-        Autoplay({ delay: 4000, stopOnMouseEnter: true, stopOnInteraction: false })])
+        Autoplay({ delay: 4000, stopOnMouseEnter: true, stopOnInteraction: true })])
 
     const scrollPrev = useCallback(() => {
         if (emblaApi) emblaApi.scrollPrev()
@@ -25,7 +25,7 @@ export const Newbooks = ({ data }: {data: any}, props: any) => {
         <Flex grow="1" className="pt-5">
             <div className="embla m-auto min-w-full">
                 <div className="embla__viewport" ref={emblaRef}>
-                    <div className="embla__container h-full grid grid-flow-col auto-cols-100 sm:auto-cols-33 lg:auto-cols-20">
+                    <div className="embla__container h-full grid grid-flow-col auto-cols-100 md:auto-cols-33 xl:auto-cols-20">
                         {data.map((src: any, i: any) => {
                             const library = src.library;
                             const subject = src.subject;
@@ -74,12 +74,12 @@ export const Newbooks = ({ data }: {data: any}, props: any) => {
                                             </HoverCard.Content>
                                         </HoverCard.Portal>
                                     </HoverCard.Root>
-                                    <Flex id="bib" className="justify-center pb-2">
+                                    <Flex id="bib" className="justify-center py-2">
                                         <Flex grow="1" direction="column" className="justify-center text-slate-700">
                                             <a href={`https://onesearch.library.northeastern.edu/permalink/01NEU_INST/lt8evo/alma${src.mmsId}`} target="_blank" className="text-center">
                                                 <Text size="4" className="text-center line-clamp-1">{splitTitle[0]}</Text>
                                             </a>
-                                            <Text className="text-xs md:text-sm lg-text-lg text-center">{authorArray[1]} {authorArray[0]}</Text>
+                                            <Text className="text-xs md:text-sm lg-text-lg text-center line-clamp-1">{authorArray[1]} {authorArray[0]}</Text>
                                             <Text className="text-xs md:text-sm lg-text-lg text-center">{library}</Text>
                                             <Text className="text-xs md:text-sm lg-text-lg text-center">{callnoDisplay}</Text>
                                             <Text className="text-xs md:text-sm lg-text-lg text-center">Subject: {subject}</Text>
