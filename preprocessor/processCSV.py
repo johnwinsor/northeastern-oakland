@@ -17,7 +17,7 @@ googleKey = env.googleKey
 csvIN = sys.argv[1]
 oldJsonFile = sys.argv[2]
 
-print(f"Reading data from {oldJsonFile}")
+print(f"Reading seen data from {oldJsonFile}")
 
 def getImageSize(coverurl):
     print(f"Checking cover image URL: {coverurl}")
@@ -136,8 +136,6 @@ def getGoogleCover(googleBook):
         return None
     
 def getBooks():
-    print("Opening current data file...")
-    
     with open(oldJsonFile) as json_file:
         jsonData = json.load(json_file)
         dataLength = len(jsonData)
@@ -146,6 +144,7 @@ def getBooks():
         newCount = 0
         existingCount = 0
         
+        print(f"Opening new csv file: {csvIN}")
         with open(csvIN, mode='r', encoding='utf-8-sig') as csv_file:
             rows = csv.DictReader(csv_file)
             for row in rows:
@@ -180,10 +179,13 @@ def getBooks():
                 print(title)
                 book['title'] = title
                 
-                if 'Author' in row:
-                    author = row['Author']
+                if(len(row['Author']) == 0):
+                    if(len(row['Author (contributor)']) == 0):
+                        author = ""
+                    else:
+                        author = row['Author (contributor)']
                 else:
-                    author = ""
+                    author = row['Author']
                 book['author'] = author
                 
                 receivingStatus = row['Receiving Status']
@@ -292,7 +294,10 @@ filteredNewJsonOut = [book for book in sortedNewJsonOut if len(book) > 1]
 with open('newbooksAll.json', "w") as j:
     json.dump(sortedNewJsonOut, j, indent=4)
     
-with open('../api/static/newbooks.json', "w") as j:
+# with open('../api/static/newbooks.json', "w") as j:
+#     json.dump(filteredNewJsonOut, j, indent=4)
+
+with open('newbooks.json', "w") as j:
     json.dump(filteredNewJsonOut, j, indent=4)
 
 print("---------------------------")
