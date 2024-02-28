@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-# USAGE: ./processCSV.py AllNewBooks.csv newbooksAll.json > logs/out-yyyymmdd.txt
+# WEEKLY USAGE: ./processCSV.py AllNewBooks.csv newbooksAll.json > logs/out-yyyymmdd.txt
+# Rescan books that were missing covers previously: ./processCSV.py AllNewBooks.csv newbooks.json > logs/out-yyyymmdd.txt
 # Rescan all books: ./processCSV.py AllNewBooks.csv rescan.json > logs/out-yyyymmdd.txt
 # move the resulting newbooks.json file to api/static overwriting the existing file.
 
@@ -18,8 +19,6 @@ googleKey = env.googleKey
 
 csvIN = sys.argv[1]
 oldJsonFile = sys.argv[2]
-
-print(f"Reading seen data from {oldJsonFile}")
 
 def getImageSize(coverurl):
     print(f"Checking cover image URL: {coverurl}")
@@ -53,7 +52,18 @@ def getImageSize(coverurl):
 def checkOpenLibImage(isbn):
     openLibMetadataUrl = f"https://openlibrary.org/api/books?bibkeys=ISBN:{isbn}&format=json"
     print(f"Getting response from {openLibMetadataUrl}")
-    response = requests.get(openLibMetadataUrl)
+    try: 
+        response = requests.get(openLibMetadataUrl)
+        response.raise_for_status()
+    except requests.exceptions.HTTPError as errh: 
+        print("HTTP Error") 
+        print(errh.args[0]) 
+    except requests.exceptions.ReadTimeout as errrt: 
+        print("Time out") 
+    except requests.exceptions.ConnectionError as conerr: 
+        print("Connection error") 
+    except requests.exceptions.RequestException as errex: 
+        print("Exception request") 
     if response.status_code == 200:
         data = response.json()
         key = f"ISBN:{isbn}"
@@ -137,16 +147,19 @@ def getBooks():
     with open(oldJsonFile) as json_file:
         jsonData = json.load(json_file)
         dataLength = len(jsonData)
-        print(f"Found {dataLength} existing records")
+        print(f"Found {dataLength} seen records")
         
-        newCount = 0
+        csvCount = 0
         dupes = 0
+        processed = 0
+        newbooks = 0
+        seenAdded = 0
         
-        print(f"Opening new csv file: {csvIN}")
+        print(f"Opening incoming data feed: {csvIN}")
         with open(csvIN, mode='r', encoding='utf-8-sig') as csv_file:
             rows = csv.DictReader(csv_file)
             for row in rows:
-                print("---------------------------")
+                csvCount = csvCount + 1
                 book = {}
                 missingBook = {}
                 
@@ -155,7 +168,9 @@ def getBooks():
                     dupes += 1
                     continue
                 else:
+                    print("---------------------------")
                     print(f"{mmsId} NOT FOUND IN DATA - Processing title...")
+                    processed += 1
                 
                 time.sleep(1)
                 
@@ -229,6 +244,10 @@ def getBooks():
                 except:
                     print("Error encountered parsing Google Metadata")
                     print(json.dumps(googleBook, indent=4))
+                    missingBook['mmsId'] = mmsId
+                    print(f"NO METADATA - Adding {missingBook} to seen books")
+                    jsonData.append(missingBook)
+                    seenAdded += 1
                     continue
                 
                 print(f"Checking Open Library cover API for {isbn}")
@@ -242,8 +261,15 @@ def getBooks():
                             print(f"Using OpenLibrary Cover: {coverurl}")
                             book['coverurl'] = coverurl
                         else:
-                            print(f"Open library cover too small")
-                            continue
+                            print(f"Open library cover too small - Checking Google Books...")
+                            googleCover = getGoogleCover(googleBook)
+                            if googleCover is None:
+                                print(f"No Google cover - Skipping title")
+                                missingBook['mmsId'] = mmsId
+                                print(missingBook)
+                                jsonData.append(missingBook)
+                                seenAdded += 1
+                                continue
                     else:
                         print("NO OPEN LIBRARY COVER - Checking Google Books...")
                         googleCover = getGoogleCover(googleBook)
@@ -252,7 +278,7 @@ def getBooks():
                             missingBook['mmsId'] = mmsId
                             print(missingBook)
                             jsonData.append(missingBook)
-                            newCount = newCount + 1
+                            seenAdded += 1
                             continue
                         else:
                             print(f"Using Google Cover: {googleCover}")
@@ -265,41 +291,44 @@ def getBooks():
                         missingBook['mmsId'] = mmsId
                         print(missingBook)
                         jsonData.append(missingBook)
-                        newCount = newCount + 1
+                        seenAdded += 1
                         continue
                     else:
                         print(f"Using Google Cover: {googleCover}")
                         book['coverurl'] = googleCover
                 print("Adding book to data file...")
                 jsonData.append(book)
-                newCount = newCount + 1
+                newbooks += 1
             
-        return jsonData, newCount, dupes, dataLength
+        return jsonData, csvCount, dupes, dataLength, processed, newbooks, seenAdded
     
-newJsonOut, count, dupes, dataLength = getBooks()
+newJsonOut, csvCount, dupes, dataLength, processed, newbooks, seenAdded = getBooks()
 
 print("---------------------------")
+print("----------FINISHED---------")
 print("---------------------------")
-print(f"Size of incoming data feed ({csvIN}): {count}")
+print(f"Size of incoming data feed ({csvIN}): {csvCount}")
 print(f"Size of comparison file ({oldJsonFile}): {dataLength}")
 print(f"Found {dupes} book(s) already in {oldJsonFile}.")
+print(f"Processed {processed} unseen books in new data feed.")
+print(f"Added {newbooks} covers to live data.")
+print(f"Added {seenAdded} partial records (MmsIDs) to seen data.")
 
-newCount = dataLength + count
-print(f"New size of {oldJsonFile}: {newCount}")
-
-print(f"Writing to new JSON file")
+print("---------------------------")
+print(f"Writing seen data amd filtered live data to new JSON files...")
 
 sortedNewJsonOut = sorted(newJsonOut, key=operator.itemgetter('mmsId'), reverse=True)
 filteredNewJsonOut = [book for book in sortedNewJsonOut if len(book) > 1]
 
 with open('newbooksAll.json', "w") as j:
     json.dump(sortedNewJsonOut, j, indent=4)
+    print("newbooksAll.json written")
     
 # with open('../api/static/newbooks.json', "w") as j:
 #     json.dump(filteredNewJsonOut, j, indent=4)
 
 with open('newbooks.json', "w") as j:
     json.dump(filteredNewJsonOut, j, indent=4)
+    print("newbooks.json written")
 
-print("---------------------------")
 print('DONE')

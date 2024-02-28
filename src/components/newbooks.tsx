@@ -11,7 +11,7 @@ import '@/components/css/newbooks.css';
 export const Newbooks = ({ data }: {data: any}, props: any) => {
     
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-        Autoplay({ delay: 4000, stopOnMouseEnter: true, stopOnInteraction: true })])
+        Autoplay({ delay: 4000, stopOnMouseEnter: true, stopOnInteraction: false })])
 
     const scrollPrev = useCallback(() => {
         if (emblaApi) emblaApi.scrollPrev()
@@ -37,25 +37,26 @@ export const Newbooks = ({ data }: {data: any}, props: any) => {
                                 callnoStatus = src.location + ": " + callnoStatus
                             }
                             let callno = callnoStatus.replace(/ - 2nd Floor/g, "");
+                            let availableDate = "Received: " + src.receivingDate
                             const format = src.format;
                             if (format == "E") {
-                                callno = "Ebook"
+                                callno = "Ebook";
+                                availableDate = "Activated: " + src.activationDate;
                             }
                             const callnoDisplay = callno.replace(/Non-Fiction:|Fiction:/gi, "");
                             const splitTitle = src.title.split(":")
-                            const authorArray = src.author.split(",")
+                            
+                            let author = src.author.replace(/author\.|editor\.|publisher\.|;/gi, "");
+                            const authorArray = author.split(",")
                             return (
                                 <div className="embla__slide px-2" key={i}>
                                     <HoverCard.Root>
                                         <HoverCard.Trigger asChild>
-                                            {/* <div className="relative mx-auto"> */}
                                             <div className="relative mx-auto" style={{ position: 'relative', width: '250px', height: '350px' }}>
                                                 <Image
                                                     src={src.coverurl}
                                                     className="ImageTrigger p-2 border-2 border-slate-300 bg-slate-50"
                                                     alt="alt"
-                                                    // width="250"
-                                                    // height="0"
                                                     sizes="500px"
                                                     fill
                                                     style={{
@@ -83,7 +84,7 @@ export const Newbooks = ({ data }: {data: any}, props: any) => {
                                             <Text className="text-xs md:text-sm lg-text-lg text-center">{library}</Text>
                                             <Text className="text-xs md:text-sm lg-text-lg text-center">{callnoDisplay}</Text>
                                             <Text className="text-xs md:text-sm lg-text-lg text-center">Subject: {subject}</Text>
-                                            <Text className="text-xs md:text-sm lg-text-lg text-center">Received: {src.recDate}</Text>
+                                            <Text className="text-xs md:text-sm lg-text-lg text-center">{availableDate}</Text>
                                         </Flex>
                                     </Flex>
                                 </div>
