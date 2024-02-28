@@ -1,7 +1,8 @@
 #Python
 .python-version
 env.py
-*out.txt
+*out*.txt
 *.csv
 *data.json:
 __pycache__/
+logs

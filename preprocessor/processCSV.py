@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
-# USAGE: ./processCSV.py AllNewBooks.csv ../api/static/newbooks.json > out.txt
+# USAGE: ./processCSV.py AllNewBooks.csv newbooksAll.json > logs/out-yyyymmdd.txt
+# Rescan all books: ./processCSV.py AllNewBooks.csv rescan.json > logs/out-yyyymmdd.txt
+# move the resulting newbooks.json file to api/static overwriting the existing file.
 
 import sys
 import os
@@ -91,16 +93,12 @@ def getGoogleCover(googleBook):
         smallThumbnail = googleBook['items'][0]['volumeInfo']['imageLinks']['smallThumbnail']
         googleSmallThumbnail = re.sub("http:", "https:", smallThumbnail)
         print(f"Checking googleSmallThumbnail size {googleSmallThumbnail}")
-        # googleSmallThumbnailResponse = requests.get(googleSmallThumbnail, allow_redirects=True)
-        # googleSmallThumbnailImageSize = googleSmallThumbnailResponse.headers.get("Content-Length")
         googleSmallThumbnailImageSize = getImageSize(googleSmallThumbnail)
         print(f"googleSmallThumbnailImageSize - {googleSmallThumbnailImageSize}")
         
         print(f"Checking for zoomed cover")
         googleBigCover = getGoogleBigCover(googleSmallThumbnail)
         print(f"Checking googleBigCover size from {googleBigCover}")
-        # googleBigCoverResponse = requests.get(googleBigCover, allow_redirects=True)
-        # googleBigCoverImageSize = googleBigCoverResponse.headers.get("Content-Length")
         googleBigCoverImageSize = getImageSize(googleBigCover)
         print(f"googleBigCoverImageSize - {googleBigCoverImageSize}")
         if int(googleBigCoverImageSize) > 150000:
@@ -142,7 +140,7 @@ def getBooks():
         print(f"Found {dataLength} existing records")
         
         newCount = 0
-        existingCount = 0
+        dupes = 0
         
         print(f"Opening new csv file: {csvIN}")
         with open(csvIN, mode='r', encoding='utf-8-sig') as csv_file:
@@ -154,11 +152,10 @@ def getBooks():
                 
                 mmsId = row['MMS Id']
                 if any(dictionary.get('mmsId') == mmsId for dictionary in jsonData):
-                    print(f"{mmsId } FOUND IN DATA - SKIPPING TITLE")
-                    existingCount += 1
+                    dupes += 1
                     continue
                 else:
-                    print(f"{mmsId} NOT FOUND IN DATA - CONTINUING...")
+                    print(f"{mmsId} NOT FOUND IN DATA - Processing title...")
                 
                 time.sleep(1)
                 
@@ -196,6 +193,9 @@ def getBooks():
                 
                 creationDate = row['PO Line Creation Date']
                 book['recDate'] = creationDate
+                
+                activationDate = row['Portfolio Activation Date']
+                book['activationDate'] = activationDate
                 
                 campus = row['Campus Name']
                 book['campus'] = campus
@@ -274,15 +274,16 @@ def getBooks():
                 jsonData.append(book)
                 newCount = newCount + 1
             
-        return jsonData, newCount, existingCount, dataLength
+        return jsonData, newCount, dupes, dataLength
     
-newJsonOut, count, existingCount, dataLength = getBooks()
+newJsonOut, count, dupes, dataLength = getBooks()
 
 print("---------------------------")
 print("---------------------------")
-print(f"Initial size of {oldJsonFile}: {dataLength}")
-print(f"Found {existingCount} book(s) already in {oldJsonFile}.")
-print(f"Appending {count} new book(s) to {oldJsonFile}.")
+print(f"Size of incoming data feed ({csvIN}): {count}")
+print(f"Size of comparison file ({oldJsonFile}): {dataLength}")
+print(f"Found {dupes} book(s) already in {oldJsonFile}.")
+
 newCount = dataLength + count
 print(f"New size of {oldJsonFile}: {newCount}")
 
