@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # WEEKLY USAGE: ./processCSV.py AllNewBooks.csv newbooksAll.json > logs/out-yyyymmdd.txt
-# Rescan books that were missing covers previously: ./processCSV.py AllNewBooks.csv newbooks.json > logs/out-yyyymmdd.txt
+# Rescan books that were missing covers previously: ./processCSV.py AllNewBooks.csv ../api/static/newbooks.json > logs/out-yyyymmdd.txt
 # Rescan all books: ./processCSV.py AllNewBooks.csv rescan.json > logs/out-yyyymmdd.txt
 # move the resulting newbooks.json file to api/static overwriting the existing file.
 
