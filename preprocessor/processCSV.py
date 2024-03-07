@@ -138,6 +138,7 @@ def getGoogleCover(googleBook):
                 print("Google BigCoverImageSize image too small")
                 return None
             else:
+                print(f"Returning {googleBigCover}")
                 return googleBigCover
     else:
         print("No Google image links found")
@@ -263,6 +264,7 @@ def getBooks():
                         else:
                             print(f"Open library cover too small - Checking Google Books...")
                             googleCover = getGoogleCover(googleBook)
+                            print(f"267 - {googleCover}")
                             if googleCover is None:
                                 print(f"No Google cover - Skipping title")
                                 missingBook['mmsId'] = mmsId
@@ -270,9 +272,13 @@ def getBooks():
                                 jsonData.append(missingBook)
                                 seenAdded += 1
                                 continue
+                            else:
+                                print(f"Using Google Cover: {googleCover}")
+                                book['coverurl'] = googleCover
                     else:
                         print("NO OPEN LIBRARY COVER - Checking Google Books...")
                         googleCover = getGoogleCover(googleBook)
+                        print(f"277 - {googleCover}")
                         if googleCover is None:
                             print(f"No Google cover - Skipping title")
                             missingBook['mmsId'] = mmsId
@@ -286,6 +292,7 @@ def getBooks():
                 else:
                     print("NO OPEN LIBRARY METADATA - Checking Google Books...")
                     googleCover = getGoogleCover(googleBook)
+                    print(f"291 - {googleCover}")
                     if googleCover is None:
                         print(f"No Google cover - Skipping title")
                         missingBook['mmsId'] = mmsId
