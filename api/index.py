@@ -21,7 +21,7 @@ def get_books():
     if 'date' in request.args:
         date_limiter = request.args.get('date')
         date_obj = datetime.strptime(date_limiter, urlDateFormat)
-        books = ([book for book in data if datetime.strptime(book["recDate"], recDateFormat) > date_obj], None)
+        books = [book for book in data if datetime.strptime(book["recDate"], recDateFormat) > date_obj]
     else:
         books = data
     return jsonify(books)
@@ -52,7 +52,7 @@ def get_books_library(lib, subj):
     if 'date' in request.args:
         date_limiter = request.args.get('date')
         date_obj = datetime.strptime(date_limiter, urlDateFormat)
-        b = ([bk for bk in books if datetime.strptime(bk["recDate"] , recDateFormat) > date_obj], None)
+        b = [bk for bk in books if datetime.strptime(bk["recDate"] , recDateFormat) > date_obj]
     else:
         b = books
         
@@ -67,7 +67,7 @@ def get_books_monitor():
     books = [book for book in data if book["library"] == "F.W. Olin Library"]
     
     date_limiter = datetime.now() - timedelta(days=90, hours=0)
-    b = ([bk for bk in books if datetime.strptime(bk["receivingDate"] , recDateFormat) > date_limiter], None)
+    b = [bk for bk in books if datetime.strptime(bk["receivingDate"] , recDateFormat) > date_limiter]
     # app.logger.warning(books[1]["recDate"])
 
     return jsonify(b)
