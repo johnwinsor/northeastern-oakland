@@ -24,3 +24,10 @@ npm run dev
      - newbooks.json
      - logs/out-YYYYMMDD.txt
    - move the resulting newbooks.json file to api/static overwriting the existing file.
+4. Commit changes and push to Github
+5. Deploy to librarystage
+   - ssh 
+   - git pull
+   - npm run build
+   - pm2 restart library
+   - pm2 restart Flask
