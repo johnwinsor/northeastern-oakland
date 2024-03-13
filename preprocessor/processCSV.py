@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# WEEKLY USAGE: ./processCSV.py AllNewBooks.csv newbooksAll.json > logs/out-yyyymmdd.txt
+# WEEKLY USAGE: ./processCSV.py AllNewBooks.csv allBooksSeen.json > logs/out-yyyymmdd.txt
 # Rescan books that were missing covers previously: ./processCSV.py AllNewBooks.csv ../api/static/newbooks.json > logs/out-yyyymmdd.txt
 # Rescan all books: ./processCSV.py AllNewBooks.csv rescan.json > logs/out-yyyymmdd.txt
 # move the resulting newbooks.json file to api/static overwriting the existing file.
@@ -327,9 +327,9 @@ print(f"Writing seen data amd filtered live data to new JSON files...")
 sortedNewJsonOut = sorted(newJsonOut, key=operator.itemgetter('mmsId'), reverse=True)
 filteredNewJsonOut = [book for book in sortedNewJsonOut if len(book) > 1]
 
-with open('newbooksAll.json', "w") as j:
+with open('allBooksSeen.json', "w") as j:
     json.dump(sortedNewJsonOut, j, indent=4)
-    print("newbooksAll.json written")
+    print("allBooksSeen.json written")
     
 # with open('../api/static/newbooks.json', "w") as j:
 #     json.dump(filteredNewJsonOut, j, indent=4)

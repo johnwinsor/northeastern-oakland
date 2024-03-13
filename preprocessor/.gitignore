@@ -1,9 +1,7 @@
 #Python
 .python-version
 env.py
-*out*.txt
 *.csv
 *data.json:
 newbooks.json
-/logs
 __pycache__/

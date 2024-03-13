@@ -1,0 +1,911 @@
+Found 2370 seen records
+Opening incoming data feed: AllNewBooks.csv
+---------------------------
+9935038060001401 NOT FOUND IN DATA - Processing title...
+Improper Bostonians : Lesbian And Gay History From The Puritans To Playland 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780807079485
+Found Google book summary
+Checking Open Library cover API for 9780807079485
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780807079485&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780807079485-L.jpg
+IMAGE-SIZE(OL): 23043
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9780807079485-L.jpg
+Adding book to data file...
+---------------------------
+9935944960001401 NOT FOUND IN DATA - Processing title...
+Able-bodied Womanhood : Personal Health And Social Change In Nineteenth-century Boston 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780195051247
+Found Google book summary
+Checking Open Library cover API for 9780195051247
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780195051247&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780195051247-L.jpg
+IMAGE-SIZE(OL): 30842
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9780195051247-L.jpg
+Adding book to data file...
+---------------------------
+9939676620001401 NOT FOUND IN DATA - Processing title...
+The North End : A Brief History Of Boston's Oldest Neighborhood 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781596295186
+Found Google book summary
+Checking Open Library cover API for 9781596295186
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781596295186&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781596295186-L.jpg
+IMAGE-SIZE(OL): 60482
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9781596295186-L.jpg
+Adding book to data file...
+---------------------------
+9940022460001401 NOT FOUND IN DATA - Processing title...
+Boston Against Busing : Race, Class, And Ethnicity In The 1960s And 1970s 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780807855263
+Found Google book summary
+Checking Open Library cover API for 9780807855263
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780807855263&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780807855263-L.jpg
+IMAGE-SIZE(OL): 24352
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9780807855263-L.jpg
+Adding book to data file...
+---------------------------
+9942863940001401 NOT FOUND IN DATA - Processing title...
+New Boy 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780618432530
+Found Google book summary
+Checking Open Library cover API for 9780618432530
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780618432530&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780618432530-L.jpg
+IMAGE-SIZE(OL): 18559
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9780618432530-L.jpg
+Adding book to data file...
+---------------------------
+9951403011801401 NOT FOUND IN DATA - Processing title...
+Radio Free Boston : The Rise And Fall Of Wbcn 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781555537296
+Found Google book summary
+Checking Open Library cover API for 9781555537296
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781555537296&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781555537296-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9781555537296-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=Yn8WCDOUQQ8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=Yn8WCDOUQQ8C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=Yn8WCDOUQQ8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=Yn8WCDOUQQ8C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 18389
+googleSmallThumbnailImageSize - 18389
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=Yn8WCDOUQQ8C&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=Yn8WCDOUQQ8C&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 115263
+googleBigCoverImageSize - 115263
+Using Zoomed Google Cover
+Returning https://books.google.com/books/content?id=Yn8WCDOUQQ8C&printsec=frontcover&img=1&zoom=10&source=gbs_api
+267 - https://books.google.com/books/content?id=Yn8WCDOUQQ8C&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Using Google Cover: https://books.google.com/books/content?id=Yn8WCDOUQQ8C&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Adding book to data file...
+---------------------------
+9951413610601401 NOT FOUND IN DATA - Processing title...
+A People's History Of The New Boston 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781625340764
+Found Google book summary
+Checking Open Library cover API for 9781625340764
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781625340764&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=r_NKngEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=r_NKngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=r_NKngEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=r_NKngEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 11751
+googleSmallThumbnailImageSize - 11751
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=r_NKngEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=r_NKngEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+277 - None
+No Google cover - Skipping title
+{'mmsId': '9951413610601401'}
+---------------------------
+9951605109001401 NOT FOUND IN DATA - Processing title...
+Boston 1945-2015 : The Decline And Rebirth Of A Great World City 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780692829349
+Found Google book summary
+Checking Open Library cover API for 9780692829349
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780692829349&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780692829349-L.jpg
+IMAGE-SIZE(OL): 48072
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9780692829349-L.jpg
+Adding book to data file...
+---------------------------
+9951804209701401 NOT FOUND IN DATA - Processing title...
+The Atlas Of Boston History 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780226631158
+Found Google book summary
+Checking Open Library cover API for 9780226631158
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780226631158&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=scirDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=scirDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=scirDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=scirDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 12476
+googleSmallThumbnailImageSize - 12476
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=scirDwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=scirDwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 115490
+googleBigCoverImageSize - 115490
+Using Zoomed Google Cover
+Returning https://books.google.com/books/content?id=scirDwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+277 - https://books.google.com/books/content?id=scirDwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Using Google Cover: https://books.google.com/books/content?id=scirDwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Adding book to data file...
+---------------------------
+9951811411201401 NOT FOUND IN DATA - Processing title...
+The Hub Of The Gay Universe : An Lgbtq History Of Boston, Provincetown, And Beyond 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780578410869
+Found Google book summary
+Checking Open Library cover API for 9780578410869
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780578410869&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780578410869-L.jpg
+IMAGE-SIZE(OL): 57621
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9780578410869-L.jpg
+Adding book to data file...
+---------------------------
+9952215352101401 NOT FOUND IN DATA - Processing title...
+Before Busing : A History Of Boston's Long Black Freedom Struggle 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781469662763
+Found Google book summary
+Checking Open Library cover API for 9781469662763
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781469662763&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=amhbzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=amhbzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=amhbzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=amhbzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 10880
+googleSmallThumbnailImageSize - 10880
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=amhbzgEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=amhbzgEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+277 - None
+No Google cover - Skipping title
+{'mmsId': '9952215352101401'}
+---------------------------
+9952409851701401 NOT FOUND IN DATA - Processing title...
+Footnotes In Gaza 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780805092776
+Found Google book summary
+Checking Open Library cover API for 9780805092776
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780805092776&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780805092776-L.jpg
+IMAGE-SIZE(OL): 60365
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9780805092776-L.jpg
+Adding book to data file...
+---------------------------
+9952409950501401 NOT FOUND IN DATA - Processing title...
+The City Of Women 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780826315557
+Found Google book summary
+Checking Open Library cover API for 9780826315557
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780826315557&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780826315557-L.jpg
+IMAGE-SIZE(OL): 53997
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9780826315557-L.jpg
+Adding book to data file...
+---------------------------
+9952417351201401 NOT FOUND IN DATA - Processing title...
+Dirtbag, Massachusetts : A Confessional.
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781639731640
+Found Google book summary
+Checking Open Library cover API for 9781639731640
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781639731640&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=-d2DEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=-d2DEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=-d2DEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=-d2DEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 19288
+googleSmallThumbnailImageSize - 19288
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=-d2DEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=-d2DEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 246264
+googleBigCoverImageSize - 246264
+LARGE GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+277 - https://books.google.com/books/content?id=-d2DEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Using Google Cover: https://books.google.com/books/content?id=-d2DEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Adding book to data file...
+---------------------------
+9952417351301401 NOT FOUND IN DATA - Processing title...
+Boston's South End : The Clash Of Ideas In A Historic Neighborhood 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780692542804
+Found Google book summary
+Checking Open Library cover API for 9780692542804
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780692542804&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780692542804-L.jpg
+IMAGE-SIZE(OL): 43791
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9780692542804-L.jpg
+Adding book to data file...
+---------------------------
+9952417351401401 NOT FOUND IN DATA - Processing title...
+Boston's South End 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781439615584
+Found Google book summary
+Checking Open Library cover API for 9781439615584
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781439615584&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=4nyk0DmG908C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=4nyk0DmG908C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=4nyk0DmG908C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=4nyk0DmG908C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 13632
+googleSmallThumbnailImageSize - 13632
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=4nyk0DmG908C&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=4nyk0DmG908C&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 67982
+googleBigCoverImageSize - 67982
+Using Zoomed Google Cover
+Returning https://books.google.com/books/content?id=4nyk0DmG908C&printsec=frontcover&img=1&zoom=10&source=gbs_api
+277 - https://books.google.com/books/content?id=4nyk0DmG908C&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Using Google Cover: https://books.google.com/books/content?id=4nyk0DmG908C&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Adding book to data file...
+---------------------------
+9952417351501401 NOT FOUND IN DATA - Processing title...
+A Block In Time : A History Of Boston's South End From A Window On Holyoke Street 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780615690711
+Found Google book summary
+Checking Open Library cover API for 9780615690711
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780615690711&format=json
+NO OPEN LIBRARY METADATA - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=pU1YlAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=pU1YlAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=pU1YlAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=pU1YlAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 14930
+googleSmallThumbnailImageSize - 14930
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=pU1YlAEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=pU1YlAEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+291 - None
+No Google cover - Skipping title
+{'mmsId': '9952417351501401'}
+---------------------------
+9952417351601401 NOT FOUND IN DATA - Processing title...
+Talking With The Elders Of Mashpee : Memories Of Earl H. Mills, Sr. 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781105953392
+Found Google book summary
+Checking Open Library cover API for 9781105953392
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781105953392&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=5RHsAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=5RHsAwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=5RHsAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=5RHsAwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 16128
+googleSmallThumbnailImageSize - 16128
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=5RHsAwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=5RHsAwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 104069
+googleBigCoverImageSize - 104069
+Using Zoomed Google Cover
+Returning https://books.google.com/books/content?id=5RHsAwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+277 - https://books.google.com/books/content?id=5RHsAwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Using Google Cover: https://books.google.com/books/content?id=5RHsAwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Adding book to data file...
+---------------------------
+9952417351701401 NOT FOUND IN DATA - Processing title...
+This Land Is Their Land : The Wampanoag Indians, Plymouth Colony, And The Troubled History Of Thanksgiving 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781632869241
+Found Google book summary
+Checking Open Library cover API for 9781632869241
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781632869241&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781632869241-L.jpg
+IMAGE-SIZE(OL): 22916
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9781632869241-L.jpg
+Adding book to data file...
+---------------------------
+9952417351801401 NOT FOUND IN DATA - Processing title...
+The History Of Boston: From Shawmut To Beantown By Ryan Hamilton And Daniel Kennedy
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9798866494927
+Found Google book summary
+Checking Open Library cover API for 9798866494927
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9798866494927&format=json
+NO OPEN LIBRARY METADATA - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=h1xV0AEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=h1xV0AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=h1xV0AEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=h1xV0AEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 5985
+googleSmallThumbnailImageSize - 5985
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=h1xV0AEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=h1xV0AEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+291 - None
+No Google cover - Skipping title
+{'mmsId': '9952417351801401'}
+---------------------------
+9952417351901401 NOT FOUND IN DATA - Processing title...
+Encounters In The New World : A History In Documents 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780195105131
+Found Google book summary
+Checking Open Library cover API for 9780195105131
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780195105131&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780195105131-L.jpg
+IMAGE-SIZE(OL): 45951
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9780195105131-L.jpg
+Adding book to data file...
+---------------------------
+9952417852101401 NOT FOUND IN DATA - Processing title...
+The Lost Subways Of North America : A Cartographic Guide To The Past, Present, And What Might Have Been 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780226829791
+Found Google book summary
+Checking Open Library cover API for 9780226829791
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780226829791&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780226829791-L.jpg
+IMAGE-SIZE(OL): 46355
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9780226829791-L.jpg
+Adding book to data file...
+---------------------------
+9952420451701401 NOT FOUND IN DATA - Processing title...
+Hidden History Of Boston 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781625858740
+Found Google book summary
+Checking Open Library cover API for 9781625858740
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781625858740&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781625858740-L.jpg
+IMAGE-SIZE(OL): 41897
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9781625858740-L.jpg
+Adding book to data file...
+---------------------------
+9952420451801401 NOT FOUND IN DATA - Processing title...
+Gangland Boston : A Tour Through The Deadly Streets Of Organized Crime.
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781493030378
+Found Google book summary
+Checking Open Library cover API for 9781493030378
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781493030378&format=json
+NO OPEN LIBRARY METADATA - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=Q9Q3DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=Q9Q3DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=Q9Q3DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=Q9Q3DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 15118
+googleSmallThumbnailImageSize - 15118
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=Q9Q3DwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=Q9Q3DwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 99351
+googleBigCoverImageSize - 99351
+Using Zoomed Google Cover
+Returning https://books.google.com/books/content?id=Q9Q3DwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+291 - https://books.google.com/books/content?id=Q9Q3DwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Using Google Cover: https://books.google.com/books/content?id=Q9Q3DwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Adding book to data file...
+---------------------------
+9952420451901401 NOT FOUND IN DATA - Processing title...
+Lovers, Muggers & Thieves : A Boston Memoir 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781607023968
+No Google book summary available
+Checking Open Library cover API for 9781607023968
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781607023968&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781607023968-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9781607023968-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=PlG-lYA76PgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=PlG-lYA76PgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=PlG-lYA76PgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=PlG-lYA76PgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 13036
+googleSmallThumbnailImageSize - 13036
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=PlG-lYA76PgC&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=PlG-lYA76PgC&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 15278
+googleBigCoverImageSize - 15278
+Using Zoomed Google Cover
+Returning https://books.google.com/books/content?id=PlG-lYA76PgC&printsec=frontcover&img=1&zoom=10&source=gbs_api
+267 - https://books.google.com/books/content?id=PlG-lYA76PgC&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Using Google Cover: https://books.google.com/books/content?id=PlG-lYA76PgC&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Adding book to data file...
+---------------------------
+9952420452001401 NOT FOUND IN DATA - Processing title...
+The City-state Of Boston : The Rise And Fall Of An Atlantic Power, 1630-1865 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780691179995
+Found Google book summary
+Checking Open Library cover API for 9780691179995
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780691179995&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780691179995-L.jpg
+IMAGE-SIZE(OL): 79173
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9780691179995-L.jpg
+Adding book to data file...
+---------------------------
+9952420452101401 NOT FOUND IN DATA - Processing title...
+A City So Grand : The Rise Of An American Metropolis, Boston 1850-1900 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780807050453
+Found Google book summary
+Checking Open Library cover API for 9780807050453
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780807050453&format=json
+NO OPEN LIBRARY METADATA - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=rYYDAQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=rYYDAQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=rYYDAQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=rYYDAQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 15655
+googleSmallThumbnailImageSize - 15655
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=rYYDAQAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=rYYDAQAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 61963
+googleBigCoverImageSize - 61963
+Using Zoomed Google Cover
+Returning https://books.google.com/books/content?id=rYYDAQAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+291 - https://books.google.com/books/content?id=rYYDAQAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Using Google Cover: https://books.google.com/books/content?id=rYYDAQAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Adding book to data file...
+---------------------------
+9952420452201401 NOT FOUND IN DATA - Processing title...
+Boston Organized Crime 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780738576732
+Found Google book summary
+Checking Open Library cover API for 9780738576732
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780738576732&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=5gG8GkFAW_IC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=5gG8GkFAW_IC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=5gG8GkFAW_IC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=5gG8GkFAW_IC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 11838
+googleSmallThumbnailImageSize - 11838
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=5gG8GkFAW_IC&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=5gG8GkFAW_IC&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 60329
+googleBigCoverImageSize - 60329
+Using Zoomed Google Cover
+Returning https://books.google.com/books/content?id=5gG8GkFAW_IC&printsec=frontcover&img=1&zoom=10&source=gbs_api
+277 - https://books.google.com/books/content?id=5gG8GkFAW_IC&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Using Google Cover: https://books.google.com/books/content?id=5gG8GkFAW_IC&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Adding book to data file...
+---------------------------
+9952420452301401 NOT FOUND IN DATA - Processing title...
+Boston's Oldest Buildings And Where To Find Them 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781684580408
+Found Google book summary
+Checking Open Library cover API for 9781684580408
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781684580408&format=json
+NO OPEN LIBRARY METADATA - Checking Google Books...
+No Google image links found
+291 - None
+No Google cover - Skipping title
+{'mmsId': '9952420452301401'}
+---------------------------
+9952420452401401 NOT FOUND IN DATA - Processing title...
+Stories, Streets, And Saints : Photographs And Oral Histories From Boston's North End 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781438490090
+Found Google book summary
+Checking Open Library cover API for 9781438490090
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781438490090&format=json
+NO OPEN LIBRARY METADATA - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=klCGEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=klCGEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=klCGEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=klCGEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 16480
+googleSmallThumbnailImageSize - 16480
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=klCGEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=klCGEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 86777
+googleBigCoverImageSize - 86777
+Using Zoomed Google Cover
+Returning https://books.google.com/books/content?id=klCGEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+291 - https://books.google.com/books/content?id=klCGEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Using Google Cover: https://books.google.com/books/content?id=klCGEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Adding book to data file...
+---------------------------
+9952420452501401 NOT FOUND IN DATA - Processing title...
+The Big Dig 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780760723074
+Found Google book summary
+Checking Open Library cover API for 9780760723074
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780760723074&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780760723074-L.jpg
+IMAGE-SIZE(OL): 50990
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9780760723074-L.jpg
+Adding book to data file...
+---------------------------
+9952420452701401 NOT FOUND IN DATA - Processing title...
+Boston's North End 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780738555034
+Found Google book summary
+Checking Open Library cover API for 9780738555034
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780738555034&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780738555034-L.jpg
+IMAGE-SIZE(OL): 44780
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9780738555034-L.jpg
+Adding book to data file...
+---------------------------
+9952423551301401 NOT FOUND IN DATA - Processing title...
+By Hands Now Known : Jim Crow's Legal Executioners 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780393867855
+Found Google book summary
+Checking Open Library cover API for 9780393867855
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780393867855&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780393867855-L.jpg
+IMAGE-SIZE(OL): 73901
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9780393867855-L.jpg
+Adding book to data file...
+---------------------------
+9952423551401401 NOT FOUND IN DATA - Processing title...
+Common Ground : A Turbulent Decade In The Lives Of Three American Families 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780394746166
+Found Google book summary
+Checking Open Library cover API for 9780394746166
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780394746166&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780394746166-L.jpg
+IMAGE-SIZE(OL): 41914
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9780394746166-L.jpg
+Adding book to data file...
+---------------------------
+9952423551501401 NOT FOUND IN DATA - Processing title...
+A People's Guide To Greater Boston 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780520967571
+Found Google book summary
+Checking Open Library cover API for 9780520967571
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780520967571&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=hyfRDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=hyfRDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=hyfRDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=hyfRDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 16073
+googleSmallThumbnailImageSize - 16073
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=hyfRDwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=hyfRDwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 37172
+googleBigCoverImageSize - 37172
+Using Zoomed Google Cover
+Returning https://books.google.com/books/content?id=hyfRDwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+277 - https://books.google.com/books/content?id=hyfRDwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Using Google Cover: https://books.google.com/books/content?id=hyfRDwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Adding book to data file...
+---------------------------
+9952423551701401 NOT FOUND IN DATA - Processing title...
+Boston's Massacre 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780674048331
+Found Google book summary
+Checking Open Library cover API for 9780674048331
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780674048331&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780674048331-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9780674048331-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=3_9aDgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=3_9aDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=3_9aDgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=3_9aDgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 14670
+googleSmallThumbnailImageSize - 14670
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=3_9aDgAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=3_9aDgAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 93427
+googleBigCoverImageSize - 93427
+Using Zoomed Google Cover
+Returning https://books.google.com/books/content?id=3_9aDgAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+267 - https://books.google.com/books/content?id=3_9aDgAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Using Google Cover: https://books.google.com/books/content?id=3_9aDgAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Adding book to data file...
+---------------------------
+9952423551901401 NOT FOUND IN DATA - Processing title...
+Boston Then & Now® 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781910904923
+Found Google book summary
+Checking Open Library cover API for 9781910904923
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781910904923&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=2WXRDwAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=2WXRDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=2WXRDwAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=2WXRDwAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 5646
+googleSmallThumbnailImageSize - 5646
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=2WXRDwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=2WXRDwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 53097
+googleBigCoverImageSize - 53097
+Using Zoomed Google Cover
+Returning https://books.google.com/books/content?id=2WXRDwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+277 - https://books.google.com/books/content?id=2WXRDwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Using Google Cover: https://books.google.com/books/content?id=2WXRDwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Adding book to data file...
+---------------------------
+9952423552001401 NOT FOUND IN DATA - Processing title...
+Inside The Combat Zone : The Stripped Down Story Of Boston's Most Notorious Neighborhood.
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781493048991
+Found Google book summary
+Checking Open Library cover API for 9781493048991
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781493048991&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=LY6kwwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=LY6kwwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=LY6kwwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=LY6kwwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 11685
+googleSmallThumbnailImageSize - 11685
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=LY6kwwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=LY6kwwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+277 - None
+No Google cover - Skipping title
+{'mmsId': '9952423552001401'}
+---------------------------
+9952423552201401 NOT FOUND IN DATA - Processing title...
+The Boston Massacre 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780393314830
+Found Google book summary
+Checking Open Library cover API for 9780393314830
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780393314830&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780393314830-L.jpg
+IMAGE-SIZE(OL): 36061
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9780393314830-L.jpg
+Adding book to data file...
+---------------------------
+9952423552301401 NOT FOUND IN DATA - Processing title...
+Boston's Immigrants, 1790-1880 : A Study In Acculturation 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780674079861
+Found Google book summary
+Checking Open Library cover API for 9780674079861
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780674079861&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780674079861-L.jpg
+IMAGE-SIZE(OL): 24430
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9780674079861-L.jpg
+Adding book to data file...
+---------------------------
+9952423552401401 NOT FOUND IN DATA - Processing title...
+Yankee Destinies : The Lives Of Ordinary Nineteenth-century Bostonians.
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781469613772
+Found Google book summary
+Checking Open Library cover API for 9781469613772
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781469613772&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=Y7NQnwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=Y7NQnwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=Y7NQnwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=Y7NQnwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 7824
+googleSmallThumbnailImageSize - 7824
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=Y7NQnwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=Y7NQnwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+277 - None
+No Google cover - Skipping title
+{'mmsId': '9952423552401401'}
+---------------------------
+9952423552501401 NOT FOUND IN DATA - Processing title...
+A City Year : On The Streets And In The Neighborhoods With Twelve Young Community Service Volunteers 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781560009078
+Found Google book summary
+Checking Open Library cover API for 9781560009078
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781560009078&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781560009078-L.jpg
+IMAGE-SIZE(OL): 24581
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9781560009078-L.jpg
+Adding book to data file...
+---------------------------
+9952423552801401 NOT FOUND IN DATA - Processing title...
+Afro-americans In Antebellum Boston : An Analysis Of Probate Records 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781138878174
+Found Google book summary
+Checking Open Library cover API for 9781138878174
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781138878174&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781138878174-L.jpg
+IMAGE-SIZE(OL): 7696
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9781138878174-L.jpg
+Adding book to data file...
+---------------------------
+9952425451701401 NOT FOUND IN DATA - Processing title...
+Banking On A Revolution : Why Financial Technology Won't Save A Broken System 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780190944131
+Found Google book summary
+Checking Open Library cover API for 9780190944131
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780190944131&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=xCsDEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=xCsDEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=xCsDEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=xCsDEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 14714
+googleSmallThumbnailImageSize - 14714
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=xCsDEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=xCsDEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 86192
+googleBigCoverImageSize - 86192
+Using Zoomed Google Cover
+Returning https://books.google.com/books/content?id=xCsDEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+277 - https://books.google.com/books/content?id=xCsDEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Using Google Cover: https://books.google.com/books/content?id=xCsDEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Adding book to data file...
+---------------------------
+9952425451801401 NOT FOUND IN DATA - Processing title...
+The Unbanking Of America : How The New Middle Class Survives 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780544602311
+Found Google book summary
+Checking Open Library cover API for 9780544602311
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780544602311&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780544602311-L.jpg
+IMAGE-SIZE(OL): 41473
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9780544602311-L.jpg
+Adding book to data file...
+---------------------------
+9952425451901401 NOT FOUND IN DATA - Processing title...
+Other People's Money : The Real Business Of Finance 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781610396035
+Found Google book summary
+Checking Open Library cover API for 9781610396035
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781610396035&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=757-rQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=757-rQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=757-rQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=757-rQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 6505
+googleSmallThumbnailImageSize - 6505
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=757-rQEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=757-rQEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+277 - None
+No Google cover - Skipping title
+{'mmsId': '9952425451901401'}
+---------------------------
+9952427352801401 NOT FOUND IN DATA - Processing title...
+East And Southeast Asian Perspectives On The Internationalisation Of Higher Education : Policies, Practices And Prospects 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781003174097
+Found Google book summary
+Checking Open Library cover API for 9781003174097
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781003174097&format=json
+NO OPEN LIBRARY METADATA - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=TjM90AEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=TjM90AEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=TjM90AEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=TjM90AEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 8010
+googleSmallThumbnailImageSize - 8010
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=TjM90AEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=TjM90AEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+291 - None
+No Google cover - Skipping title
+{'mmsId': '9952427352801401'}
+---------------------------
+9952427652201401 NOT FOUND IN DATA - Processing title...
+Dark Tide : The Great Boston Molasses Flood Of 1919 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780807078006
+Found Google book summary
+Checking Open Library cover API for 9780807078006
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780807078006&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780807078006-L.jpg
+IMAGE-SIZE(OL): 63151
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9780807078006-L.jpg
+Adding book to data file...
+---------------------------
+9952427752601401 NOT FOUND IN DATA - Processing title...
+Pardon And Parole : A Legal Research Guide 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780837742991
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952427752601401'} to seen books
+---------------------------
+9952428052801401 NOT FOUND IN DATA - Processing title...
+Rethinking Rural Health Ethics 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9783319608112
+Found Google book summary
+Checking Open Library cover API for 9783319608112
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9783319608112&format=json
+NO OPEN LIBRARY METADATA - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=xNAwDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=xNAwDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=xNAwDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=xNAwDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 9543
+googleSmallThumbnailImageSize - 9543
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=xNAwDwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=xNAwDwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 49462
+googleBigCoverImageSize - 49462
+Using Zoomed Google Cover
+Returning https://books.google.com/books/content?id=xNAwDwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+291 - https://books.google.com/books/content?id=xNAwDwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Using Google Cover: https://books.google.com/books/content?id=xNAwDwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Adding book to data file...
+---------------------------
+9952428152801401 NOT FOUND IN DATA - Processing title...
+Go 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:B0008EJXEW
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952428152801401'} to seen books
+---------------------------
+----------FINISHED---------
+---------------------------
+Size of incoming data feed (AllNewBooks.csv): 2455
+Size of comparison file (allBooksSeen.json): 2370
+Found 2404 book(s) already in allBooksSeen.json.
+Processed 51 unseen books in new data feed.
+Added 40 covers to live data.
+Added 11 partial records (MmsIDs) to seen data.
+---------------------------
+Writing seen data amd filtered live data to new JSON files...
+allBooksSeen.json written
+newbooks.json written
+DONE
