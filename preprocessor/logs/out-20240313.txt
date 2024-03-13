@@ -1,0 +1,16 @@
+Found 2421 seen records
+Opening incoming data feed: AllNewBooks.csv
+---------------------------
+----------FINISHED---------
+---------------------------
+Size of incoming data feed (AllNewBooks.csv): 2455
+Size of comparison file (allBooksSeen.json): 2421
+Found 2455 book(s) already in allBooksSeen.json.
+Processed 0 unseen books in new data feed.
+Added 0 covers to live data.
+Added 0 partial records (MmsIDs) to seen data.
+---------------------------
+Writing seen data amd filtered live data to new JSON files...
+allBooksSeen.json written
+newbooks.json written
+DONE
