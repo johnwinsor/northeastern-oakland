@@ -10,15 +10,15 @@ npm run dev
    - Use Analytics dv workbook AllNewBooks
    - /@Catalog/users/he_15651436950001401_1401_d_na03.alma.exlibrisgroup.com/AllNewBooks
    - Make sure the "Receiving Status=Yes" filter is enabled
-   - Export as "AllNewBooks.csv"
-   - Rename the existing AllNewBooks.csv to AllNewBooksOLD.csv
+   - Export as "AllNewBooks.csv", It will download as a csv file to the local Downloads directory.
    - Move AllNewBooks.csv from Downloads to "projects/northeastern-oakland/preprocessor"
+     - `mv ~/Downloads/AllNewBooks.csv ~/projects/northeastern-oakland/preprocessor`
 3. Run preprocessor from "projects/northeastern-oakland/preprocessor"
-   - WEEKLY USAGE: ./processCSV.py AllNewBooks.csv newbooksAll.json > logs/out-yyyymmdd.txt
-   - Rescan books that were missing covers previously: ./processCSV.py AllNewBooks.csv ../api/static/newbooks.json > logs/out-yyyymmdd.txt
-   - Rescan all books: ./processCSV.py AllNewBooks.csv rescan.json > logs/out-yyyymmdd.txt
-   - `./processCSV.py AllNewBooks.csv newbooksAll.json > logs/out-YYYYMMDD.txt`
-     - newbooksAll.json is your comparison set
+   - WEEKLY USAGE: `./processCSV.py AllNewBooks.csv allBooksSeen.json > logs/out-YYYYMMDD.txt `
+   - Rescan books that were missing covers previously: `./processCSV.py AllNewBooks.csv ../api/static/newbooks.json > logs/out-yyyymmdd.txt`
+   - Rescan all books: `./processCSV.py AllNewBooks.csv rescan.json > logs/out-yyyymmdd.txt`
+   - `./processCSV.py AllNewBooks.csv allBooksSeen.json > logs/out-YYYYMMDD.txt `
+     - allBooksSeen.json is your comparison set in this example
    - Will output 2 data files and a log file
      - newbooksAll.json
      - newbooks.json
@@ -31,3 +31,10 @@ npm run dev
    - npm run build
    - pm2 restart library
    - pm2 restart Flask
+
+Front End Applications
+
+1. New Books Carousel
+2. Library Monitor - Appspace
+3. Libguides
+   - https://northeastern.libapps.com/libguides/admin_c.php?g=1382992
