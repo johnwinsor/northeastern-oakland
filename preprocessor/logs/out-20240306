@@ -1,0 +1,532 @@
+Found 2343 seen records
+Opening incoming data feed: AllNewBooks.csv
+---------------------------
+9935571360001401 NOT FOUND IN DATA - Processing title...
+The Corrections 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780374129989
+Found Google book summary
+Checking Open Library cover API for 9780374129989
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780374129989&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780374129989-L.jpg
+IMAGE-SIZE(OL): 56671
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9780374129989-L.jpg
+Adding book to data file...
+---------------------------
+9952386351001401 NOT FOUND IN DATA - Processing title...
+The Practical Origins Of Ideas : Genealogy As Conceptual Reverse-engineering 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780198868705
+Found Google book summary
+Checking Open Library cover API for 9780198868705
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780198868705&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=BhogEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=BhogEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=BhogEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=BhogEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 12776
+googleSmallThumbnailImageSize - 12776
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=BhogEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=BhogEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 103791
+googleBigCoverImageSize - 103791
+Using Zoomed Google Cover
+Using Google Cover: https://books.google.com/books/content?id=BhogEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Adding book to data file...
+---------------------------
+9952386351501401 NOT FOUND IN DATA - Processing title...
+The Law Between Objectivity And Power 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781509962655
+Found Google book summary
+Checking Open Library cover API for 9781509962655
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781509962655&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=UpKFEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=UpKFEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=UpKFEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=UpKFEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 4939
+googleSmallThumbnailImageSize - 4939
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=UpKFEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=UpKFEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 246264
+googleBigCoverImageSize - 246264
+LARGE GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952386351501401'}
+---------------------------
+9952409544101401 NOT FOUND IN DATA - Processing title...
+Lotteries : A Legal Research Guide 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780837742960
+Found Google book summary
+Checking Open Library cover API for 9780837742960
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780837742960&format=json
+NO OPEN LIBRARY METADATA - Checking Google Books...
+No Google image links found
+No Google cover - Skipping title
+{'mmsId': '9952409544101401'}
+---------------------------
+9952409751001401 NOT FOUND IN DATA - Processing title...
+Nigeria Jones.
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780062888846
+Found Google book summary
+Checking Open Library cover API for 9780062888846
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780062888846&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780062888846-L.jpg
+IMAGE-SIZE(OL): 84898
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9780062888846-L.jpg
+Adding book to data file...
+---------------------------
+9952409852701401 NOT FOUND IN DATA - Processing title...
+Steeped: The Chemistry Of Tea.
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781839165917
+No Google book summary available
+Checking Open Library cover API for 9781839165917
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781839165917&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=XlvzEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=XlvzEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=XlvzEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=XlvzEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 9178
+googleSmallThumbnailImageSize - 9178
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=XlvzEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=XlvzEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 51612
+googleBigCoverImageSize - 51612
+Using Zoomed Google Cover
+Using Google Cover: https://books.google.com/books/content?id=XlvzEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Adding book to data file...
+---------------------------
+9952409951701401 NOT FOUND IN DATA - Processing title...
+Cultural Property Law : A Practitioner's Guide To The Management, Protection, And Preservation Of Heritage Resources 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781627227353
+Found Google book summary
+Checking Open Library cover API for 9781627227353
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781627227353&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=kSZGMQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=kSZGMQAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=kSZGMQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=kSZGMQAACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 9918
+googleSmallThumbnailImageSize - 9918
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=kSZGMQAACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=kSZGMQAACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952409951701401'}
+---------------------------
+9952409951801401 NOT FOUND IN DATA - Processing title...
+Financial Aid For Veterans, Military Personnel, And Their Families, 2021-2023 : A Listing Of Scholarships, Fellowships, Grants-in-aid, And Other Sources Of Free Money Available Primarily Or Exclusively To Veterans, Military Personnel And Their Family Members, Plus A Set Of Six Indexes (program, Title, Sponsoring Organization, Residency, Tenability, Subject, And Deadline Date) 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9798676627072
+Found Google book summary
+Checking Open Library cover API for 9798676627072
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9798676627072&format=json
+NO OPEN LIBRARY METADATA - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=tb7YzQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=tb7YzQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=tb7YzQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=tb7YzQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 7019
+googleSmallThumbnailImageSize - 7019
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=tb7YzQEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=tb7YzQEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952409951801401'}
+---------------------------
+9952417852301401 NOT FOUND IN DATA - Processing title...
+The United States Of America And The Deaflympic Games 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9798887229683
+Found Google book summary
+Checking Open Library cover API for 9798887229683
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9798887229683&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+No Google image links found
+No Google cover - Skipping title
+{'mmsId': '9952417852301401'}
+---------------------------
+9952422751201401 NOT FOUND IN DATA - Processing title...
+The United Nations And The Question Of Palestine : Rule By Law And The Structure Of International Legal Subalternity 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781316513897
+Found Google book summary
+Checking Open Library cover API for 9781316513897
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781316513897&format=json
+NO OPEN LIBRARY METADATA - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=wtfbEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=wtfbEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=wtfbEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=wtfbEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 9695
+googleSmallThumbnailImageSize - 9695
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=wtfbEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=wtfbEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 65316
+googleBigCoverImageSize - 65316
+Using Zoomed Google Cover
+Using Google Cover: https://books.google.com/books/content?id=wtfbEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Adding book to data file...
+---------------------------
+9952422850901401 NOT FOUND IN DATA - Processing title...
+Saga.
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781534399136
+Found Google book summary
+Checking Open Library cover API for 9781534399136
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781534399136&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+No Google image links found
+No Google cover - Skipping title
+{'mmsId': '9952422850901401'}
+---------------------------
+9952422851001401 NOT FOUND IN DATA - Processing title...
+Saga.
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781534323346
+Found Google book summary
+Checking Open Library cover API for 9781534323346
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781534323346&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781534323346-L.jpg
+IMAGE-SIZE(OL): 27001
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9781534323346-L.jpg
+Adding book to data file...
+---------------------------
+9952422851101401 NOT FOUND IN DATA - Processing title...
+Palestinian Music In Exile : Voices Of Resistance 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781649033048
+Found Google book summary
+Checking Open Library cover API for 9781649033048
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781649033048&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=JVG5zwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=JVG5zwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=JVG5zwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=JVG5zwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 12712
+googleSmallThumbnailImageSize - 12712
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=JVG5zwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=JVG5zwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952422851101401'}
+---------------------------
+9952423548101401 NOT FOUND IN DATA - Processing title...
+Erasing The Human : Collapse Of The Postcolonial World And Thee Refugee Immigration Crisis 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781800119956
+Found Google book summary
+Checking Open Library cover API for 9781800119956
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781800119956&format=json
+NO OPEN LIBRARY METADATA - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=HGFjEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=HGFjEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=HGFjEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=HGFjEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 12021
+googleSmallThumbnailImageSize - 12021
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=HGFjEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=HGFjEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 59785
+googleBigCoverImageSize - 59785
+Using Zoomed Google Cover
+Using Google Cover: https://books.google.com/books/content?id=HGFjEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Adding book to data file...
+---------------------------
+9952423549201401 NOT FOUND IN DATA - Processing title...
+Awol Erizku : Mystic Parallax 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781597115469
+Found Google book summary
+Checking Open Library cover API for 9781597115469
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781597115469&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=ZX5VzwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=ZX5VzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=ZX5VzwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=ZX5VzwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 4248
+googleSmallThumbnailImageSize - 4248
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=ZX5VzwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=ZX5VzwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952423549201401'}
+---------------------------
+9952423549401401 NOT FOUND IN DATA - Processing title...
+Now You See Me : An Introduction To 100 Years Of Black Design 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9783791388472
+Found Google book summary
+Checking Open Library cover API for 9783791388472
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9783791388472&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=OhWAzwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=OhWAzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=OhWAzwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=OhWAzwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 12798
+googleSmallThumbnailImageSize - 12798
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=OhWAzwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=OhWAzwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952423549401401'}
+---------------------------
+9952423549601401 NOT FOUND IN DATA - Processing title...
+Designing The Computational Image, Imagining Computational Design 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781954081345
+Found Google book summary
+Checking Open Library cover API for 9781954081345
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781954081345&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=TIxVzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=TIxVzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=TIxVzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=TIxVzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 7771
+googleSmallThumbnailImageSize - 7771
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=TIxVzgEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=TIxVzgEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952423549601401'}
+---------------------------
+9952423549701401 NOT FOUND IN DATA - Processing title...
+Pentagram : Living By Design 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780500027462
+Found Google book summary
+Checking Open Library cover API for 9780500027462
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780500027462&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=FIDazwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=FIDazwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=FIDazwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=FIDazwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 2981
+googleSmallThumbnailImageSize - 2981
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=FIDazwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=FIDazwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952423549701401'}
+---------------------------
+9952425211601401 NOT FOUND IN DATA - Processing title...
+When Za'atar Met Zeit 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780960014743
+Found Google book summary
+Checking Open Library cover API for 9780960014743
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780960014743&format=json
+NO OPEN LIBRARY METADATA - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=c_a2zgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=c_a2zgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=c_a2zgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=c_a2zgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 7218
+googleSmallThumbnailImageSize - 7218
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=c_a2zgEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=c_a2zgEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952425211601401'}
+---------------------------
+9952425211701401 NOT FOUND IN DATA - Processing title...
+Graven With Diamonds: The Many Lives Of Thomas Wyatt: Poet, Lover, Statesman, And Spy In The Court Of Henry Viii
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781586422073
+Found Google book summary
+Checking Open Library cover API for 9781586422073
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781586422073&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781586422073-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9781586422073-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=aZ5kji8XJtAC&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=aZ5kji8XJtAC&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=aZ5kji8XJtAC&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=aZ5kji8XJtAC&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 11490
+googleSmallThumbnailImageSize - 11490
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=aZ5kji8XJtAC&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=aZ5kji8XJtAC&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 76968
+googleBigCoverImageSize - 76968
+Using Zoomed Google Cover
+Adding book to data file...
+---------------------------
+9952425451401401 NOT FOUND IN DATA - Processing title...
+Probability & Statistics For Engineers & Scientists : Mystatlab Update 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780134115856
+Found Google book summary
+Checking Open Library cover API for 9780134115856
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780134115856&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780134115856-L.jpg
+IMAGE-SIZE(OL): 44413
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9780134115856-L.jpg
+Adding book to data file...
+---------------------------
+9952425451601401 NOT FOUND IN DATA - Processing title...
+Race For Profit : How Banks And The Real Estate Industry Undermined Black Homeownership 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781469653662
+Found Google book summary
+Checking Open Library cover API for 9781469653662
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781469653662&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781469653662-L.jpg
+IMAGE-SIZE(OL): 39220
+Using OpenLibrary Cover: https://covers.openlibrary.org/b/isbn/9781469653662-L.jpg
+Adding book to data file...
+---------------------------
+9952425452201401 NOT FOUND IN DATA - Processing title...
+Busting The Bankers' Club : Finance For The Rest Of Us 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780520385641
+Found Google book summary
+Checking Open Library cover API for 9780520385641
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780520385641&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=uZvZEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=uZvZEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=uZvZEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=uZvZEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 11556
+googleSmallThumbnailImageSize - 11556
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=uZvZEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=uZvZEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 3024
+googleBigCoverImageSize - 3024
+Small Thumbnail larger than Big Cover - Falling back to Small Thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952425452201401'}
+---------------------------
+9952425851401401 NOT FOUND IN DATA - Processing title...
+A Field Guide To Grad School : Uncovering The Hidden Curriculum 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780691201108
+Found Google book summary
+Checking Open Library cover API for 9780691201108
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780691201108&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=nXnTDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=nXnTDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=nXnTDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=nXnTDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 15880
+googleSmallThumbnailImageSize - 15880
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=nXnTDwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=nXnTDwAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 3418
+googleBigCoverImageSize - 3418
+Small Thumbnail larger than Big Cover - Falling back to Small Thumbnail
+Using Google Cover: https://books.google.com/books/content?id=nXnTDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Adding book to data file...
+---------------------------
+9952425851501401 NOT FOUND IN DATA - Processing title...
+The Affect Theory Reader 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780822393047
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952425851501401'} to seen books
+---------------------------
+9952425851601401 NOT FOUND IN DATA - Processing title...
+White Self-criticality Beyond Anti-racism : How Does It Feel To Be A White Problem? 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780739189504
+Found Google book summary
+Checking Open Library cover API for 9780739189504
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780739189504&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=iB4vBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=iB4vBQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=iB4vBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=iB4vBQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 8915
+googleSmallThumbnailImageSize - 8915
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=iB4vBQAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=iB4vBQAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 35367
+googleBigCoverImageSize - 35367
+Using Zoomed Google Cover
+Using Google Cover: https://books.google.com/books/content?id=iB4vBQAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Adding book to data file...
+---------------------------
+9952426352801401 NOT FOUND IN DATA - Processing title...
+Routledge International Handbook Of Charisma 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780367207441
+Found Google book summary
+Checking Open Library cover API for 9780367207441
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780367207441&format=json
+NO OPEN LIBRARY COVER - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=ljR_zQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=ljR_zQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=ljR_zQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=ljR_zQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 7569
+googleSmallThumbnailImageSize - 7569
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=ljR_zQEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=ljR_zQEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952426352801401'}
+---------------------------
+----------FINISHED---------
+---------------------------
+Size of incoming data feed (AllNewBooks.csv): 2467
+Size of comparison file (newbooksAll.json): 2343
+Found 2440 book(s) already in newbooksAll.json.
+Processed 27 unseen books in new data feed.
+Added 12 covers to live data.
+Added 15 partial records (MmsIDs) to seen data.
+---------------------------
+Writing seen data amd filtered live data to new JSON files...
+newbooksAll.json written
+newbooks.json written
+DONE

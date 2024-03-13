@@ -1,0 +1,3552 @@
+Reading seen data from newbooksAll.json
+Found 2039 existing records
+Opening new csv file: AllNewBooks.csv
+9943572180001401 NOT FOUND IN DATA - Processing title...
+Thirty Frames Per Second : The Visionary Art Of The Music Video 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780810943575
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9943572180001401'} to seen books
+9951549113601401 NOT FOUND IN DATA - Processing title...
+The Identity Dilemma : Social Movements And Collective Identity 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781439912539
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9951549113601401'} to seen books
+9951549857601401 NOT FOUND IN DATA - Processing title...
+Creative Execution : What Great Leaders Do To Unleash The Forces Of Innovation And Bold Thinking In Their Organizations 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781118356500
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9951549857601401'} to seen books
+9951550862801401 NOT FOUND IN DATA - Processing title...
+Cognitive-behavioral Social Skills Training For Schizophrenia : A Practical Treatment Guide 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781462524730
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9951550862801401'} to seen books
+9951596076401401 NOT FOUND IN DATA - Processing title...
+Consent 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781780018812
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9951596076401401'} to seen books
+9951691322401401 NOT FOUND IN DATA - Processing title...
+Believe Me : The Evangelical Road To Donald Trump 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781467450461
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9951691322401401'} to seen books
+9951775807501401 NOT FOUND IN DATA - Processing title...
+Guillotine : The Revolutionary Card Game Where You Win By Getting A Head 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780786949953
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9951775807501401'} to seen books
+9951775810201401 NOT FOUND IN DATA - Processing title...
+Betrayal At House On The Hill : A Strategy Game 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780786957170
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9951775810201401'} to seen books
+9951997972801401 NOT FOUND IN DATA - Processing title...
+Seeds 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781788503327
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9951997972801401'} to seen books
+9952031690501401 NOT FOUND IN DATA - Processing title...
+White Feminism : From The Suffragettes To Influencers And Who They Leave Behind 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781982134433
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952031690501401'} to seen books
+9952031693001401 NOT FOUND IN DATA - Processing title...
+What I (don't) Know About Autism (nhb Modern Plays)
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781788503228
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952031693001401'} to seen books
+9952045908001401 NOT FOUND IN DATA - Processing title...
+Regime Of Obstruction : How Corporate Power Blocks Energy Democracy 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781771992916
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952045908001401'} to seen books
+9952078326601401 NOT FOUND IN DATA - Processing title...
+The Relational Revolution In Psychoanalysis And Psychotherapy 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781913494155
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952078326601401'} to seen books
+9952203878101401 NOT FOUND IN DATA - Processing title...
+Still 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781788504638
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952203878101401'} to seen books
+9952218851301401 NOT FOUND IN DATA - Processing title...
+Scholarships, Fellowships, And Loans : A Guide To Education-related Financial Aid Programs For Students And Professionals 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781535785011
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952218851301401'} to seen books
+9952221493601401 NOT FOUND IN DATA - Processing title...
+Risk Management For Medical Device Manufacturers.
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781636940403
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952221493601401'} to seen books
+9952238146201401 NOT FOUND IN DATA - Processing title...
+First, Learn To Practice 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781457507755
+No Google book summary available
+Checking Open Library cover API for 9781457507755
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781457507755&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781457507755-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9781457507755-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=d9mAygEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=d9mAygEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=d9mAygEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=d9mAygEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 11897
+googleSmallThumbnailImageSize - 11897
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=d9mAygEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=d9mAygEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952238146201401'}
+9952238146901401 NOT FOUND IN DATA - Processing title...
+Udl And Blended Learning : Thriving In Flexible Learning Landscapes 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781948334327
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952238146901401'} to seen books
+9952238147801401 NOT FOUND IN DATA - Processing title...
+The Faculty Factor : Developing Faculty Engagement With Living-learning Communities 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781642672558
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952238147801401'} to seen books
+9952238250301401 NOT FOUND IN DATA - Processing title...
+Renewable Energy For Sustainable Growth Assessment 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9785464; 9781
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952238250301401'} to seen books
+9952238250501401 NOT FOUND IN DATA - Processing title...
+Smart Charging Solutions For Hybrid And Electric Vehicles 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781119771739
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952238250501401'} to seen books
+9952238749501401 NOT FOUND IN DATA - Processing title...
+Building Back Better : Sustainable Mental Health Care After Emergencies 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9789240690677
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952238749501401'} to seen books
+9952239804601401 NOT FOUND IN DATA - Processing title...
+All Of Us 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781788503372
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952239804601401'} to seen books
+9952242249301401 NOT FOUND IN DATA - Processing title...
+Approaches To Teaching The Works Of Edwidge Danticat 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000005707
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952242249301401'} to seen books
+9952242351401401 NOT FOUND IN DATA - Processing title...
+China : The Bubble That Never Pops 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780197710012
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952242351401401'} to seen books
+9952242448801401 NOT FOUND IN DATA - Processing title...
+The Ethics Of Tainted Legacies : Human Flourishing After Traumatic Pasts 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781009110907
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952242448801401'} to seen books
+9952242449801401 NOT FOUND IN DATA - Processing title...
+The Ethics Of Consciousness 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781009086660
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952242449801401'} to seen books
+9952242450001401 NOT FOUND IN DATA - Processing title...
+Rebellious Wives, Neglectful Husbands : Controversies In Modern Qur'anic Commentaries 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780197553312
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952242450001401'} to seen books
+9952242450601401 NOT FOUND IN DATA - Processing title...
+Nursing Theory, Postmodernism, Post-structuralism, And Foucault  Olga Petrovskaya.
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781003194439
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952242450601401'} to seen books
+9952242450701401 NOT FOUND IN DATA - Processing title...
+Nursing Ethics And Professional Responsibility In Advanced Practice 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781284261585
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952242450701401'} to seen books
+9952242451501401 NOT FOUND IN DATA - Processing title...
+Data Visualization And Analysis In Second Language Research 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000394580
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952242451501401'} to seen books
+9952242451901401 NOT FOUND IN DATA - Processing title...
+Museums And Wealth : The Politics Of Contemporary Art Collections 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781350045798
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952242451901401'} to seen books
+9952242452501401 NOT FOUND IN DATA - Processing title...
+The Fate Of The Jews In The Early Islamic Near East : Tracing The Demographic Shift From East To West 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781009058018
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952242452501401'} to seen books
+9952242950001401 NOT FOUND IN DATA - Processing title...
+Kant And The Problem Of Morality : Rethinking The Contemporary World 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000606195
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952242950001401'} to seen books
+9952242950401401 NOT FOUND IN DATA - Processing title...
+Saints, Heretics, And Atheists : A Historical Introduction To The Philosophy Of Religion 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780197563885
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952242950401401'} to seen books
+9952242950701401 NOT FOUND IN DATA - Processing title...
+Kant's Ethics 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781108754637
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952242950701401'} to seen books
+9952242951601401 NOT FOUND IN DATA - Processing title...
+Statistics For Nursing : A Practical Approach 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781284255003
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952242951601401'} to seen books
+9952242952101401 NOT FOUND IN DATA - Processing title...
+Mastering Microsoft Teams : Creating A Hub For Successful Teamwork In Office 365 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:97883; 978111
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952242952101401'} to seen books
+9952242952701401 NOT FOUND IN DATA - Processing title...
+Roman Architecture And Urbanism : From The Origins To Late Antiquity 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780511979743
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952242952701401'} to seen books
+9952245951501401 NOT FOUND IN DATA - Processing title...
+The World In Six Songs : How The Musical Brain Created Human Nature 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781101035962
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952245951501401'} to seen books
+9952245951601401 NOT FOUND IN DATA - Processing title...
+Folk Devils And Moral Panics : The Creation Of The Mods And Rockers 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780203828250
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952245951601401'} to seen books
+9952246047901401 NOT FOUND IN DATA - Processing title...
+Rehabilitation Ethics For Interprofessional Practice 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781449647780
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952246047901401'} to seen books
+9952246048001401 NOT FOUND IN DATA - Processing title...
+Introduction To Pathology For The Physical Therapist Assistant 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781284179378
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952246048001401'} to seen books
+9952246048301401 NOT FOUND IN DATA - Processing title...
+Cardiopulmonary Physical Therapy : Management And Case Studies 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781617119873
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952246048301401'} to seen books
+9952246050501401 NOT FOUND IN DATA - Processing title...
+Biorenewable Nanocomposite Materials 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:97819; 978084
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952246050501401'} to seen books
+9952246050701401 NOT FOUND IN DATA - Processing title...
+Biomass, Bioproducts And Biofuels 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000580808
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952246050701401'} to seen books
+9952246051301401 NOT FOUND IN DATA - Processing title...
+The Steel Ceiling : Achieving Sustainable Growth In Engineering And Construction.
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781119910466
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952246051301401'} to seen books
+9952246149901401 NOT FOUND IN DATA - Processing title...
+The Profits Of Distrust : Citizen-consumers, Drinking Water, And The Crisis Of Confidence In American Government 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781009244893
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952246149901401'} to seen books
+9952246151001401 NOT FOUND IN DATA - Processing title...
+The Fight To Save The Town : Reimagining Discarded America 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781501196003
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952246151001401'} to seen books
+9952246152201401 NOT FOUND IN DATA - Processing title...
+Fostering Computational Thinking Among Underrepresented Students In Stem : Strategies For Supporting Racially Equitable Computing 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781003024552
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952246152201401'} to seen books
+9952246152301401 NOT FOUND IN DATA - Processing title...
+Identity Development During Stem Integration For Underrepresented Minority Students 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781108898966
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952246152301401'} to seen books
+9952246152601401 NOT FOUND IN DATA - Processing title...
+How Things Work : The Computer Science Edition 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000433913
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952246152601401'} to seen books
+9952246252501401 NOT FOUND IN DATA - Processing title...
+Sources Of The Holocaust 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780230214408
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952246252501401'} to seen books
+9952249152701401 NOT FOUND IN DATA - Processing title...
+Real-world Evidence In A Patient-centric Digital Era 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781003017523
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952249152701401'} to seen books
+9952249851101401 NOT FOUND IN DATA - Processing title...
+Environmental Health : Poverty, Race And Child Health In The Time Of Covid-19 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9798886974539
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952249851101401'} to seen books
+9952249851401401 NOT FOUND IN DATA - Processing title...
+Science Studies Meets Colonialism 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781509553549
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952249851401401'} to seen books
+9952249852801401 NOT FOUND IN DATA - Processing title...
+Women In Science And Technology : Confronting Inequalities 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9789353287498
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952249852801401'} to seen books
+9952250352601401 NOT FOUND IN DATA - Processing title...
+The Cambridge Handbook Of The Neuroscience Of Creativity 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781316556238
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952250352601401'} to seen books
+9952269752301401 NOT FOUND IN DATA - Processing title...
+Shared Leadership In Higher Education : A Framework And Models For Responding To A Changing World 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781642672275
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952269752301401'} to seen books
+9952272752201401 NOT FOUND IN DATA - Processing title...
+Uncivil Disobedience : Theological Perspectives 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:978713576; 97
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952272752201401'} to seen books
+9952272752301401 NOT FOUND IN DATA - Processing title...
+Technology Ethics : A Philosophical Introduction And Readings 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000830224
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952272752301401'} to seen books
+9952272752801401 NOT FOUND IN DATA - Processing title...
+Ideological Fixation : From The Stone Age To Today's Culture Wars 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780197646731
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952272752801401'} to seen books
+9952273151101401 NOT FOUND IN DATA - Processing title...
+Animals Are Outside Today 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781934435366
+Found Google book summary
+Checking Open Library cover API for 9781934435366
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781934435366&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781934435366-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9781934435366-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=UmmSZwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=UmmSZwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=UmmSZwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=UmmSZwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 7827
+googleSmallThumbnailImageSize - 7827
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=UmmSZwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=UmmSZwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952273151101401'}
+9952273151601401 NOT FOUND IN DATA - Processing title...
+Pieces Of String 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781934435502
+Found Google book summary
+Checking Open Library cover API for 9781934435502
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781934435502&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781934435502-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9781934435502-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=l3IoLgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=l3IoLgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=l3IoLgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=l3IoLgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 3157
+googleSmallThumbnailImageSize - 3157
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=l3IoLgEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=l3IoLgEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952273151601401'}
+9952273252401401 NOT FOUND IN DATA - Processing title...
+The Routledge Handbook Of Public Service Interpreting 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780429298202
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952273252401401'} to seen books
+9952273252801401 NOT FOUND IN DATA - Processing title...
+Teaching Critical Reading Skills : Strategies For Academic Librarians.
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780838939284
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952273252801401'} to seen books
+9952273352101401 NOT FOUND IN DATA - Processing title...
+Philosophy - Oxford Bibliographies.
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780195396577
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952273352101401'} to seen books
+9952275452701401 NOT FOUND IN DATA - Processing title...
+Reviving Phoenicia : The Search For Identity In Lebanon 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781282529618
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952275452701401'} to seen books
+9952277152501401 NOT FOUND IN DATA - Processing title...
+The Routledge Companion To Historical Theory 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000465457
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952277152501401'} to seen books
+9952277452201401 NOT FOUND IN DATA - Processing title...
+Gender Trouble : Feminism And The Subversion Of Identity 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780203902752
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952277452201401'} to seen books
+9952277652501401 NOT FOUND IN DATA - Processing title...
+The Gamification Of Learning And Instruction : Game-based Methods And Strategies For Training And Education 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781118192009
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952277652501401'} to seen books
+9952277852401401 NOT FOUND IN DATA - Processing title...
+Evangelicals And Electoral Politics In Latin America : A Kingdom Of This World 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781009275088
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952277852401401'} to seen books
+9952279352801401 NOT FOUND IN DATA - Processing title...
+The Doctor Of Nursing Practice Project : A Framework For Success 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781284255461
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952279352801401'} to seen books
+9952280152001401 NOT FOUND IN DATA - Processing title...
+Routledge Handbook Of Internet Politics 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780203962541
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952280152001401'} to seen books
+9952280152301401 NOT FOUND IN DATA - Processing title...
+International Relations From The Global South : Worlds Of Difference 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781315756233
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952280152301401'} to seen books
+9952280152401401 NOT FOUND IN DATA - Processing title...
+The Cambridge Introduction To Theatre Studies 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780511817021
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952280152401401'} to seen books
+9952280152701401 NOT FOUND IN DATA - Processing title...
+Dear World & Everyone In It : New Poetry In The Uk 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781780370637
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952280152701401'} to seen books
+9952280152801401 NOT FOUND IN DATA - Processing title...
+The Poetry Handbook : A Guide To Reading Poetry For Pleasure And Practical Criticism 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781280905414
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952280152801401'} to seen books
+9952280552301401 NOT FOUND IN DATA - Processing title...
+International Project Management 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780080495477
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952280552301401'} to seen books
+9952280652101401 NOT FOUND IN DATA - Processing title...
+Reproduction : Antiquity To The Present Day 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781107705647
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952280652101401'} to seen books
+9952285747101401 NOT FOUND IN DATA - Processing title...
+Probiotics, Prebiotics, And Synbiotics : Technological Advancements Towards Safety And Industrial Applications 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781119701224
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952285747101401'} to seen books
+9952285747701401 NOT FOUND IN DATA - Processing title...
+Environmental Toxicology : Biological And Health Effects Of Pollutants 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780429106002
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952285747701401'} to seen books
+9952285747901401 NOT FOUND IN DATA - Processing title...
+Counselling Skills For Social Workers 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781315145853
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952285747901401'} to seen books
+9952285748801401 NOT FOUND IN DATA - Processing title...
+Feminist Judgments : Rewritten Criminal Law Opinions 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:978; 97810090
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952285748801401'} to seen books
+9952285750901401 NOT FOUND IN DATA - Processing title...
+Leading Dynamic Information Literacy Programs : Best Practices And Stories From Instruction Coordinators 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000863321
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952285750901401'} to seen books
+9952285751701401 NOT FOUND IN DATA - Processing title...
+Making Bureaucracy Work : Norms, Education And Public Service Delivery In Rural India 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781009258029
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952285751701401'} to seen books
+9952285850201401 NOT FOUND IN DATA - Processing title...
+Mathematical Aspects Of Deep Learning 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781009025096
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952285850201401'} to seen books
+9952285850701401 NOT FOUND IN DATA - Processing title...
+Scene Shift : U.s. Set Designers In Conversation 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781003148197
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952285850701401'} to seen books
+9952285851701401 NOT FOUND IN DATA - Processing title...
+The Rise Of Virtual Communities : In Conversation With Virtual World Pioneers 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781484292976
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952285851701401'} to seen books
+9952285851901401 NOT FOUND IN DATA - Processing title...
+Promoting Urban Social Justice Through Engaged Communication Scholarship : Reimagining Place 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000437065
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952285851901401'} to seen books
+9952285852301401 NOT FOUND IN DATA - Processing title...
+In Search Of The Magic Theater 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781646031924
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952285852301401'} to seen books
+9952285944001401 NOT FOUND IN DATA - Processing title...
+Wicked Problems : The Ethics Of Action For Peace, Rights, And Justice 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780197632840
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952285944001401'} to seen books
+9952285944401401 NOT FOUND IN DATA - Processing title...
+Post-racial Constitutionalism And The Roberts Court : Rhetorical Neutrality And The Perpetuation Of Inequality 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781108878227
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952285944401401'} to seen books
+9952285946101401 NOT FOUND IN DATA - Processing title...
+Dismantling Constructs Of Whiteness In Higher Education : Narratives Of Resistance From The Academy 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000646559
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952285946101401'} to seen books
+9952285946301401 NOT FOUND IN DATA - Processing title...
+On Not Being Able To Paint 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780203833650
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952285946301401'} to seen books
+9952285947701401 NOT FOUND IN DATA - Processing title...
+I Love Dick 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781584351917
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952285947701401'} to seen books
+9952285949001401 NOT FOUND IN DATA - Processing title...
+Uncreative Writing : Managing Language In The Digital Age 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780231149907
+Found Google book summary
+Checking Open Library cover API for 9780231149907
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780231149907&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780231149907-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9780231149907-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=ClMUSzQSydYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=ClMUSzQSydYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=ClMUSzQSydYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=ClMUSzQSydYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 5398
+googleSmallThumbnailImageSize - 5398
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=ClMUSzQSydYC&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=ClMUSzQSydYC&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 35950
+googleBigCoverImageSize - 35950
+Using Zoomed Google Cover
+Adding book to data file...
+9952285949801401 NOT FOUND IN DATA - Processing title...
+Can The Monster Speak? : A Report To An Academy Of Psychoanalysts 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781913097592
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952285949801401'} to seen books
+9952285950001401 NOT FOUND IN DATA - Processing title...
+Alfred And Emily 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780061697739
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952285950001401'} to seen books
+9952285951001401 NOT FOUND IN DATA - Processing title...
+Things We Lost In The Fire Stories 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780451495136
+Found Google book summary
+Checking Open Library cover API for 9780451495136
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780451495136&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780451495136-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9780451495136-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=GEc1DAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=GEc1DAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=GEc1DAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=GEc1DAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 22487
+googleSmallThumbnailImageSize - 22487
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=GEc1DAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=GEc1DAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 117240
+googleBigCoverImageSize - 117240
+Using Zoomed Google Cover
+Adding book to data file...
+9952285952201401 NOT FOUND IN DATA - Processing title...
+Story : Substance, Structure, Style, And The Principles Of Screenwriting 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780062039828
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952285952201401'} to seen books
+9952286050901401 NOT FOUND IN DATA - Processing title...
+Japanese Racial Identities Within Us-japan Relations, 1853-1919 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781399506915
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952286050901401'} to seen books
+9952286052801401 NOT FOUND IN DATA - Processing title...
+Roma 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781681436579
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952286052801401'} to seen books
+9952287952701401 NOT FOUND IN DATA - Processing title...
+The Cambridge Companion To Newton 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781139058568
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952287952701401'} to seen books
+9952288052101401 NOT FOUND IN DATA - Processing title...
+Frank Lloyd Wright : The Early Years : Progressivism : Aesthetics : Cities 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781315583051
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952288052101401'} to seen books
+9952288052601401 NOT FOUND IN DATA - Processing title...
+Reclaiming The Wicked Son : Finding Judaism In Secular Jewish Philosophers 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781839986154
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952288052601401'} to seen books
+9952288352601401 NOT FOUND IN DATA - Processing title...
+Modern Ferrites.
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781118971499
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952288352601401'} to seen books
+9952288352701401 NOT FOUND IN DATA - Processing title...
+Modern Ferrites.
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781394156146
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952288352701401'} to seen books
+9952288552801401 NOT FOUND IN DATA - Processing title...
+The Role Of Internet Of Things (iot) In Biomedical Engineering : Present Scenario And Challenges 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000400892
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952288552801401'} to seen books
+9952288652801401 NOT FOUND IN DATA - Processing title...
+The Double Helix : A Personal Account Of The Discovery Of The Structure Of Dna 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780743219174
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952288652801401'} to seen books
+9952288752501401 NOT FOUND IN DATA - Processing title...
+Topics In Nanoscience 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9789811242687
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952288752501401'} to seen books
+9952288752701401 NOT FOUND IN DATA - Processing title...
+Introduction To Environmental Toxicology : Molecular Substructures To Ecological Landscapes 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781315117867
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952288752701401'} to seen books
+9952289652701401 NOT FOUND IN DATA - Processing title...
+The Caliph And The Imam : The Making Of Sunnism And Shiism 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780190689476
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952289652701401'} to seen books
+9952289752401401 NOT FOUND IN DATA - Processing title...
+The Routledge Handbook Of Judaism In The 21st Century 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000850369
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952289752401401'} to seen books
+9952293749701401 NOT FOUND IN DATA - Processing title...
+Contemporary Boston Architects 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780764342219
+Found Google book summary
+Checking Open Library cover API for 9780764342219
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780764342219&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780764342219-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9780764342219-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=WFg5LgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=WFg5LgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=WFg5LgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=WFg5LgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 6416
+googleSmallThumbnailImageSize - 6416
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=WFg5LgEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=WFg5LgEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952293749701401'}
+9952294252201401 NOT FOUND IN DATA - Processing title...
+Smart Stimuli-responsive Polymers, Films, And Gels 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9783527832378
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952294252201401'} to seen books
+9952294252301401 NOT FOUND IN DATA - Processing title...
+Microalgae For Sustainable Products : The Green Synthetic Biology Platform 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781839167508
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952294252301401'} to seen books
+9952294252801401 NOT FOUND IN DATA - Processing title...
+Essentials Of Health, Culture, And Diversity : Understanding People, Reducing Disparities 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781284226263
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952294252801401'} to seen books
+9952301351201401 NOT FOUND IN DATA - Processing title...
+Iot Product Design And Development : Best Practices For Industrial, Consumer, And Business Applications 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9787661; 9781
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952301351201401'} to seen books
+9952301351301401 NOT FOUND IN DATA - Processing title...
+Smart Antennas, Electromagnetic Interference And Microwave Antennas For Wireless Communications 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9788770227759
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952301351301401'} to seen books
+9952301351601401 NOT FOUND IN DATA - Processing title...
+App And Website Accessibility Developments And Compliance Strategies 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781799878513
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952301351601401'} to seen books
+9952301352801401 NOT FOUND IN DATA - Processing title...
+Sensory Systems For Robotic Applications 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781849199490
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952301352801401'} to seen books
+9952306652701401 NOT FOUND IN DATA - Processing title...
+Cryptid 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781472830654
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952306652701401'} to seen books
+9952308548701401 NOT FOUND IN DATA - Processing title...
+Counterstory : The Rhetoric And Writing Of Critical Race Theory 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780814100264
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952308548701401'} to seen books
+9952308550301401 NOT FOUND IN DATA - Processing title...
+A Study Of The Effectiveness Of Solutions Focused On Anxiety And Depression In College Students 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781805455073
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952308550301401'} to seen books
+9952308550901401 NOT FOUND IN DATA - Processing title...
+The Essential Guide To Date Rape Prevention : How To Avoid Dangerous Situations, Overpowering Individuals And Date Rape 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781402219726
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952308550901401'} to seen books
+9952308551101401 NOT FOUND IN DATA - Processing title...
+Academic And Workplace Sexual Harassment : A Handbook Of Cultural, Social Science, Management, And Legal Perspectives 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781429473903
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952308551101401'} to seen books
+9952308651901401 NOT FOUND IN DATA - Processing title...
+Beethoven's Conversation Books : Volume 4: Nos. 32 To 43 (may 1823 To September 1823).
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781800103962
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952308651901401'} to seen books
+9952308652001401 NOT FOUND IN DATA - Processing title...
+Music Commodities, Markets, And Values In India : Music As Merchandise 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781315669861
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952308652001401'} to seen books
+9952310152701401 NOT FOUND IN DATA - Processing title...
+Clathrate Hydrates Of Natural Gases.
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781281127730
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952310152701401'} to seen books
+9952314352801401 NOT FOUND IN DATA - Processing title...
+Food Tv 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781315658605
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952314352801401'} to seen books
+9952325952801401 NOT FOUND IN DATA - Processing title...
+Critical Toponymies : The Contested Politics Of Place Naming 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781351947275
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952325952801401'} to seen books
+9952326051701401 NOT FOUND IN DATA - Processing title...
+Mla Handbook 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781603293532
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952326051701401'} to seen books
+9952326252301401 NOT FOUND IN DATA - Processing title...
+Crisis Communications : A Casebook Approach 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781315684857
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952326252301401'} to seen books
+9952344551001401 NOT FOUND IN DATA - Processing title...
+Congotay! Congotay! : A Global History Of Caribbean Food 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781315719887
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952344551001401'} to seen books
+9952344551401401 NOT FOUND IN DATA - Processing title...
+Strategies And Tactics Of Behavioral Research And Practice 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781315537085
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952344551401401'} to seen books
+9952344552101401 NOT FOUND IN DATA - Processing title...
+The Wiley-blackwell History Of American Film 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780470671153
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952344552101401'} to seen books
+9952348752201401 NOT FOUND IN DATA - Processing title...
+The Mexican Mission : Indigenous Reconstruction And Mendicant Enterprise In New Spain, 1521-1600 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781108600576
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952348752201401'} to seen books
+9952348852401401 NOT FOUND IN DATA - Processing title...
+The Usmca : Nafta Re-negotiated And Its Business Impacts In A Nutshell 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9788887863260
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952348852401401'} to seen books
+9952350250201401 NOT FOUND IN DATA - Processing title...
+The Routledge Companion To Design Research 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000897418
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952350250201401'} to seen books
+9952350351401401 NOT FOUND IN DATA - Processing title...
+The Christoffel-darboux Kernel For Data Analysis 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781108937078
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952350351401401'} to seen books
+9952350451301401 NOT FOUND IN DATA - Processing title...
+The Temple Of Man : Apet Of The South At Luxor 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780892815708
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952350451301401'} to seen books
+9952350550101401 NOT FOUND IN DATA - Processing title...
+Information Technology And Organizational Learning : Managing Behavioral Change Through Technology And Education 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781315143804
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952350550101401'} to seen books
+9952353643301401 NOT FOUND IN DATA - Processing title...
+Critical Legal Education As A Subversive Activity 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:978; 97810320
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952353643301401'} to seen books
+9952353852001401 NOT FOUND IN DATA - Processing title...
+Magic : Once Upon A Faraway Land 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781951836573
+Found Google book summary
+Checking Open Library cover API for 9781951836573
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781951836573&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781951836573-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9781951836573-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=Qqw9zgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=Qqw9zgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=Qqw9zgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=Qqw9zgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 9924
+googleSmallThumbnailImageSize - 9924
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=Qqw9zgEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=Qqw9zgEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952353852001401'}
+9952354952801401 NOT FOUND IN DATA - Processing title...
+Race On Trial 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780736554480
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952354952801401'} to seen books
+9952355252801401 NOT FOUND IN DATA - Processing title...
+Essentials Of The U.s. Health Care System 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781284235111
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952355252801401'} to seen books
+9952356147401401 NOT FOUND IN DATA - Processing title...
+Love, Simon 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9786317273801
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952356147401401'} to seen books
+9952356149301401 NOT FOUND IN DATA - Processing title...
+The History Of Marketing Science 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9789814596480
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952356149301401'} to seen books
+9952356149801401 NOT FOUND IN DATA - Processing title...
+Who Moved My Cheese? : An Amazing Way To Deal With Change In Your Work And In Your Life 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781101495438
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952356149801401'} to seen books
+9952356151201401 NOT FOUND IN DATA - Processing title...
+At The Intersection : Understanding And Supporting First-generation Students 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781642670639
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952356151201401'} to seen books
+9952356151401401 NOT FOUND IN DATA - Processing title...
+How College Students Succeed : Making Meaning Across Disciplinary Perspectives 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781642671353
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952356151401401'} to seen books
+9952356151701401 NOT FOUND IN DATA - Processing title...
+Managing The Unthinkable : Crisis Preparation And Response For Campus Leaders 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781620360736
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952356151701401'} to seen books
+9952356151801401 NOT FOUND IN DATA - Processing title...
+Advising Lesbian, Gay, Bisexual, Transgender, And Queer College Students 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781642671797
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952356151801401'} to seen books
+9952356152301401 NOT FOUND IN DATA - Processing title...
+Promoting Inclusive Classroom Dynamics In Higher Education : A Research-based Pedagogical Guide For Faculty 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781620369005
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952356152301401'} to seen books
+9952356252401401 NOT FOUND IN DATA - Processing title...
+Polyarchy : Participation And Opposition 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780300015652
+No Google book summary available
+Checking Open Library cover API for 9780300015652
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780300015652&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780300015652-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9780300015652-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=LRG7ngEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=LRG7ngEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=LRG7ngEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=LRG7ngEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 9411
+googleSmallThumbnailImageSize - 9411
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=LRG7ngEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=LRG7ngEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952356252401401'}
+9952356547301401 NOT FOUND IN DATA - Processing title...
+Proteins : Structure And Function 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780470012413
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952356547301401'} to seen books
+9952356547401401 NOT FOUND IN DATA - Processing title...
+Private Bodies, Public Texts : Race, Gender, And A Cultural Bioethics 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780822393719
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952356547401401'} to seen books
+9952356552301401 NOT FOUND IN DATA - Processing title...
+Now And At The Hour Of Our Death 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781908276636
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952356552301401'} to seen books
+9952356552801401 NOT FOUND IN DATA - Processing title...
+Antitrust Economics At A Time Of Upheaval : Recent Competition Policy Cases On Two Continents 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781950769315
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952356552801401'} to seen books
+9952356651601401 NOT FOUND IN DATA - Processing title...
+Cindy Sherman : The Early Works 1975-1977 : Catalogue Raisonné 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9783775729819
+Found Google book summary
+Checking Open Library cover API for 9783775729819
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9783775729819&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9783775729819-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9783775729819-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=64ZfpJhzxx4C&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=64ZfpJhzxx4C&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=64ZfpJhzxx4C&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=64ZfpJhzxx4C&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 2794
+googleSmallThumbnailImageSize - 2794
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=64ZfpJhzxx4C&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=64ZfpJhzxx4C&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 2414
+googleBigCoverImageSize - 2414
+Small Thumbnail larger than Big Cover - Falling back to Small Thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952356651601401'}
+9952356752301401 NOT FOUND IN DATA - Processing title...
+All The Black Girls Are Activists : A Fourth Wave Womanist Pursuit Of Dreams As Radical Resistance 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781955905466
+Found Google book summary
+Checking Open Library cover API for 9781955905466
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781955905466&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781955905466-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9781955905466-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=KIZ2zwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=KIZ2zwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=KIZ2zwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=KIZ2zwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 9833
+googleSmallThumbnailImageSize - 9833
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=KIZ2zwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=KIZ2zwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952356752301401'}
+9952356752601401 NOT FOUND IN DATA - Processing title...
+Matchmaking In The Archive : 19 Conversations With The Dead And 3 Encounters With Ghosts 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:978823134; 97
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952356752601401'} to seen books
+9952356752701401 NOT FOUND IN DATA - Processing title...
+Neurovascular Nursing : Scope And Standards Of Practice 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781953985651
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952356752701401'} to seen books
+9952356852501401 NOT FOUND IN DATA - Processing title...
+Critical Praxis In Student Affairs : Social Justice In Action 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781642672756
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952356852501401'} to seen books
+9952356852601401 NOT FOUND IN DATA - Processing title...
+Scope And Standards Of Practice For Professional Ambulatory Care Nursing 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781940325804
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952356852601401'} to seen books
+9952356852701401 NOT FOUND IN DATA - Processing title...
+Public Health Nursing : Scope And Standards Of Practice 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780999308837
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952356852701401'} to seen books
+9952364652801401 NOT FOUND IN DATA - Processing title...
+Imperialism, Sovereignty, And The Making Of International Law 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780511081651
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952364652801401'} to seen books
+9952366052701401 NOT FOUND IN DATA - Processing title...
+Julia Morgan : An Intimate Biography Of The Trailblazing Architect 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781797215952
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952366052701401'} to seen books
+9952366152401401 NOT FOUND IN DATA - Processing title...
+Energy Economics 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000770773
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952366152401401'} to seen books
+9952366152601401 NOT FOUND IN DATA - Processing title...
+Industrial Ecology And Sustainability 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9789811277610
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952366152601401'} to seen books
+9952367152501401 NOT FOUND IN DATA - Processing title...
+The Venture Fund Blueprint : How To Access Capital, Achieve Launch, And Actualize Growth 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781544535975
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952367152501401'} to seen books
+9952367852701401 NOT FOUND IN DATA - Processing title...
+Lewin's Genes Xii 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781284104516
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952367852701401'} to seen books
+9952367952301401 NOT FOUND IN DATA - Processing title...
+Perfluoroalkyl Substances In The Environment : Theory, Practice, And Innovation 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780429487125
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952367952301401'} to seen books
+9952367952501401 NOT FOUND IN DATA - Processing title...
+Visualizing Health Care Statistics : A Data-mining Approach 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781284197662
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952367952501401'} to seen books
+9952368551801401 NOT FOUND IN DATA - Processing title...
+Basics Of The U.s. Health Care System 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781284170023
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952368551801401'} to seen books
+9952368749501401 NOT FOUND IN DATA - Processing title...
+Welfare For Markets : A Global History Of Basic Income 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780226823683
+Found Google book summary
+Checking Open Library cover API for 9780226823683
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780226823683&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780226823683-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9780226823683-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=AYqsEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=AYqsEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=AYqsEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=AYqsEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 11270
+googleSmallThumbnailImageSize - 11270
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=AYqsEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=AYqsEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 77902
+googleBigCoverImageSize - 77902
+Using Zoomed Google Cover
+Adding book to data file...
+9952368852001401 NOT FOUND IN DATA - Processing title...
+Becoming A Therapist : What Do I Say, And Why?.
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781462549573
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952368852001401'} to seen books
+9952368852201401 NOT FOUND IN DATA - Processing title...
+Short-term Play Therapy For Children 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781462520282
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952368852201401'} to seen books
+9952368852301401 NOT FOUND IN DATA - Processing title...
+Essential Psychotherapies : Theory And Practice 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781462540976
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952368852301401'} to seen books
+9952368946701401 NOT FOUND IN DATA - Processing title...
+Modern Japanese Cuisine : Food, Power And National Identity 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781861896209
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952368946701401'} to seen books
+9952369251101401 NOT FOUND IN DATA - Processing title...
+Eat The Rich 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781684158324
+Found Google book summary
+Checking Open Library cover API for 9781684158324
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781684158324&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781684158324-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9781684158324-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=0b-vzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=0b-vzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=0b-vzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=0b-vzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 7131
+googleSmallThumbnailImageSize - 7131
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=0b-vzgEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=0b-vzgEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952369251101401'}
+9952369251501401 NOT FOUND IN DATA - Processing title...
+Player's Handbook.
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780786965601
+Found Google book summary
+Checking Open Library cover API for 9780786965601
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780786965601&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780786965601-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9780786965601-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=vQSPEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=vQSPEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=vQSPEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=vQSPEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 11764
+googleSmallThumbnailImageSize - 11764
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=vQSPEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=vQSPEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 246264
+googleBigCoverImageSize - 246264
+LARGE GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952369251501401'}
+9952369252401401 NOT FOUND IN DATA - Processing title...
+Under The Eye Of Power : How Fear Of Secret Societies Shapes American Democracy 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780593299456
+Found Google book summary
+Checking Open Library cover API for 9780593299456
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780593299456&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780593299456-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9780593299456-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=H86UEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=H86UEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=H86UEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=H86UEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 13645
+googleSmallThumbnailImageSize - 13645
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=H86UEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=H86UEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 56255
+googleBigCoverImageSize - 56255
+Using Zoomed Google Cover
+Adding book to data file...
+9952370085301401 NOT FOUND IN DATA - Processing title...
+Risk : The Game Of Strategic Conquest.
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:B01ALHAIWG
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952370085301401'} to seen books
+9952370552801401 NOT FOUND IN DATA - Processing title...
+Politics And The Anthropocene 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781509537723
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952370552801401'} to seen books
+9952371052601401 NOT FOUND IN DATA - Processing title...
+Lost Artefacts From Medieval England And France : Representation, Reimagination, Recovery 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781800105461
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952371052601401'} to seen books
+9952372550601401 NOT FOUND IN DATA - Processing title...
+Action Research 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781544355931
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952372550601401'} to seen books
+9952375446701401 NOT FOUND IN DATA - Processing title...
+Secrets Of Analytical Leaders 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781935504344
+Found Google book summary
+Checking Open Library cover API for 9781935504344
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781935504344&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781935504344-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9781935504344-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=1omAMAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=1omAMAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=1omAMAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=1omAMAEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 9945
+googleSmallThumbnailImageSize - 9945
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=1omAMAEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=1omAMAEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952375446701401'}
+9952375447501401 NOT FOUND IN DATA - Processing title...
+The Four Corners : A National Sacrifice Area? 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781594586316
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952375447501401'} to seen books
+9952375450801401 NOT FOUND IN DATA - Processing title...
+Drawing : The Motive Force Of Architecture 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781118700617
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952375450801401'} to seen books
+9952375652601401 NOT FOUND IN DATA - Processing title...
+Uniform Commercial Code In A Nutshell 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781628106251
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952375652601401'} to seen books
+9952375851201401 NOT FOUND IN DATA - Processing title...
+Summary Of Rob Fitzpatrick's The Mom Test.
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781669343318
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952375851201401'} to seen books
+9952375851301401 NOT FOUND IN DATA - Processing title...
+Clinical Pharmacist Tools To Deliver Rational Medication Use 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:978575
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952375851301401'} to seen books
+9952375946901401 NOT FOUND IN DATA - Processing title...
+The Responsive Chord : How Media Manipulate You: What You Buy ... Who You Vote For ... And How You Think 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781633536081
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952375946901401'} to seen books
+9952376051701401 NOT FOUND IN DATA - Processing title...
+Never Whistle At Night : An Indigenous Dark Fiction Anthology 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780593468463
+Found Google book summary
+Checking Open Library cover API for 9780593468463
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780593468463&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780593468463-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9780593468463-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=LQbCEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=LQbCEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=LQbCEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=LQbCEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 24186
+googleSmallThumbnailImageSize - 24186
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=LQbCEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=LQbCEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 116502
+googleBigCoverImageSize - 116502
+Using Zoomed Google Cover
+Adding book to data file...
+9952376052101401 NOT FOUND IN DATA - Processing title...
+That's Enough, Folks : Black Images In Animated Cartoons, 1900-1960 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780585114361
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952376052101401'} to seen books
+9952376052801401 NOT FOUND IN DATA - Processing title...
+Against Technoableism : Rethinking Who Needs Improvement 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781324036661
+Found Google book summary
+Checking Open Library cover API for 9781324036661
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781324036661&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781324036661-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9781324036661-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=J0SczwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=J0SczwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=J0SczwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=J0SczwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 16744
+googleSmallThumbnailImageSize - 16744
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=J0SczwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=J0SczwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Adding book to data file...
+9952376151601401 NOT FOUND IN DATA - Processing title...
+Inclusive Screenwriting For Film And Television 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000584226
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952376151601401'} to seen books
+9952376151701401 NOT FOUND IN DATA - Processing title...
+How Documentaries Work 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780197554142
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952376151701401'} to seen books
+9952376152201401 NOT FOUND IN DATA - Processing title...
+Gather 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781536231113
+Found Google book summary
+Checking Open Library cover API for 9781536231113
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781536231113&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781536231113-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9781536231113-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=uYC7EAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=uYC7EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=uYC7EAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=uYC7EAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 15454
+googleSmallThumbnailImageSize - 15454
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=uYC7EAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=uYC7EAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 114319
+googleBigCoverImageSize - 114319
+Using Zoomed Google Cover
+Adding book to data file...
+9952376549401401 NOT FOUND IN DATA - Processing title...
+African Activists In A Decolonising World : The Making Of An Anticolonial Culture, 1952-1966 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781009277020
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952376549401401'} to seen books
+9952376549701401 NOT FOUND IN DATA - Processing title...
+Giving The Past A Voice : Oral History On Communism In Translation 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9782875744593
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952376549701401'} to seen books
+9952376550501401 NOT FOUND IN DATA - Processing title...
+The Cq Press Writing Guide For Public Policy 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781071858295
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952376550501401'} to seen books
+9952376552001401 NOT FOUND IN DATA - Processing title...
+The Right To Look : A Counterhistory Of Visuality 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781283335225
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952376552001401'} to seen books
+9952384731401401 NOT FOUND IN DATA - Processing title...
+Salt The Water 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780593529317
+Found Google book summary
+Checking Open Library cover API for 9780593529317
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780593529317&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780593529317-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9780593529317-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=Oi29EAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=Oi29EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=Oi29EAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=Oi29EAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 18537
+googleSmallThumbnailImageSize - 18537
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=Oi29EAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=Oi29EAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 90466
+googleBigCoverImageSize - 90466
+Using Zoomed Google Cover
+Adding book to data file...
+9952385552601401 NOT FOUND IN DATA - Processing title...
+Turnock's Public Health : What It Is And How It Works 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781284181210
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952385552601401'} to seen books
+9952385852801401 NOT FOUND IN DATA - Processing title...
+The Invention Of Race In The European Middle Ages 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781108381710
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952385852801401'} to seen books
+9952386252001401 NOT FOUND IN DATA - Processing title...
+Reclaiming Queer : Activist & Academic Rhetorics Of Resistance 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780817387518
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952386252001401'} to seen books
+9952386552701401 NOT FOUND IN DATA - Processing title...
+The Return Of Cultural Heritage To Latin America : Nationalism, Policy, And Politics In Colombia, Mexico, And Peru 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781003243885
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952386552701401'} to seen books
+9952387852801401 NOT FOUND IN DATA - Processing title...
+Trusts And Private Wealth Management : Developments And Directions 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781009049399
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952387852801401'} to seen books
+9952387952701401 NOT FOUND IN DATA - Processing title...
+Contemporary Museums : Tension Between Universalist And Communitarian Approaches 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:978X; 9781394
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952387952701401'} to seen books
+9952388252801401 NOT FOUND IN DATA - Processing title...
+Applied Missing Data Analysis 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781462550005
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952388252801401'} to seen books
+9952389751001401 NOT FOUND IN DATA - Processing title...
+Everything I Learned, I Learned In A Chinese Restaurant : A Memoir 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780316507653
+Found Google book summary
+Checking Open Library cover API for 9780316507653
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780316507653&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780316507653-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9780316507653-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=zk-rzwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=zk-rzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=zk-rzwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=zk-rzwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 13099
+googleSmallThumbnailImageSize - 13099
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=zk-rzwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=zk-rzwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952389751001401'}
+9952389751901401 NOT FOUND IN DATA - Processing title...
+Billionaires In World Politics 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780191887079
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952389751901401'} to seen books
+9952389752601401 NOT FOUND IN DATA - Processing title...
+Everything I Need I Get From You : How Fangirls Created The Internet As We Know It 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780374539184
+Found Google book summary
+Checking Open Library cover API for 9780374539184
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780374539184&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780374539184-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9780374539184-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=381EEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=381EEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=381EEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=381EEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 14157
+googleSmallThumbnailImageSize - 14157
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=381EEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=381EEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 246264
+googleBigCoverImageSize - 246264
+LARGE GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952389752601401'}
+9952389852401401 NOT FOUND IN DATA - Processing title...
+The Woman In Me 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781668009048
+Found Google book summary
+Checking Open Library cover API for 9781668009048
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781668009048&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781668009048-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9781668009048-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=15p5zwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=15p5zwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=15p5zwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=15p5zwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 7805
+googleSmallThumbnailImageSize - 7805
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=15p5zwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=15p5zwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952389852401401'}
+9952389852501401 NOT FOUND IN DATA - Processing title...
+The Making Of American Buddhism 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780197641590
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952389852501401'} to seen books
+9952389852601401 NOT FOUND IN DATA - Processing title...
+System Collapse 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781250826978
+Found Google book summary
+Checking Open Library cover API for 9781250826978
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781250826978&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781250826978-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9781250826978-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=jBGhEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=jBGhEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=jBGhEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=jBGhEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 10563
+googleSmallThumbnailImageSize - 10563
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=jBGhEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=jBGhEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 246264
+googleBigCoverImageSize - 246264
+LARGE GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952389852601401'}
+9952391149601401 NOT FOUND IN DATA - Processing title...
+Gather 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781536231113
+Found Google book summary
+Checking Open Library cover API for 9781536231113
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781536231113&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781536231113-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9781536231113-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=uYC7EAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=uYC7EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=uYC7EAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=uYC7EAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 15454
+googleSmallThumbnailImageSize - 15454
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=uYC7EAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=uYC7EAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 114319
+googleBigCoverImageSize - 114319
+Using Zoomed Google Cover
+Adding book to data file...
+9952391150701401 NOT FOUND IN DATA - Processing title...
+An Impossible Thing To Say 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780063248359
+No Google book summary available
+Checking Open Library cover API for 9780063248359
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780063248359&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780063248359-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9780063248359-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=2BSlzwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=2BSlzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=2BSlzwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=2BSlzwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 17526
+googleSmallThumbnailImageSize - 17526
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=2BSlzwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=2BSlzwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Adding book to data file...
+9952391151201401 NOT FOUND IN DATA - Processing title...
+Duel 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781534496552
+Found Google book summary
+Checking Open Library cover API for 9781534496552
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781534496552&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781534496552-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9781534496552-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=12CvEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=12CvEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=12CvEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=12CvEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 12543
+googleSmallThumbnailImageSize - 12543
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=12CvEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=12CvEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 31116
+googleBigCoverImageSize - 31116
+Using Zoomed Google Cover
+Adding book to data file...
+9952392751501401 NOT FOUND IN DATA - Processing title...
+Mass Supervision : Probation, Parole, And The Illusion Of Safety And Freedom 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:978172; 97816
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952392751501401'} to seen books
+9952392852201401 NOT FOUND IN DATA - Processing title...
+The Contested World Economy : The Deep And Global Roots Of International Political Economy 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781009337489
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952392852201401'} to seen books
+9952392852301401 NOT FOUND IN DATA - Processing title...
+The Inexact And Separate Science Of Economics 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781009320283
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952392852301401'} to seen books
+9952392950801401 NOT FOUND IN DATA - Processing title...
+The Cambridge History Of The Second World War. Economy, Society And Culture 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781139626859
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952392950801401'} to seen books
+9952392950901401 NOT FOUND IN DATA - Processing title...
+The Cambridge History Of The Second World War.
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781139855969
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952392950901401'} to seen books
+9952392951001401 NOT FOUND IN DATA - Processing title...
+The Cambridge History Of The Second World War.
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781139524377
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952392951001401'} to seen books
+9952392952101401 NOT FOUND IN DATA - Processing title...
+Ending Mass Incarceration : Why It Persists And How To Achieve Meaningful Reform 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780197536599
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952392952101401'} to seen books
+9952392952701401 NOT FOUND IN DATA - Processing title...
+Diego Maradona : A Socio-cultural Study 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000789225
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952392952701401'} to seen books
+9952393049201401 NOT FOUND IN DATA - Processing title...
+The Woman In Me 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781668009048
+Found Google book summary
+Checking Open Library cover API for 9781668009048
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781668009048&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781668009048-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9781668009048-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=15p5zwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=15p5zwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=15p5zwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=15p5zwEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 7805
+googleSmallThumbnailImageSize - 7805
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=15p5zwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=15p5zwEACAAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 9103
+googleBigCoverImageSize - 9103
+FOUND 'image not available' GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952393049201401'}
+9952394752601401 NOT FOUND IN DATA - Processing title...
+Women Do Genre In Film And Television 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781315526089
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952394752601401'} to seen books
+9952395952401401 NOT FOUND IN DATA - Processing title...
+Corpus-assisted Discourse Studies 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781009168144
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952395952401401'} to seen books
+9952397250101401 NOT FOUND IN DATA - Processing title...
+The Ai Military Race : Common Good Governance In The Age Of Artificial Intelligence 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780191955136
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397250101401'} to seen books
+9952397250501401 NOT FOUND IN DATA - Processing title...
+The Victims' Rights Movement : What It Gets Right, What It Gets Wrong 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781479820757
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397250501401'} to seen books
+9952397250901401 NOT FOUND IN DATA - Processing title...
+Genome Editing Tools : A Brief Overview 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000463088
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397250901401'} to seen books
+9952397251901401 NOT FOUND IN DATA - Processing title...
+Bioethics And Racism : Practices, Conflicts, Negotiations And Struggles 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9783110765120
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397251901401'} to seen books
+9952397349401401 NOT FOUND IN DATA - Processing title...
+Medical Humanities : Ethics, Aesthetics, Politics 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000961591
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397349401401'} to seen books
+9952397350601401 NOT FOUND IN DATA - Processing title...
+Non-governmental Organizations And The State In Latin America : Rethinking Roles In Sustainable Agricultural Development 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780203974377
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397350601401'} to seen books
+9952397350701401 NOT FOUND IN DATA - Processing title...
+Non-governmental Organizations And The State In Africa : Rethinking Roles In Sustainable Agricultural Development 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000941906
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397350701401'} to seen books
+9952397550301401 NOT FOUND IN DATA - Processing title...
+Investing For Social Impact, Economic Justice, And Racial Equity 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781639052097
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397550301401'} to seen books
+9952397550501401 NOT FOUND IN DATA - Processing title...
+Aba Sales & Use Tax Desk Book 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781639052530
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397550501401'} to seen books
+9952397551501401 NOT FOUND IN DATA - Processing title...
+U.s. Financial Privacy And Data Security : A Practical Guide 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781639053773
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397551501401'} to seen books
+9952397551701401 NOT FOUND IN DATA - Processing title...
+The Legal And Social Ramifications Of Pandemics On Civil Rights And Civil Liberties 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781639053698
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397551701401'} to seen books
+9952397651601401 NOT FOUND IN DATA - Processing title...
+Live Sports Media : The What, How And Why Of Sports Broadcasting 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781003165590
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397651601401'} to seen books
+9952397651701401 NOT FOUND IN DATA - Processing title...
+The Economics Of Sports Broadcasting 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780203003855
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397651701401'} to seen books
+9952397751601401 NOT FOUND IN DATA - Processing title...
+The Scholarly Communication Handbook : From Research Dissemination To Societal Impact 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781783306268
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397751601401'} to seen books
+9952397846801401 NOT FOUND IN DATA - Processing title...
+Scaffolding For Multilingual Learners In Elementary And Secondary Schools 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781003196228
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397846801401'} to seen books
+9952397847301401 NOT FOUND IN DATA - Processing title...
+Critical Whiteness Praxis In Higher Education : Considerations For The Pursuit Of Racial Justice On Campus 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781642672718
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397847301401'} to seen books
+9952397848001401 NOT FOUND IN DATA - Processing title...
+Empowering Women In Stem : Personal Stories And Career Journeys From Around The World 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000822137
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397848001401'} to seen books
+9952397848501401 NOT FOUND IN DATA - Processing title...
+Ethical Hacking : Techniques, Tools, And Countermeasures 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781284249002
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397848501401'} to seen books
+9952397849601401 NOT FOUND IN DATA - Processing title...
+Designing The Forest And Other Mass Timber Futures 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000836066
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397849601401'} to seen books
+9952397849701401 NOT FOUND IN DATA - Processing title...
+Experiments Manual For Principles Of Electronic Communication Systems 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781260789331
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397849701401'} to seen books
+9952397849801401 NOT FOUND IN DATA - Processing title...
+Meaningful Futures With Robots : Designing A New Coexistence 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000630428
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397849801401'} to seen books
+9952397850401401 NOT FOUND IN DATA - Processing title...
+Connected And Autonomous Vehicles : The Challenges Facing Cities And Regions 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000844993
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397850401401'} to seen books
+9952397850801401 NOT FOUND IN DATA - Processing title...
+The Coming Wave 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780593593967
+Found Google book summary
+Checking Open Library cover API for 9780593593967
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780593593967&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780593593967-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9780593593967-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=TQ-oEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=TQ-oEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=TQ-oEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=TQ-oEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 14129
+googleSmallThumbnailImageSize - 14129
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=TQ-oEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=TQ-oEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 88189
+googleBigCoverImageSize - 88189
+Using Zoomed Google Cover
+Adding book to data file...
+9952397850901401 NOT FOUND IN DATA - Processing title...
+The Active Defender : Immersion In The Offensive Security Mindset 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781119895220
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397850901401'} to seen books
+9952397851901401 NOT FOUND IN DATA - Processing title...
+Mechanical Properties And Characterization Of Additively Manufactured Materials 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000928983
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397851901401'} to seen books
+9952397852701401 NOT FOUND IN DATA - Processing title...
+No Miracles Needed : How Today's Technology Can Save Our Climate And Clean Our Air 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781009249553
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397852701401'} to seen books
+9952397951201401 NOT FOUND IN DATA - Processing title...
+Expressive Morphology In The Languages Of South Asia 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781315265629
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397951201401'} to seen books
+9952397951501401 NOT FOUND IN DATA - Processing title...
+Land Of Milk And Honey 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780593538241
+Found Google book summary
+Checking Open Library cover API for 9780593538241
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780593538241&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780593538241-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9780593538241-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=l9erEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=l9erEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=l9erEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=l9erEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 16269
+googleSmallThumbnailImageSize - 16269
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=l9erEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=l9erEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 84014
+googleBigCoverImageSize - 84014
+Using Zoomed Google Cover
+Adding book to data file...
+9952397951701401 NOT FOUND IN DATA - Processing title...
+Torture Survivors In Analytic Therapy : Jung, Politics, Culture 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000583618
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397951701401'} to seen books
+9952397952501401 NOT FOUND IN DATA - Processing title...
+The Development Of Emotional Competence In Young Children 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781462551781
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952397952501401'} to seen books
+9952399752401401 NOT FOUND IN DATA - Processing title...
+What Computers Still Can't Do : A Critique Of Artificial Reason 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780585330136
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952399752401401'} to seen books
+9952399847201401 NOT FOUND IN DATA - Processing title...
+The Reflective Practitioner : How Professionals Think In Action 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781351883160
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952399847201401'} to seen books
+9952399847401401 NOT FOUND IN DATA - Processing title...
+The Ethnographic Imagination 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780745678382
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952399847401401'} to seen books
+9952399847801401 NOT FOUND IN DATA - Processing title...
+African American Slavery And Disability : Bodies, Property, And Power In The Antebellum South, 1800-1860 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781136275326
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952399847801401'} to seen books
+9952399848001401 NOT FOUND IN DATA - Processing title...
+City Of Song : Music And The Making Of Modern Jerusalem 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780197546451
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952399848001401'} to seen books
+9952399848301401 NOT FOUND IN DATA - Processing title...
+Mathematical Analysis Of Machine Learning Algorithms 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781009093057
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952399848301401'} to seen books
+9952399848401401 NOT FOUND IN DATA - Processing title...
+The Impossible Quintic Made As Simple As Possible 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9798886979725
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952399848401401'} to seen books
+9952399848501401 NOT FOUND IN DATA - Processing title...
+Understanding Integro-differential Equations 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9798891131361
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952399848501401'} to seen books
+9952399849601401 NOT FOUND IN DATA - Processing title...
+Climate-smart Production Of Coffee : Improving Social And Environmental Sustainability 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781786764850
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952399849601401'} to seen books
+9952399850301401 NOT FOUND IN DATA - Processing title...
+Tungsten Carbides : Advances In Research And Applications 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9798891132610
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952399850301401'} to seen books
+9952399851101401 NOT FOUND IN DATA - Processing title...
+The Chemistry Of Calcium Carbonate 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9798886974485
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952399851101401'} to seen books
+9952399851201401 NOT FOUND IN DATA - Processing title...
+An Introduction To Legal, Regulatory And Intellectual Property Rights Issues In Biotechnology 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9789815080629
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952399851201401'} to seen books
+9952399851501401 NOT FOUND IN DATA - Processing title...
+Biotechnology : Scientific Advancement Versus Public Safety 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9789811259265
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952399851501401'} to seen books
+9952399852001401 NOT FOUND IN DATA - Processing title...
+Encyclopaedia Of Bioinformatics, Biotechnology And Bio-remediation 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9789387846173
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952399852001401'} to seen books
+9952399852301401 NOT FOUND IN DATA - Processing title...
+Cheminformatics And Bioinformatics At The Interface With Systems Biology : Bridging Chemistry And Medicine 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781839166037
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952399852301401'} to seen books
+9952399852801401 NOT FOUND IN DATA - Processing title...
+Introduction To Bioinformatics And Clinical Scientific Computing 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781003316244
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952399852801401'} to seen books
+9952400151901401 NOT FOUND IN DATA - Processing title...
+The Mental Health Of Gifted Intelligent Machines : Ai And The Mirror Of Human Psychology 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781003284482
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952400151901401'} to seen books
+9952400152801401 NOT FOUND IN DATA - Processing title...
+Metabolism And Medicine : The Physics Of Biological Engines.
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781003149873
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952400152801401'} to seen books
+9952400250601401 NOT FOUND IN DATA - Processing title...
+Back Exercise : Stabilize, Mobilize, And Reduce Pain 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781492594789
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952400250601401'} to seen books
+9952400250801401 NOT FOUND IN DATA - Processing title...
+Interpreting Musculoskeletal Images : Anatomy, Pathology And Emergency Reporting 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781000912982
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952400250801401'} to seen books
+9952400251501401 NOT FOUND IN DATA - Processing title...
+The Two-mile Time Machine : Ice Cores, Abrupt Climate Change, And Our Future 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781400839209
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952400251501401'} to seen books
+9952403252801401 NOT FOUND IN DATA - Processing title...
+Building Blocks Of Tabletop Game Design : An Encyclopaedia Of Mechanisms 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781003179184
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952403252801401'} to seen books
+9952404052501401 NOT FOUND IN DATA - Processing title...
+Getting To The Heart Of Science Communication : A Guide To Effective Engagement 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781642830750
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952404052501401'} to seen books
+9952404451801401 NOT FOUND IN DATA - Processing title...
+Lourenço Da Silva Mendonça And The Black Atlantic Abolitionist Movement In The Seventeenth Century 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781108974196
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952404451801401'} to seen books
+9952404952701401 NOT FOUND IN DATA - Processing title...
+Naturally Obsessed : The Making Of A Scientist 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781608832187
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952404952701401'} to seen books
+9952405552801401 NOT FOUND IN DATA - Processing title...
+Appropriate ; An Octoroon : Plays 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781559368018
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952405552801401'} to seen books
+9952405651101401 NOT FOUND IN DATA - Processing title...
+Colonial Internationalism And The Governmentality Of Empire, 1893-1982 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781009072229
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952405651101401'} to seen books
+9952405651601401 NOT FOUND IN DATA - Processing title...
+Latin America And The First World War 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781316411735
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952405651601401'} to seen books
+9952405651701401 NOT FOUND IN DATA - Processing title...
+Race, Rights And Reform : Black Activism In The French Empire And The United States From World War 1 To Cold War 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781108764971
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952405651701401'} to seen books
+9952406784801401 NOT FOUND IN DATA - Processing title...
+Inspire To Include 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9798872985884
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952406784801401'} to seen books
+9952407052401401 NOT FOUND IN DATA - Processing title...
+Open Standards And The Digital Age : History, Ideology, And Networks 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781139856553
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952407052401401'} to seen books
+9952407052501401 NOT FOUND IN DATA - Processing title...
+Letters To Lizzie : The Story Of Sixteen Men In The Civil War And The One Woman Who Connected Them All 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781631015014
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952407052501401'} to seen books
+9952408152701401 NOT FOUND IN DATA - Processing title...
+Sounding Our Way Home : Japanese American Musicking And The Politics Of Identity 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781496847683
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952408152701401'} to seen books
+9952408549601401 NOT FOUND IN DATA - Processing title...
+The Mystery Guest 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780593356180
+Found Google book summary
+Checking Open Library cover API for 9780593356180
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780593356180&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780593356180-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9780593356180-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=dFjAEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=dFjAEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=dFjAEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=dFjAEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 10578
+googleSmallThumbnailImageSize - 10578
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=dFjAEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=dFjAEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 246264
+googleBigCoverImageSize - 246264
+LARGE GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952408549601401'}
+9952408550101401 NOT FOUND IN DATA - Processing title...
+Fourth Wing 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781649374042
+Found Google book summary
+Checking Open Library cover API for 9781649374042
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781649374042&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781649374042-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9781649374042-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=6_CLEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=6_CLEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=6_CLEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=6_CLEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 13831
+googleSmallThumbnailImageSize - 13831
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=6_CLEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=6_CLEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 246264
+googleBigCoverImageSize - 246264
+LARGE GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952408550101401'}
+9952408550701401 NOT FOUND IN DATA - Processing title...
+Land Of Milk And Honey 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780593538241
+Found Google book summary
+Checking Open Library cover API for 9780593538241
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780593538241&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780593538241-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9780593538241-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=l9erEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=l9erEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=l9erEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=l9erEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 16269
+googleSmallThumbnailImageSize - 16269
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=l9erEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=l9erEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 84014
+googleBigCoverImageSize - 84014
+Using Zoomed Google Cover
+Adding book to data file...
+9952408550801401 NOT FOUND IN DATA - Processing title...
+The Lost Cause 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781250865939
+Found Google book summary
+Checking Open Library cover API for 9781250865939
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9781250865939&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9781250865939-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9781250865939-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=GemuEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=GemuEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=GemuEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=GemuEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api
+IMAGE-SIZE(Google): 13210
+googleSmallThumbnailImageSize - 13210
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=GemuEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=GemuEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 246264
+googleBigCoverImageSize - 246264
+LARGE GOOGLE PLACEHOLDER IMAGE Found - Falling back to small thumbnail
+Google SmallThumbnailImageSize image too small
+No Google cover - Skipping title
+{'mmsId': '9952408550801401'}
+9952408552101401 NOT FOUND IN DATA - Processing title...
+Day : A Novel 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780399591341
+Found Google book summary
+Checking Open Library cover API for 9780399591341
+Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9780399591341&format=json
+Checking cover image URL: https://covers.openlibrary.org/b/isbn/9780399591341-L.jpg
+IMAGE-SIZE(Google): None
+ERROR getting Cover image size: https://covers.openlibrary.org/b/isbn/9780399591341-L.jpg
+Open library cover too small - Checking Google Books...
+{'smallThumbnail': 'http://books.google.com/books/content?id=wWa8EAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api', 'thumbnail': 'http://books.google.com/books/content?id=wWa8EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api'}
+Checking googleSmallThumbnail size https://books.google.com/books/content?id=wWa8EAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=wWa8EAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+IMAGE-SIZE(Google): 5019
+googleSmallThumbnailImageSize - 5019
+Checking for zoomed cover
+Checking googleBigCover size from https://books.google.com/books/content?id=wWa8EAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+Checking cover image URL: https://books.google.com/books/content?id=wWa8EAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+IMAGE-SIZE(Google): 29383
+googleBigCoverImageSize - 29383
+Using Zoomed Google Cover
+Adding book to data file...
+9952409545501401 NOT FOUND IN DATA - Processing title...
+Statistical Mechanics : Theory And Molecular Simulation 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780191864582
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952409545501401'} to seen books
+9952409749801401 NOT FOUND IN DATA - Processing title...
+Worlding The Brain : Neurocentrism, Cognition And The Challenge Of The Arts And Humanities 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9789004681293
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952409749801401'} to seen books
+9952409851901401 NOT FOUND IN DATA - Processing title...
+Voodoo : The History Of A Racial Slur 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9780197689448
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952409851901401'} to seen books
+9952417152401401 NOT FOUND IN DATA - Processing title...
+Race, Representation, And Satire 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781666919288
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952417152401401'} to seen books
+9952421852801401 NOT FOUND IN DATA - Processing title...
+Introduction To Epidemiology 
+Getting book summary Google books API metadata...
+Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9781284170719
+Error encountered parsing Google Metadata
+{
+    "kind": "books#volumes",
+    "totalItems": 0
+}
+NO METADATA - Adding {'mmsId': '9952421852801401'} to seen books
+---------------------------
+---------------------------
+Size of incoming data feed (AllNewBooks.csv): 306
+Size of comparison file (newbooksAll.json): 2039
+Found 2253 book(s) already in newbooksAll.json.
+New size of newbooksAll.json: 2345
+Writing to new JSON file
+---------------------------
+DONE
