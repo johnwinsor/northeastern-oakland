@@ -14,7 +14,7 @@ npm run dev
    - Move AllNewBooks.csv from Downloads to "projects/northeastern-oakland/preprocessor"
      - `mv ~/Downloads/AllNewBooks.csv ~/projects/northeastern-oakland/preprocessor`
 3. Get Data from API
-   - https://api-na.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?path=%2Fshared%2FNortheastern%20University%2FJohnShared%2FAPI%2FNewBooksApp&limit=25&col_names=true&apikey=l8xx5852c9867ab64264901d17af13574837
+   - https://api-na.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?path=%2Fshared%2FNortheastern%20University%2FJohnShared%2FAPI%2FNewBooksApp&limit=25&col_names=true&apikey=APIKEY
 4. Run preprocessor from "projects/northeastern-oakland/preprocessor"
    - WEEKLY USAGE: `./processCSV.py AllNewBooks.csv allBooksSeen.json > logs/out-YYYYMMDD.txt `
    - Rescan books that were missing covers previously: `./processCSV.py AllNewBooks.csv ../api/static/newbooks.json > logs/out-yyyymmdd.txt`
