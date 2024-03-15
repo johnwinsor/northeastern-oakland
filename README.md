@@ -13,7 +13,9 @@ npm run dev
    - Export as "AllNewBooks.csv", It will download as a csv file to the local Downloads directory.
    - Move AllNewBooks.csv from Downloads to "projects/northeastern-oakland/preprocessor"
      - `mv ~/Downloads/AllNewBooks.csv ~/projects/northeastern-oakland/preprocessor`
-3. Run preprocessor from "projects/northeastern-oakland/preprocessor"
+3. Get Data from API
+   - https://api-na.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?path=%2Fshared%2FNortheastern%20University%2FJohnShared%2FAPI%2FNewBooksApp&limit=25&col_names=true&apikey=l8xx5852c9867ab64264901d17af13574837
+4. Run preprocessor from "projects/northeastern-oakland/preprocessor"
    - WEEKLY USAGE: `./processCSV.py AllNewBooks.csv allBooksSeen.json > logs/out-YYYYMMDD.txt `
    - Rescan books that were missing covers previously: `./processCSV.py AllNewBooks.csv ../api/static/newbooks.json > logs/out-yyyymmdd.txt`
    - Rescan all books: `./processCSV.py AllNewBooks.csv rescan.json > logs/out-yyyymmdd.txt`
@@ -24,8 +26,8 @@ npm run dev
      - newbooks.json
      - logs/out-YYYYMMDD.txt
    - move the resulting newbooks.json file to api/static overwriting the existing file.
-4. Commit changes and push to Github
-5. Deploy to librarystage
+5. Commit changes and push to Github
+6. Deploy to librarystage
    - ssh 
    - git pull
    - npm run build
