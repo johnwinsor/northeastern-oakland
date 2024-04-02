@@ -21,7 +21,7 @@ def get_books():
     if 'date' in request.args:
         date_limiter = request.args.get('date')
         date_obj = datetime.strptime(date_limiter, urlDateFormat)
-        books = [book for book in data if datetime.strptime(book["recDate"], recDateFormat) > date_obj]
+        books = [book for book in data if datetime.strptime(book["SortDate"], recDateFormat) > date_obj]
     else:
         books = data
     return jsonify(books)
@@ -38,21 +38,21 @@ def get_books_library(lib, subj):
     if library == "all":
         if subj:
             subject = urllib.parse.unquote(subj)
-            books = [book for book in data if book["subject"] == subject]
+            books = [book for book in data if book["ReportingCode"] == subject]
         else:
             books = data
     else:
         if subj:
             subject = urllib.parse.unquote(subj)
-            bks = [book for book in data if (book["library"] == library) or (book["library"] is None)]
-            books = [book for book in bks if book["subject"] == subject]
+            bks = [book for book in data if (book["LibraryName"] == library) or (book["LibraryName"] is None)]
+            books = [book for book in bks if book["ReportingCode"] == subject]
         else:
-            books = [book for book in data if book["library"] == library]
+            books = [book for book in data if book["LibraryName"] == library]
     
     if 'date' in request.args:
         date_limiter = request.args.get('date')
         date_obj = datetime.strptime(date_limiter, urlDateFormat)
-        b = [bk for bk in books if datetime.strptime(bk["recDate"] , recDateFormat) > date_obj]
+        b = [bk for bk in books if datetime.strptime(bk["SortDate"] , recDateFormat) > date_obj]
     else:
         b = books
         
@@ -64,10 +64,12 @@ def get_books_monitor():
     with app.open_resource('static/newbooks.json') as f:
         data = json.load(f)
     
-    books = [book for book in data if book["library"] == "F.W. Olin Library"]
+    books = [book for book in data if book["LibraryName"] == "F.W. Olin Library"]
+    # app.logger.warning(books)
     
     date_limiter = datetime.now() - timedelta(days=90, hours=0)
-    b = [bk for bk in books if datetime.strptime(bk["receivingDate"] , recDateFormat) > date_limiter]
+    app.logger.warning(date_limiter)
+    b = [bk for bk in books if datetime.strptime(bk["SortDate"] , urlDateFormat) > date_limiter]
     # app.logger.warning(books[1]["recDate"])
 
     return jsonify(b)
@@ -78,7 +80,7 @@ def get_subjects():
     with app.open_resource('static/newbooks.json') as f:
         data = json.load(f)
     
-    subjects = [ sub['subject'] for sub in data ]
+    subjects = [ sub['ReportingCode'] for sub in data ]
     subjects = list(set(subjects))
 
     return jsonify(subjects)

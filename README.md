@@ -1,6 +1,9 @@
 npm install
 npm run dev
 
+jq -r '[.[] | select(.SortDate!="9999-99-99")]' newbooks.json > ../api/static/newbooks.json
+jq -r '[.[] | select(.SortDate=="9999-99-99")]' newbooks.json > seenbooks.json
+
 1. Start the local development server
    - `npm run dev`
    - Go to the New Books page or Monitor page for the before view

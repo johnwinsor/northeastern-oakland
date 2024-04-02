@@ -17,15 +17,15 @@ export const Monitor = ({ data }: {data: any}) => {
                     
                     <div className="embla__container">
                             {data.map((slide: any, index: any) => {
-                                let callnoStatus = slide.callNo.replace(/Unknown/g, "In Processing");
-                                if (slide.location == "On order") {
+                                let callnoStatus = slide.PermanentCallNumber.replace(/Unknown/g, "In Processing");
+                                if (slide.LocationName == "On order") {
                                     callnoStatus = "In Processing";
                                 }
-                                if (slide.location != "On order") {
-                                    callnoStatus = slide.location + ": " + callnoStatus
+                                if (slide.LocationName != "On order") {
+                                    callnoStatus = slide.LocationName + ": " + callnoStatus
                                 }
-                                const splitTitle = slide.title.split(":")
-                                const authorArray = slide.author.split(",")
+                                const splitTitle = slide.Title.split(":")
+                                const authorArray = slide.Author.split(",")
                                 return (             
                                     <div className="embla__slide justify-center justify-items-center" key={index}>
 
@@ -43,7 +43,7 @@ export const Monitor = ({ data }: {data: any}) => {
                                                 <Text as="p" className="text-center text-2xl text-slate-50 line-clamp-2 max-w-lg">{ splitTitle }</Text>
                                                 <Text as="p" className="text-center text-md text-slate-50">{authorArray[1]} {authorArray[0]}</Text>
                                                 <Text as="p" className="text-xs md:text-sm lg-text-lg text-center text-slate-50">{callnoStatus}</Text>
-                                                <Text as="p" className="text-xs md:text-sm lg-text-lg text-center text-slate-50">Received: {slide.receivingDate}</Text>
+                                                <Text as="p" className="text-xs md:text-sm lg-text-lg text-center text-slate-50">Received: {slide.SortDate}</Text>
                                             </Flex>
 
                                         

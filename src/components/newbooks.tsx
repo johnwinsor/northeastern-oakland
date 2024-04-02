@@ -27,27 +27,30 @@ export const Newbooks = ({ data }: {data: any}, props: any) => {
                 <div className="embla__viewport" ref={emblaRef}>
                     <div className="embla__container h-full grid grid-flow-col auto-cols-100 md:auto-cols-33 xl:auto-cols-20">
                         {data.map((src: any, i: any) => {
-                            const library = src.library;
-                            const subject = src.subject;
-                            let callnoStatus = src.callNo.replace(/Unknown/g, "In Processing");
-                            if (src.location == "On order") {
+                            const library = src.LibraryName;
+                            const subject = src.ReportingCode;
+                            let callnoStatus = src.PermanentCallNumber.replace(/Unknown/g, "In Processing");
+                            if (src.LocationName == "On order") {
                                 callnoStatus = "In Processing";
                             }
-                            if (src.location != "On order") {
-                                callnoStatus = src.location + ": " + callnoStatus
+                            if (src.LocationName != "On order") {
+                                callnoStatus = src.LocationName + ": " + callnoStatus
                             }
                             let callno = callnoStatus.replace(/ - 2nd Floor/g, "");
-                            let availableDate = "Received: " + src.receivingDate
-                            const format = src.format;
+                            let availableDate = "Received: " + src.SortDate
+                            const format = src.Format;
                             if (format == "E") {
                                 callno = "Ebook";
-                                availableDate = "Activated: " + src.activationDate;
+                                availableDate = "Activated: " + src.PortfolioActivationDate;
                             }
                             const callnoDisplay = callno.replace(/Non-Fiction:|Fiction:/gi, "");
-                            const splitTitle = src.title.split(":")
+                            const splitTitle = src.Title.split(":")
                             
-                            let author = src.author.replace(/author\.|editor\.|publisher\.|;/gi, "");
-                            const authorArray = author.split(",")
+                            let authorArray: any = {}
+                            if (src.Author != null) {
+                                let author = src.Author.replace(/author\.|editor\.|publisher\.|;/gi, "");
+                                authorArray = author.split(",")
+                            }
                             return (
                                 <div className="embla__slide px-2" key={i}>
                                     <HoverCard.Root>
