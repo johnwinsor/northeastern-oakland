@@ -57,7 +57,7 @@ export const Newbooks = ({ data }: {data: any}, props: any) => {
                                         <HoverCard.Trigger asChild>
                                             <div className="relative mx-auto" style={{ position: 'relative', width: '250px', height: '350px' }}>
                                                 <Image
-                                                    src={src.coverurl}
+                                                    src={src.coverurl[0]}
                                                     className="ImageTrigger p-2 border-2 border-slate-300 bg-slate-50"
                                                     alt="alt"
                                                     sizes="500px"
