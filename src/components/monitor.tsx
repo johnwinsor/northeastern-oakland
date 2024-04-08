@@ -31,7 +31,7 @@ export const Monitor = ({ data }: {data: any}) => {
 
                                             <div id="image" className="relative rounded-lg h-full p-2 bg-slate-50 max-w-fit">
                                                 <Image
-                                                    src={slide.coverurl[0]}
+                                                    src={slide.coverurl}
                                                     width="0"
                                                     height="0"
                                                     sizes="100vw"
