@@ -153,10 +153,10 @@ def getAnalyticsJson():
     lastRecord = "9952428352701401"
 
     # Process Delta
-    almaUrl = f"https://api-na.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?path=%2Fshared%2FNortheastern%20University%2FJohnShared%2FAPI%2FNewBooksApp&limit={records}&apikey={almaKey}&filter=%3Csawx%3Aexpr%20xsi%3Atype%3D%22sawx%3Acomparison%22%20op%3D%22greater%22%0A%20%20%20%20xmlns%3Asaw%3D%22com.siebel.analytics.web%2Freport%2Fv1.1%22%20%0A%20%20%20%20xmlns%3Asawx%3D%22com.siebel.analytics.web%2Fexpression%2Fv1.1%22%20%0A%20%20%20%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20%0A%20%20%20%20xmlns%3Axsd%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%22%0A%3E%0A%20%20%20%20%3Csawx%3Aexpr%20xsi%3Atype%3D%22sawx%3AsqlExpression%22%3E%22Funds%20Expenditure%22.%22MMS%20Id%22%3C%2Fsawx%3Aexpr%3E%0A%20%20%20%20%3Csawx%3Aexpr%20xsi%3Atype%3D%22xsd%3Astring%22%3E{lastRecord}%3C%2Fsawx%3Aexpr%3E%0A%3C%2Fsawx%3Aexpr%3E"
+    almaUrl = f"https://api-na.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?path=%2Fshared%2FNortheastern%20University%2FJohnShared%2FAPI%2FAPI-Analysis&limit={records}&apikey={almaKey}&filter=%3Csawx%3Aexpr%20xsi%3Atype%3D%22sawx%3Acomparison%22%20op%3D%22greater%22%0Axmlns%3Asaw%3D%22com.siebel.analytics.web%2Freport%2Fv1.1%22%20%0Axmlns%3Asawx%3D%22com.siebel.analytics.web%2Fexpression%2Fv1.1%22%20%0Axmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20%0Axmlns%3Axsd%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%22%0A%3E%0A%3Csawx%3Aexpr%20xsi%3Atype%3D%22sawx%3AsqlExpression%22%3E%22Titles%22.%22MMS%20Id%22%3C%2Fsawx%3Aexpr%3E%0A%3Csawx%3Aexpr%20xsi%3Atype%3D%22xsd%3Astring%22%3E{lastRecord}%3C%2Fsawx%3Aexpr%3E%0A%3C%2Fsawx%3Aexpr%3E"
     
     # Process Full Dataset
-    # almaUrl = f"https://api-na.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?path=%2Fshared%2FNortheastern%20University%2FJohnShared%2FAPI%2FAPI&limit={records}&apikey={almaKey}"
+    #almaUrl = f"https://api-na.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?path=%2Fshared%2FNortheastern%20University%2FJohnShared%2FAPI%2FAPI-Analysis&limit={records}&apikey={almaKey}"
     booksJson = []
     IsFinished = False
     while not IsFinished:
@@ -171,46 +171,32 @@ def getAnalyticsJson():
                     rows = [rows]
                 for row in rows:
                     book = {}
-                    book['mmsId'] = row['Column12']
-                    if row['Column17'] != "0000-00-00":
-                        sortDate = row['Column17']
+                    book['mmsId'] = row['Column20']
+                    if row['Column1'] != "0000-00-00":
+                        sortDate = row['Column1']
                     else:
-                        sortDate = row['Column15']
+                        sortDate = row['Column8']
                     book['SortDate'] = sortDate
-                    book['AcquisitionMethodDescription'] = row['Column1']
-                    book['AcquisitionMethod'] = row['Column2']
-                    book['AuthorContributor'] = row['Column3']
-                    book['Author'] = row['Column4']
-                    book['FiscalPeriodDescription'] = row['Column5']
-                    book['Format'] = row['Column6']
-                    book['FundCode'] = row['Column7']
-                    book['FundName'] = row['Column8']
-                    book['FundType'] = row['Column9']
+                    book['AcquisitionMethod'] = row['Column4']
+                    book['AuthorContributor'] = row['Column17']
+                    book['Author'] = row['Column18']
+                    book['Format'] = row['Column5']
                     
-                    isbns = row['Column10']
+                    isbns = row['Column19']
                     isbn13 = getIsbn13(isbns)
                     book['isbn13'] = isbn13
                     
-                    book['ISBNS'] = row['Column10']
-                    book['MaterialType'] = row['Column11']
-                    book['ParentFundName'] = row['Column13']
-                    book['POLineCreationDateFilter'] = row['Column14']
-                    book['POLineCreationDate'] = row['Column15']
-                    book['POLineTypeName'] = row['Column16']
-                    book['ReceivingDate'] = row['Column17']
-                    book['ReceivingStatus'] = row['Column18']
-                    book['ReportingCode'] = row['Column19']
-                    book['SourceType'] = row['Column20']
-                    book['StatusActive'] = row['Column21']
-                    book['Status'] = row['Column22']
-                    title = titlecase(row['Column23'])
+                    book['ISBNS'] = row['Column19']
+                    book['MaterialType'] = row['Column3']
+                    book['POLineTypeName'] = row['Column7']
+                    book['ReceivingDate'] = row['Column8']
+                    book['ReportingCode'] = row['Column16']
+                    title = titlecase(row['Column22'])
                     book['Title'] = title
-                    book['VendorName'] = row['Column24']
-                    book['CampusName'] = row['Column25']
-                    book['LibraryName'] = row['Column26']
-                    book['LocationCode'] = row['Column27']
-                    book['LocationName'] = row['Column28']
-                    book['PermanentCallNumber'] = row['Column29']
+                    book['VendorName'] = row['Column10']
+                    book['LibraryName'] = row['Column6']
+                    book['LocationName'] = row['Column13']
+                    book['PermanentCallNumber'] = row['Column14']
                     booksJson.append(book)
             except KeyError:
                 print("No new records")
@@ -298,6 +284,8 @@ def main():
             misses += 1
             print("Skipping title")
     
+    with open('rawnewbooks.json', "w") as r:
+        json.dump(newBooks, r, indent=4)
     cleanNewBooks = replace_null_with_empty_string(newBooks)
     filteredBooks = [d for d in cleanNewBooks if d['SortDate'] != '0000-00-00'] 
     sortedNewBooks = sorted(filteredBooks, key=operator.itemgetter('SortDate'), reverse=True)
