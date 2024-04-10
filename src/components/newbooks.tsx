@@ -80,7 +80,7 @@ export const Newbooks = ({ data }: {data: any}, props: any) => {
                                     </HoverCard.Root>
                                     <Flex id="bib" className="justify-center py-2">
                                         <Flex grow="1" direction="column" className="justify-center text-slate-700">
-                                            <a href={`https://onesearch.library.northeastern.edu/permalink/01NEU_INST/lt8evo/alma${src.mmsId}`} target="_blank" className="text-center">
+                                            <a href={`https://northeastern.alma.exlibrisgroup.com/discovery/fulldisplay?docid=alma${src.mmsId}&context=L&vid=01NEU_INST:NU&tab=default_tab&lang=en`} target="_blank" className="text-center">
                                                 <Text size="4" className="text-center line-clamp-1">{splitTitle[0]}</Text>
                                             </a>
                                             <Text className="text-xs md:text-sm lg-text-lg text-center line-clamp-1">{authorArray[1]} {authorArray[0]}</Text>
