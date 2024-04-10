@@ -29,11 +29,11 @@ export const Libguides = ({ data }: {data: any}, props: any) => {
                         {data.map((src: any, i: any) => {
                             const library = src.library;
                             const subject = src.subject;
-                            let callnoStatus = src.callNo.replace(/Unknown/g, "In Processing");
-                            if (src.location == "On order") {
+                            let callnoStatus = src.PermanentCallNumber.replace(/Unknown/g, "In Processing");
+                            if (src.LocationName == "On order") {
                                 callnoStatus = "In Processing";
                             }
-                            if (src.location != "On order") {
+                            if (src.LocationName != "On order") {
                                 callnoStatus = src.location + ": " + callnoStatus
                             }
                             let callno = callnoStatus.replace(/ - 2nd Floor/g, "");
@@ -42,15 +42,15 @@ export const Libguides = ({ data }: {data: any}, props: any) => {
                                 callno = "Ebook"
                             }
                             const callnoDisplay = callno.replace(/Non-Fiction:|Fiction:/gi, "");
-                            const splitTitle = src.title.split(":")
-                            const authorArray = src.author.split(",")
+                            const splitTitle = src.Title.split(":")
+                            const authorArray = src.Author.split(",")
                             return (
                                 <div className="embla__slide px-2" key={i}>
                                     <HoverCard.Root>
                                         <HoverCard.Trigger asChild>
                                             <div id="image" className="relative mx-auto text-center">
                                                 <Image
-                                                    src={src.coverurl}
+                                                    src={src.coverurl[0]}
                                                     width="250"
                                                     height="0"
                                                     className="ImageTrigger p-2 border-2 border-slate-300 bg-slate-50"

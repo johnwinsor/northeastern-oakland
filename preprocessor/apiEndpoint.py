@@ -11,7 +11,8 @@ import env
 
 googleKey = env.googleKey
 almaKey = env.almaKey
-records = sys.argv[1]
+# records = sys.argv[1]
+records = 25
 
 def replace_null_with_empty_string(obj):
     if isinstance(obj, dict):
@@ -177,6 +178,7 @@ def getAnalyticsJson():
                     else:
                         sortDate = row['Column8']
                     book['SortDate'] = sortDate
+                    book['AccessModel'] = row['Column2']
                     book['AcquisitionMethod'] = row['Column4']
                     book['AuthorContributor'] = row['Column17']
                     book['Author'] = row['Column18']
@@ -190,13 +192,19 @@ def getAnalyticsJson():
                     book['MaterialType'] = row['Column3']
                     book['POLineTypeName'] = row['Column7']
                     book['ReceivingDate'] = row['Column8']
-                    book['ReportingCode'] = row['Column16']
+                    book['PortfolioActivationDate'] = row['Column1']
+                    book['ReportingCode'] = row['Column9']
                     title = titlecase(row['Column22'])
                     book['Title'] = title
                     book['VendorName'] = row['Column10']
                     book['LibraryName'] = row['Column6']
+                    book['Description'] = row['Column12']
                     book['LocationName'] = row['Column13']
+                    book['TemporaryLocationName'] = row['Column16']
                     book['PermanentCallNumber'] = row['Column14']
+                    book['TitleCreationDate'] = row['Column21']
+                    book['Barcode'] = row['Column11']
+                    book['PhysicalItemId'] = row['Column15']
                     booksJson.append(book)
             except KeyError:
                 print("No new records")
@@ -284,8 +292,6 @@ def main():
             misses += 1
             print("Skipping title")
     
-    with open('rawnewbooks.json', "w") as r:
-        json.dump(newBooks, r, indent=4)
     cleanNewBooks = replace_null_with_empty_string(newBooks)
     filteredBooks = [d for d in cleanNewBooks if d['SortDate'] != '0000-00-00'] 
     sortedNewBooks = sorted(filteredBooks, key=operator.itemgetter('SortDate'), reverse=True)
