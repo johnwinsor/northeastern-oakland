@@ -36,11 +36,12 @@ jq -r '[.[] | select(.SortDate=="9999-99-99")]' newbooks.json > seenbooks.json
        - Partial Set (send last MMS ID as filter)
 3. Commit changes and push to Github
 4. Deploy to librarystage
-   - ssh 
-   - git pull
-   - npm run build
-   - pm2 restart library
-   - pm2 restart Flask
+   - ssh
+   - `cd /var/www/projects/northeastern-oakland`
+   - `git pull`
+   - `npm run build`
+   - `pm2 restart library`
+   - `pm2 restart Flask`
 
 Front End Applications
 
