@@ -151,10 +151,10 @@ def getAnalyticsJson():
 #     <sawx:expr xsi:type="xsd:string">9952423549901401</sawx:expr>
 # </sawx:expr>
 
-    lastRecord = "9952428352701401"
+    lastRecord = "9952437352501401"
 
     # Process Delta
-    # almaUrl = f"https://api-na.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?path=%2Fshared%2FNortheastern%20University%2FJohnShared%2FAPI%2FAPI-Analysis&limit={records}&apikey={almaKey}&filter=%3Csawx%3Aexpr%20xsi%3Atype%3D%22sawx%3Acomparison%22%20op%3D%22greater%22%0Axmlns%3Asaw%3D%22com.siebel.analytics.web%2Freport%2Fv1.1%22%20%0Axmlns%3Asawx%3D%22com.siebel.analytics.web%2Fexpression%2Fv1.1%22%20%0Axmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20%0Axmlns%3Axsd%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%22%0A%3E%0A%3Csawx%3Aexpr%20xsi%3Atype%3D%22sawx%3AsqlExpression%22%3E%22Titles%22.%22MMS%20Id%22%3C%2Fsawx%3Aexpr%3E%0A%3Csawx%3Aexpr%20xsi%3Atype%3D%22xsd%3Astring%22%3E{lastRecord}%3C%2Fsawx%3Aexpr%3E%0A%3C%2Fsawx%3Aexpr%3E"
+    #almaUrl = f"https://api-na.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?path=%2Fshared%2FNortheastern%20University%2FJohnShared%2FAPI%2FAPI-Analysis&limit={records}&apikey={almaKey}&filter=%3Csawx%3Aexpr%20xsi%3Atype%3D%22sawx%3Acomparison%22%20op%3D%22greater%22%0Axmlns%3Asaw%3D%22com.siebel.analytics.web%2Freport%2Fv1.1%22%20%0Axmlns%3Asawx%3D%22com.siebel.analytics.web%2Fexpression%2Fv1.1%22%20%0Axmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20%0Axmlns%3Axsd%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%22%0A%3E%0A%3Csawx%3Aexpr%20xsi%3Atype%3D%22sawx%3AsqlExpression%22%3E%22Titles%22.%22MMS%20Id%22%3C%2Fsawx%3Aexpr%3E%0A%3Csawx%3Aexpr%20xsi%3Atype%3D%22xsd%3Astring%22%3E{lastRecord}%3C%2Fsawx%3Aexpr%3E%0A%3C%2Fsawx%3Aexpr%3E"
     
     # Process Full Dataset
     almaUrl = f"https://api-na.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?path=%2Fshared%2FNortheastern%20University%2FJohnShared%2FAPI%2FAPI-Analysis&limit={records}&apikey={almaKey}"
@@ -168,13 +168,12 @@ def getAnalyticsJson():
             try:
                 rows = my_dict['report']['QueryResult']['ResultXml']['rowset']['Row']
                 if not isinstance(rows, list):
-                    # raise ValueError("Expected a list of dictionaries")
                     rows = [rows]
                 for row in rows:
                     book = {}
                     book['mmsId'] = row['Column20']
-                    if row['Column1'] != "0000-00-00":
-                        sortDate = row['Column1']
+                    if row['Column5'] == "E":
+                        sortDate = row['Column21']
                     else:
                         sortDate = row['Column8']
                     book['SortDate'] = sortDate
@@ -224,6 +223,7 @@ def main():
     dataLength = len(analyticsJson)
     print(f"Found {dataLength} records in Analytics report")
     newBooks = []
+    missingBooks = []
     counter = 1
     hits = 0
     misses = 0
@@ -231,12 +231,14 @@ def main():
         print("------------------------------------")
         print(counter)
         counter+=1
-        if book['isbn13']:
-            print(book['isbn13'])
+        try:
+            isbn13 = book['isbn13']
+            print(isbn13)
             print(book['Title'])
             time.sleep(1)
             googleBook = getGoogleBook(book['isbn13'])
-            if 'items' in googleBook:
+            try:
+                item = googleBook['items'][0]
                 if 'description' in googleBook['items'][0]['volumeInfo']:
                     summary = googleBook['items'][0]['volumeInfo']['description']
                     print("Found Google book summary")
@@ -258,8 +260,8 @@ def main():
                         else:
                             print("No suitable Open Library book cover found")
                             print("Skipping title")
-                            missingbook = {'mmsId': book['mmsId'], 'isbn13': book['isbn13'], 'SortDate': '9999-99-99'}
-                            newBooks.append(missingbook)
+                            missingbook = {'mmsId': book['mmsId'], 'isbn13': book['isbn13'], 'SortDate': '9999-99-99', 'error': 'No suitable book cover found'}
+                            missingBooks.append(missingbook)
                             misses += 1
                             continue      
                 else:
@@ -271,35 +273,43 @@ def main():
                     else:
                         print(f"No suitable Open Library book cover found")
                         print("Skipping title")
-                        missingbook = {'mmsId': book['mmsId'], 'isbn13': book['isbn13'], 'SortDate': '9999-99-99'}
-                        newBooks.append(missingbook)
+                        missingbook = {'mmsId': book['mmsId'], 'isbn13': book['isbn13'], 'SortDate': '9999-99-99', 'error': 'No suitable book cover found'}
+                        missingBooks.append(missingbook)
                         misses += 1
                         continue
                 hits += 1
                 newBooks.append(book)
-            else:
+            except:
                 print('NO GOOGLE METADATA')
                 print("Skipping title")
-                missingbook = {'mmsId': book['mmsId'], 'isbn13': book['isbn13'], 'SortDate': '9999-99-99'}
-                newBooks.append(missingbook)
+                missingbook = {'mmsId': book['mmsId'], 'isbn13': book['isbn13'], 'SortDate': '9999-99-99', 'error': 'NO GOOGLE METADATA'}
+                missingBooks.append(missingbook)
                 misses += 1
                 continue
-        else:
+        except:
             print("No ISBN13")
             print(book['Title'])
-            missingbook = {'mmsId': book['mmsId'], 'isbn13': book['isbn13'], 'SortDate': '9999-99-99'}
-            newBooks.append(missingbook)
+            missingbook = {'mmsId': book['mmsId'], 'isbn13': book['isbn13'], 'SortDate': '9999-99-99', 'error': 'No ISBN13'}
+            missingBooks.append(missingbook)
             misses += 1
             print("Skipping title")
     
     cleanNewBooks = replace_null_with_empty_string(newBooks)
-    filteredBooks = [d for d in cleanNewBooks if d['SortDate'] != '0000-00-00'] 
+    notReceivedBooks = [nr for nr in cleanNewBooks if nr['SortDate'] == '0000-00-00']
+    notReceivedBooksCount = len(notReceivedBooks)
+    filteredBooks = [fb for fb in cleanNewBooks if fb['SortDate'] != '0000-00-00']
     sortedNewBooks = sorted(filteredBooks, key=operator.itemgetter('SortDate'), reverse=True)
-    with open('newbooks.json', "w") as j:
-        json.dump(sortedNewBooks, j, indent=4)
+    sortedNewBooksCount = len(sortedNewBooks)
+    with open('newbooks.json', "w") as nb:
+        json.dump(sortedNewBooks, nb, indent=4)
+    with open('missingBooks.json', "w") as mb:
+        json.dump(missingBooks, mb, indent=4)
+    with open('notReceivedBooks.json', "w") as nrb:
+        json.dump(notReceivedBooks, nrb, indent=4)
     print("------------------------------------")
     print("newbooks.json written")
-    print(f"Matched {hits} titles with usable covers")
+    print(f"Matched {sortedNewBooksCount} titles with usable covers")
+    print(f"{notReceivedBooksCount} titles not yet received")
     print(f"Unable to match {misses} titles with usable covers")
     
 
