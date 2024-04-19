@@ -1,0 +1,238 @@
+18-Apr-24 16:35:05 - ++++++++++++++++++++++++++++++++++++
+18-Apr-24 16:35:05 - START OF LOG FOR 2024-04-18 16:35:05.070139
+18-Apr-24 16:35:14 - ------------------------------------
+18-Apr-24 16:35:14 - 1
+18-Apr-24 16:35:14 - 9952384356601401
+18-Apr-24 16:35:14 - Psychiatric-mental Health Nurse (pmh-bc(tm)) Certification Review /
+18-Apr-24 16:35:14 - FOUND BOOK in SEEN DATA
+18-Apr-24 16:35:14 - ------------------------------------
+18-Apr-24 16:35:14 - 2
+18-Apr-24 16:35:14 - 9952391652801401
+18-Apr-24 16:35:14 - 9789004529762
+18-Apr-24 16:35:14 - Women And Latin In The Early Modern Period.
+18-Apr-24 16:35:15 - Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9789004529762
+18-Apr-24 16:35:15 - Found Google book summary
+18-Apr-24 16:35:15 - Checking cover image URL: https://books.google.com/books/content?id=HtKLEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+18-Apr-24 16:35:15 - IMAGE-SIZE(Google): 7107
+18-Apr-24 16:35:15 - Checking cover image URL: https://books.google.com/books/content?id=HtKLEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+18-Apr-24 16:35:16 - IMAGE-SIZE(Google): 2788
+18-Apr-24 16:35:16 - No suitable Google book cover found
+18-Apr-24 16:35:16 - Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9789004529762&format=json
+18-Apr-24 16:35:16 - No suitable Open Library book cover found
+18-Apr-24 16:35:16 - Skipping title
+18-Apr-24 16:35:16 - ------------------------------------
+18-Apr-24 16:35:16 - Found 3111 records in existing dataset
+18-Apr-24 16:35:16 - Attempted to match 2 new titles from Analytics report with enhanced metadata.
+18-Apr-24 16:35:16 - Matched 0 titles with usable covers. Adding to Dataset and writing to newbooks.json.
+18-Apr-24 16:35:16 - New Dataset size: 3111
+18-Apr-24 16:35:16 - Found 1 titles in existing dataset
+18-Apr-24 16:35:16 - 0 titles not yet received and skipped
+18-Apr-24 16:35:16 - Unable to match 1 titles with usable covers
+18-Apr-24 16:39:22 - ++++++++++++++++++++++++++++++++++++
+18-Apr-24 16:39:22 - START OF LOG FOR 2024-04-18 16:39:22.298592
+18-Apr-24 16:39:33 - ------------------------------------
+18-Apr-24 16:39:33 - 1
+18-Apr-24 16:39:33 - 9952384356601401
+18-Apr-24 16:39:33 - Psychiatric-mental Health Nurse (pmh-bc(tm)) Certification Review /
+18-Apr-24 16:39:33 - FOUND BOOK in SEEN DATA
+18-Apr-24 16:39:33 - ------------------------------------
+18-Apr-24 16:39:33 - 2
+18-Apr-24 16:39:33 - 9952391652801401
+18-Apr-24 16:39:33 - 9789004529762
+18-Apr-24 16:39:33 - Women And Latin In The Early Modern Period.
+18-Apr-24 16:39:34 - Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9789004529762
+18-Apr-24 16:39:35 - Found Google book summary
+18-Apr-24 16:39:35 - Checking cover image URL: https://books.google.com/books/content?id=HtKLEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+18-Apr-24 16:39:35 - IMAGE-SIZE(Google): 7107
+18-Apr-24 16:39:35 - Checking cover image URL: https://books.google.com/books/content?id=HtKLEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+18-Apr-24 16:39:35 - IMAGE-SIZE(Google): 2788
+18-Apr-24 16:39:35 - No suitable Google book cover found
+18-Apr-24 16:39:35 - Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9789004529762&format=json
+18-Apr-24 16:39:35 - No suitable Open Library book cover found
+18-Apr-24 16:39:35 - Skipping title
+18-Apr-24 16:44:03 - ++++++++++++++++++++++++++++++++++++
+18-Apr-24 16:44:03 - START OF LOG FOR 2024-04-18 16:44:03.524738
+18-Apr-24 16:44:14 - ------------------------------------
+18-Apr-24 16:44:14 - 1
+18-Apr-24 16:44:14 - 9952384356601401
+18-Apr-24 16:44:14 - Psychiatric-mental Health Nurse (pmh-bc(tm)) Certification Review /
+18-Apr-24 16:44:14 - FOUND BOOK in SEEN DATA
+18-Apr-24 16:44:14 - ------------------------------------
+18-Apr-24 16:44:14 - 2
+18-Apr-24 16:44:14 - 9952391652801401
+18-Apr-24 16:44:14 - 9789004529762
+18-Apr-24 16:44:14 - Women And Latin In The Early Modern Period.
+18-Apr-24 16:44:15 - Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9789004529762
+18-Apr-24 16:44:15 - Found Google book summary
+18-Apr-24 16:44:15 - Checking cover image URL: https://books.google.com/books/content?id=HtKLEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+18-Apr-24 16:44:15 - IMAGE-SIZE(Google): 7107
+18-Apr-24 16:44:15 - Checking cover image URL: https://books.google.com/books/content?id=HtKLEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+18-Apr-24 16:44:15 - IMAGE-SIZE(Google): 2788
+18-Apr-24 16:44:15 - No suitable Google book cover found
+18-Apr-24 16:44:15 - Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9789004529762&format=json
+18-Apr-24 16:44:16 - No suitable Open Library book cover found
+18-Apr-24 16:44:16 - Skipping title
+18-Apr-24 16:45:29 - ++++++++++++++++++++++++++++++++++++
+18-Apr-24 16:45:29 - START OF LOG FOR 2024-04-18 16:45:29.011398
+18-Apr-24 16:45:41 - ------------------------------------
+18-Apr-24 16:45:41 - 1
+18-Apr-24 16:45:41 - 9952384356601401
+18-Apr-24 16:45:41 - Psychiatric-mental Health Nurse (pmh-bc(tm)) Certification Review /
+18-Apr-24 16:45:41 - FOUND BOOK in SEEN DATA
+18-Apr-24 16:45:41 - ------------------------------------
+18-Apr-24 16:45:41 - 2
+18-Apr-24 16:45:41 - 9952391652801401
+18-Apr-24 16:45:41 - 9789004529762
+18-Apr-24 16:45:41 - Women And Latin In The Early Modern Period.
+18-Apr-24 16:45:42 - Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9789004529762
+18-Apr-24 16:45:43 - Found Google book summary
+18-Apr-24 16:45:43 - Checking cover image URL: https://books.google.com/books/content?id=HtKLEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+18-Apr-24 16:45:43 - IMAGE-SIZE(Google): 7107
+18-Apr-24 16:45:43 - Checking cover image URL: https://books.google.com/books/content?id=HtKLEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+18-Apr-24 16:45:43 - IMAGE-SIZE(Google): 2788
+18-Apr-24 16:45:43 - No suitable Google book cover found
+18-Apr-24 16:45:43 - Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9789004529762&format=json
+18-Apr-24 16:45:43 - No suitable Open Library book cover found
+18-Apr-24 16:45:43 - Skipping title
+18-Apr-24 16:45:43 - ------------------------------------
+18-Apr-24 16:45:43 - Found 3111 records in existing dataset
+18-Apr-24 16:45:43 - Attempted to match 2 new titles from Analytics report with enhanced metadata.
+18-Apr-24 16:45:43 - Matched 0 titles with usable covers. Adding to Dataset and writing to newbooks.json.
+18-Apr-24 16:45:43 - New Dataset size: 3111
+18-Apr-24 16:45:43 - Found 1 titles in existing dataset
+18-Apr-24 16:45:43 - 0 titles not yet received and skipped
+18-Apr-24 16:45:43 - Unable to match 1 titles with usable covers
+18-Apr-24 17:00:11 - ++++++++++++++++++++++++++++++++++++
+18-Apr-24 17:00:11 - START OF LOG FOR 2024-04-18 17:00:11.803866
+18-Apr-24 17:00:24 - ------------------------------------
+18-Apr-24 17:00:24 - 1
+18-Apr-24 17:00:24 - 9952384356601401
+18-Apr-24 17:00:24 - Psychiatric-mental Health Nurse (pmh-bc(tm)) Certification Review /
+18-Apr-24 17:00:24 - FOUND BOOK in SEEN DATA
+18-Apr-24 17:00:24 - ------------------------------------
+18-Apr-24 17:00:24 - 2
+18-Apr-24 17:00:24 - 9952391652801401
+18-Apr-24 17:00:24 - 9789004529762
+18-Apr-24 17:00:24 - Women And Latin In The Early Modern Period.
+18-Apr-24 17:00:25 - Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9789004529762
+18-Apr-24 17:00:26 - Found Google book summary
+18-Apr-24 17:00:26 - Checking cover image URL: https://books.google.com/books/content?id=HtKLEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+18-Apr-24 17:00:26 - IMAGE-SIZE(Google): 7107
+18-Apr-24 17:00:26 - Checking cover image URL: https://books.google.com/books/content?id=HtKLEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+18-Apr-24 17:00:26 - IMAGE-SIZE(Google): 2788
+18-Apr-24 17:00:26 - No suitable Google book cover found
+18-Apr-24 17:00:26 - Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9789004529762&format=json
+18-Apr-24 17:00:26 - No suitable Open Library book cover found
+18-Apr-24 17:00:26 - Skipping title
+18-Apr-24 17:00:26 - ------------------------------------
+18-Apr-24 17:00:26 - Found 3111 records in existing dataset
+18-Apr-24 17:00:26 - Attempted to match 2 new titles from Analytics report with enhanced metadata.
+18-Apr-24 17:00:26 - Matched 0 titles with usable covers. Adding to Dataset and writing to newbooks.json.
+18-Apr-24 17:00:26 - New Dataset size: 3111
+18-Apr-24 17:00:26 - Found 1 titles in existing dataset
+18-Apr-24 17:00:26 - 0 titles not yet received and skipped
+18-Apr-24 17:00:26 - Unable to match 1 titles with usable covers
+18-Apr-24 17:02:09 - ++++++++++++++++++++++++++++++++++++
+18-Apr-24 17:02:09 - START OF LOG FOR 2024-04-18 17:02:09.437486
+18-Apr-24 17:02:21 - ------------------------------------
+18-Apr-24 17:02:21 - 1
+18-Apr-24 17:02:21 - 9952384356601401
+18-Apr-24 17:02:21 - Psychiatric-mental Health Nurse (pmh-bc(tm)) Certification Review /
+18-Apr-24 17:02:21 - FOUND BOOK in SEEN DATA
+18-Apr-24 17:02:21 - ------------------------------------
+18-Apr-24 17:02:21 - 2
+18-Apr-24 17:02:21 - 9952391652801401
+18-Apr-24 17:02:21 - 9789004529762
+18-Apr-24 17:02:21 - Women And Latin In The Early Modern Period.
+18-Apr-24 17:02:22 - Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9789004529762
+18-Apr-24 17:02:22 - Found Google book summary
+18-Apr-24 17:02:22 - Checking cover image URL: https://books.google.com/books/content?id=HtKLEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+18-Apr-24 17:02:23 - IMAGE-SIZE(Google): 7107
+18-Apr-24 17:02:23 - Checking cover image URL: https://books.google.com/books/content?id=HtKLEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+18-Apr-24 17:02:23 - IMAGE-SIZE(Google): 2788
+18-Apr-24 17:02:23 - No suitable Google book cover found
+18-Apr-24 17:02:23 - Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9789004529762&format=json
+18-Apr-24 17:02:23 - No suitable Open Library book cover found
+18-Apr-24 17:02:23 - Skipping title
+18-Apr-24 17:04:57 - ++++++++++++++++++++++++++++++++++++
+18-Apr-24 17:04:57 - START OF LOG FOR 2024-04-18 17:04:57.045253
+18-Apr-24 17:05:08 - ------------------------------------
+18-Apr-24 17:05:08 - 1
+18-Apr-24 17:05:08 - 9952384356601401
+18-Apr-24 17:05:08 - Psychiatric-mental Health Nurse (pmh-bc(tm)) Certification Review /
+18-Apr-24 17:05:08 - FOUND BOOK in SEEN DATA
+18-Apr-24 17:05:08 - ------------------------------------
+18-Apr-24 17:05:08 - 2
+18-Apr-24 17:05:08 - 9952391652801401
+18-Apr-24 17:05:08 - 9789004529762
+18-Apr-24 17:05:08 - Women And Latin In The Early Modern Period.
+18-Apr-24 17:05:09 - Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9789004529762
+18-Apr-24 17:05:09 - Found Google book summary
+18-Apr-24 17:05:09 - Checking cover image URL: https://books.google.com/books/content?id=HtKLEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+18-Apr-24 17:05:09 - IMAGE-SIZE(Google): 7107
+18-Apr-24 17:05:09 - Checking cover image URL: https://books.google.com/books/content?id=HtKLEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+18-Apr-24 17:05:10 - IMAGE-SIZE(Google): 2788
+18-Apr-24 17:05:10 - No suitable Google book cover found
+18-Apr-24 17:05:10 - Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9789004529762&format=json
+18-Apr-24 17:05:10 - No suitable Open Library book cover found
+18-Apr-24 17:05:10 - Skipping title
+18-Apr-24 17:08:31 - ++++++++++++++++++++++++++++++++++++
+18-Apr-24 17:08:31 - START OF LOG FOR 2024-04-18 17:08:31.578560
+18-Apr-24 17:08:42 - ------------------------------------
+18-Apr-24 17:08:42 - 1
+18-Apr-24 17:08:42 - 9952384356601401
+18-Apr-24 17:08:42 - Psychiatric-mental Health Nurse (pmh-bc(tm)) Certification Review /
+18-Apr-24 17:08:42 - FOUND BOOK in SEEN DATA
+18-Apr-24 17:08:42 - ------------------------------------
+18-Apr-24 17:08:42 - 2
+18-Apr-24 17:08:42 - 9952391652801401
+18-Apr-24 17:08:42 - 9789004529762
+18-Apr-24 17:08:42 - Women And Latin In The Early Modern Period.
+18-Apr-24 17:08:43 - Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9789004529762
+18-Apr-24 17:08:43 - Found Google book summary
+18-Apr-24 17:08:43 - Checking cover image URL: https://books.google.com/books/content?id=HtKLEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+18-Apr-24 17:08:43 - IMAGE-SIZE(Google): 7107
+18-Apr-24 17:08:43 - Checking cover image URL: https://books.google.com/books/content?id=HtKLEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+18-Apr-24 17:08:43 - IMAGE-SIZE(Google): 2788
+18-Apr-24 17:08:43 - No suitable Google book cover found
+18-Apr-24 17:08:43 - Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9789004529762&format=json
+18-Apr-24 17:08:44 - No suitable Open Library book cover found
+18-Apr-24 17:08:44 - Skipping title
+18-Apr-24 17:08:44 - ------------------------------------
+18-Apr-24 17:08:44 - Found 3111 records in existing dataset
+18-Apr-24 17:08:44 - Attempted to match 2 new titles from Analytics report with enhanced metadata.
+18-Apr-24 17:08:44 - Matched 0 titles with usable covers. Adding to Dataset and writing to newbooks.json.
+18-Apr-24 17:08:44 - New Dataset size: 3111
+18-Apr-24 17:08:44 - Found 1 titles in existing dataset
+18-Apr-24 17:08:44 - 0 titles not yet received and skipped
+18-Apr-24 17:08:44 - Unable to match 1 titles with usable covers
+18-Apr-24 17:11:42 - ++++++++++++++++++++++++++++++++++++
+18-Apr-24 17:11:42 - START OF LOG FOR 2024-04-18 17:11:42.194399
+18-Apr-24 17:11:54 - ------------------------------------
+18-Apr-24 17:11:54 - 1
+18-Apr-24 17:11:54 - 9952384356601401
+18-Apr-24 17:11:54 - Psychiatric-mental Health Nurse (pmh-bc(tm)) Certification Review /
+18-Apr-24 17:11:54 - FOUND BOOK in SEEN DATA
+18-Apr-24 17:11:54 - ------------------------------------
+18-Apr-24 17:11:54 - 2
+18-Apr-24 17:11:54 - 9952391652801401
+18-Apr-24 17:11:54 - 9789004529762
+18-Apr-24 17:11:54 - Women And Latin In The Early Modern Period.
+18-Apr-24 17:11:55 - Getting response from https://www.googleapis.com/books/v1/volumes?q=isbn:9789004529762
+18-Apr-24 17:11:55 - Found Google book summary
+18-Apr-24 17:11:55 - Checking cover image URL: https://books.google.com/books/content?id=HtKLEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api
+18-Apr-24 17:11:55 - IMAGE-SIZE(Google): 7107
+18-Apr-24 17:11:55 - Checking cover image URL: https://books.google.com/books/content?id=HtKLEAAAQBAJ&printsec=frontcover&img=1&zoom=10&source=gbs_api
+18-Apr-24 17:11:55 - IMAGE-SIZE(Google): 2788
+18-Apr-24 17:11:55 - No suitable Google book cover found
+18-Apr-24 17:11:55 - Getting response from https://openlibrary.org/api/books?bibkeys=ISBN:9789004529762&format=json
+18-Apr-24 17:11:56 - No suitable Open Library book cover found
+18-Apr-24 17:11:56 - Skipping title
+18-Apr-24 17:11:56 - ------------------------------------
+18-Apr-24 17:11:56 - Found 3111 records in existing dataset
+18-Apr-24 17:11:56 - Attempted to match 2 new titles from Analytics report with enhanced metadata.
+18-Apr-24 17:11:56 - Found 1 titles in existing dataset
+18-Apr-24 17:11:56 - Matched 0 titles with usable covers. Adding to Dataset and writing to newbooks.json.
+18-Apr-24 17:11:56 - New Dataset size: 3111
+18-Apr-24 17:11:56 - 0 titles not yet received and skipped
+18-Apr-24 17:11:56 - Unable to match 1 titles with usable covers

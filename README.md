@@ -49,3 +49,27 @@ Front End Applications
 2. Library Monitor - Appspace
 3. Libguides
    - https://northeastern.libapps.com/libguides/admin_c.php?g=1382992
+
+
+
+<sawx:expr xsi:type="sawx:comparison" op="greater"
+    xmlns:saw="com.siebel.analytics.web/report/v1.1" 
+    xmlns:sawx="com.siebel.analytics.web/expression/v1.1" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+>
+   <sawx:expr xsi:type="sawx:sqlExpression">"Funds Expenditure"."MMS Id"</sawx:expr>
+   <sawx:expr xsi:type="xsd:string">9952423549901401</sawx:expr>
+ </sawx:expr>
+
+<sawx:expr xsi:type="sawx:comparison" op="greater"
+  xmlns:saw="com.siebel.analytics.web/report/v1.1" 
+  xmlns:sawx="com.siebel.analytics.web/expression/v1.1" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+>
+  <sawx:expr xsi:type="sawx:sqlExpression">"Funds Expenditure"."PO Line Reference"</sawx:expr>
+  <sawx:expr xsi:type="xsd:string">POL-143700</sawx:expr>
+</sawx:expr>
+
+https://www.urlencoder.org/

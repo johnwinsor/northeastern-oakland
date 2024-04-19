@@ -41,10 +41,11 @@ export const Newbooks = ({ data }: {data: any}, props: any) => {
                             const format = src.Format;
                             if (format == "E") {
                                 callno = "Ebook";
-                                availableDate = "Activated: " + src.PortfolioActivationDate;
+                                availableDate = "Activated: " + src.TitleCreationDate;
                             }
                             const callnoDisplay = callno.replace(/Non-Fiction:|Fiction:/gi, "");
                             const splitTitle = src.Title.split(":")
+                            const cleanTitle = splitTitle[0].replace(/\/$/gi, "");
                             
                             let authorArray: any = {}
                             if (src.Author != null) {
@@ -81,7 +82,7 @@ export const Newbooks = ({ data }: {data: any}, props: any) => {
                                     <Flex id="bib" className="justify-center py-2">
                                         <Flex grow="1" direction="column" className="justify-center text-slate-700">
                                             <a href={`https://northeastern.alma.exlibrisgroup.com/discovery/fulldisplay?docid=alma${src.mmsId}&context=L&vid=01NEU_INST:NU&tab=default_tab&lang=en`} target="_blank" className="text-center">
-                                                <Text size="4" className="text-center line-clamp-1">{splitTitle[0]}</Text>
+                                                <Text size="4" className="text-center line-clamp-2">{cleanTitle}</Text>
                                             </a>
                                             <Text className="text-xs md:text-sm lg-text-lg text-center line-clamp-1">{authorArray[1]} {authorArray[0]}</Text>
                                             <Text className="text-xs md:text-sm lg-text-lg text-center">{library}</Text>
