@@ -29,13 +29,7 @@ export const Newbooks = ({ data }: {data: any}, props: any) => {
                         {data.map((src: any, i: any) => {
                             const library = src.LibraryName;
                             const subject = src.ReportingCode;
-                            let callnoStatus = src.PermanentCallNumber.replace(/Unknown/g, "In Processing");
-                            if (src.LocationName == "On order") {
-                                callnoStatus = "In Processing";
-                            }
-                            if (src.LocationName != "On order") {
-                                callnoStatus = src.LocationName + ": " + callnoStatus
-                            }
+                            const callnoStatus = src.LocationName + ": " + src.PermanentCallNumber
                             let callno = callnoStatus.replace(/ - 2nd Floor/g, "");
                             let availableDate = "Received: " + src.SortDate
                             const format = src.Format;
@@ -72,7 +66,7 @@ export const Newbooks = ({ data }: {data: any}, props: any) => {
                                         <HoverCard.Portal>
                                             <HoverCard.Content className="HoverCardContent text-xs md:text-sm overflow-hidden overflow-y-auto data-[side=bottom]:animate-slideUpAndFade data-[side=right]:animate-slideLeftAndFade data-[side=left]:animate-slideRightAndFade data-[side=top]:animate-slideDownAndFade w-[300px] rounded-md bg-white p-5 shadow-[hsl(206_22%_7%_/_35%)_0px_10px_38px_-10px,hsl(206_22%_7%_/_20%)_0px_10px_20px_-15px] data-[state=open]:transition-all" sideOffset={5} side="left">
                                                 <Flex grow="1" direction="column" gap="3">
-                                                    <Text color="ruby" className="text-lg">{splitTitle[0]}</Text>
+                                                    <Text color="ruby" className="text-lg">{cleanTitle}</Text>
                                                     <Text as="p">{src.summary}</Text>
                                                 </Flex>
                                                 <HoverCard.Arrow className="HoverCardArrow" />

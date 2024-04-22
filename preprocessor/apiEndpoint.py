@@ -135,16 +135,22 @@ def getGoogleCover(googleBook):
         smallThumbnail = googleItem['volumeInfo']['imageLinks']['smallThumbnail']
         googleSmallThumbnail = re.sub("http:", "https:", smallThumbnail)
         googleSmallThumbnailImageSize = getImageSize(googleSmallThumbnail)
+        logging.info(f"Getting Google Small Thumbnail book cover...")
         if int(googleSmallThumbnailImageSize) == 246264:
+            logging.info(f"Found UNUSABLE image for {googleSmallThumbnail}")
             return None
         if int(googleSmallThumbnailImageSize) > 10000:
+            logging.info(f"Found Usable Google Small Thumbnail book cover")
             return (googleSmallThumbnail, googleSmallThumbnailImageSize)
         else:
+            logging.info(f"Trying Zoomed Google book cover...")
             googleBigCover = getGoogleBigCover(googleSmallThumbnail)
             googleBigCoverImageSize = getImageSize(googleBigCover)
             if int(googleBigCoverImageSize) == 246264:
+                logging.info(f"Found UNUSABLE image for {googleSmallThumbnail}")
                 return None
             if int(googleBigCoverImageSize) > 10000:
+                logging.info(f"Found Usable Google Zoomed Thumbnail book cover")
                 return (googleBigCover, googleBigCoverImageSize)
             else:
                 return None
@@ -251,7 +257,7 @@ def main():
             seenBooks = json.load(seenBooksJson)
             
         seenDataCount = len(seenBooks)
-        print(f"Found {seenDataCount} seen records")
+        print(f"Existing Dataset has {seenDataCount} enhanced records")
         
         with open('notReceivedBooks.json', 'r') as startNotReceivedBooksJson:
             startNotReceivedBooks = json.load(startNotReceivedBooksJson)
@@ -265,8 +271,8 @@ def main():
         for book in tqdm(analyticsJson):
             sleep(0.5)
             counter+=1
-            logging.WARNING("------------------------------------------------------------")
-            logging.CRITICAL(counter)
+            logging.warning("------------------------------------------------------------")
+            logging.critical(counter)
             pol = book['POL']
             logging.info(pol)
             logging.info(book['Title'])
@@ -371,6 +377,8 @@ def main():
         print(f"Sorting Dataset...")
         sortedSeenBooks = sorted(seenBooks, key=operator.itemgetter('SortDate'), reverse=True)
         sortedSeenBooksCount = len(sortedSeenBooks)
+        
+        print(f"New Dataset size: {sortedSeenBooksCount}")
 
         print(f"Writing New Dataset to tempNewbooks.json...")
         with open('newbooksTemp.json', "w") as nb:
@@ -379,7 +387,7 @@ def main():
         sortedNewBooks = sorted(cleanNewBooks, key=operator.itemgetter('SortDate'), reverse=True)
         sortedNewBooksCount = len(sortedNewBooks)
         
-        print(f"Writing {newBooksCount} New Books Matched to newFoundBooks.json...")
+        logging.info(f"Writing {newBooksCount} New Books Matched to newFoundBooks.json...")
         with open('newFoundBooks.json', "w") as f:
             json.dump(sortedNewBooks, f, indent=4)
         
@@ -387,13 +395,13 @@ def main():
         print(f"Writing {endMissingCoversCount} Unmatched Books to missingCovers.json...")
         with open('missingCovers.json', "w") as f:
             json.dump(startMissingCovers, f, indent=4)
-        print(f"Missing Covers books changed from {startMissingCoversCount} to {endMissingCoversCount}")
+        print(f"Titles in missingCovers.json changed from {startMissingCoversCount} to {endMissingCoversCount}")
             
         endNotReceivedBooksCount = len(startNotReceivedBooks)
         print(f"Writing {endNotReceivedBooksCount} Non-Received Books to notReceivedBooks.json...")
         with open('notReceivedBooks.json', "w") as f:
             json.dump(startNotReceivedBooks, f, indent=4)
-        print(f"Not received books changed from {startNotReceivedBooksCount} to {endNotReceivedBooksCount}")
+        print(f"Titles in notReceivedBooks.json changed from {startNotReceivedBooksCount} to {endNotReceivedBooksCount}")
         
         
         logging.info("------------------------------------")
@@ -410,7 +418,6 @@ def main():
         oldfile = dest / f"newbooks.json"
         oldfile.replace(f"{dest}/newbooks.json.bak")
         source.replace(f"{dest}/newbooks.json")
-        print("DONE")
         print(f"Last POL Processed: {newLatestPOL}. Writing to lastRecord.txt")
         
         f = open("lastRecord.txt", "w")
