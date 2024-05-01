@@ -13,10 +13,10 @@ recDateFormat = '%Y-%m-%d'
 @app.route("/api/newbooks", methods=["GET"])
 def get_books():
     
-    with app.open_resource('static/newbooks.json') as f:
+    with app.open_resource('static/dataset.json') as f:
         d = json.load(f)
         
-    data = d[0 : 3000]
+    data = d['items'][0 : 3000]
     
     if 'date' in request.args:
         date_limiter = request.args.get('date')
@@ -30,7 +30,7 @@ def get_books():
 @app.route("/api/newbooks/<lib>/<subj>", methods=["GET"])
 def get_books_library(lib, subj):
     
-    with app.open_resource('static/newbooks.json') as f:
+    with app.open_resource('static/dataset.json') as f:
         data = json.load(f)
     
     library = urllib.parse.unquote(lib)
@@ -38,16 +38,16 @@ def get_books_library(lib, subj):
     if library == "all":
         if subj:
             subject = urllib.parse.unquote(subj)
-            books = [book for book in data if book["ReportingCode"] == subject]
+            books = [book for book in data['items'] if book["ReportingCode"] == subject]
         else:
-            books = data
+            books = data['items']
     else:
         if subj:
             subject = urllib.parse.unquote(subj)
-            bks = [book for book in data if (book["LibraryName"] == library) or (book["LibraryName"] is None)]
+            bks = [book for book in data['items'] if (book["LibraryName"] == library) or (book["LibraryName"] is None)]
             books = [book for book in bks if book["ReportingCode"] == subject]
         else:
-            books = [book for book in data if book["LibraryName"] == library]
+            books = [book for book in data['items'] if book["LibraryName"] == library]
     
     if 'date' in request.args:
         date_limiter = request.args.get('date')
@@ -61,10 +61,10 @@ def get_books_library(lib, subj):
 @app.route("/api/appspace", methods=["GET"])
 def get_books_monitor():
     
-    with app.open_resource('static/newbooks.json') as f:
+    with app.open_resource('static/dataset.json') as f:
         data = json.load(f)
     
-    books = [book for book in data if book["LibraryName"] == "F.W. Olin Library"]
+    books = [book for book in data['items'] if book["LibraryName"] == "F.W. Olin Library"]
     # app.logger.warning(books)
     
     date_limiter = datetime.now() - timedelta(days=90, hours=0)
@@ -77,10 +77,10 @@ def get_books_monitor():
 @app.route("/api/subjects", methods=["GET"])
 def get_subjects():
     
-    with app.open_resource('static/newbooks.json') as f:
+    with app.open_resource('static/dataset.json') as f:
         data = json.load(f)
     
-    subjects = [ sub['ReportingCode'] for sub in data ]
+    subjects = [ sub['ReportingCode'] for sub in data['items'] ]
     subjects = list(set(subjects))
 
     return jsonify(subjects)
@@ -88,10 +88,10 @@ def get_subjects():
 @app.route("/api/libraries", methods=["GET"])
 def get_libraries():
     
-    with app.open_resource('static/newbooks.json') as f:
+    with app.open_resource('static/dataset.json') as f:
         data = json.load(f)
     
-    libraries = [ lib['LibraryName'] for lib in data ]
+    libraries = [ lib['LibraryName'] for lib in data['items'] ]
     libraries = list(set(libraries))
 
     return jsonify(libraries)
