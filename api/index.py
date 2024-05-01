@@ -8,7 +8,7 @@ import json
 app = Flask(__name__)
 CORS(app)
 urlDateFormat = '%Y-%m-%d'
-recDateFormat = '%m/%d/%Y'
+recDateFormat = '%Y-%m-%d'
 
 @app.route("/api/newbooks", methods=["GET"])
 def get_books():
@@ -16,7 +16,7 @@ def get_books():
     with app.open_resource('static/newbooks.json') as f:
         d = json.load(f)
         
-    data = d[0 : 50]
+    data = d[0 : 3000]
     
     if 'date' in request.args:
         date_limiter = request.args.get('date')
@@ -84,6 +84,17 @@ def get_subjects():
     subjects = list(set(subjects))
 
     return jsonify(subjects)
+
+@app.route("/api/libraries", methods=["GET"])
+def get_libraries():
+    
+    with app.open_resource('static/newbooks.json') as f:
+        data = json.load(f)
+    
+    libraries = [ lib['LibraryName'] for lib in data ]
+    libraries = list(set(libraries))
+
+    return jsonify(libraries)
 
 @app.route("/api/healthchecker", methods=["GET"])
 def healthchecker():

@@ -211,7 +211,8 @@ def getAnalyticsJson(latestPOL):
     # logging.critical(f"Getting complete analytics dataset...")
     # almaUrl = f"https://api-na.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?path=%2Fshared%2FNortheastern%20University%2FJohnShared%2FAPI%2FAcq-Analysis&limit={records}&apikey={almaKey}"
    
-    booksJson = []
+    booksJson = {}
+    booksJson['items'] = []
     IsFinished = False
     pages = 0
     while not IsFinished:
@@ -222,12 +223,13 @@ def getAnalyticsJson(latestPOL):
                 rows = my_dict['report']['QueryResult']['ResultXml']['rowset']['Row']
             except KeyError:
                 print("No new records")
+                booksJson['totalItems'] = 0
                 return booksJson
             if not isinstance(rows, list):
                 rows = [rows]
             for row in rows:
                 book = mapRow(row)
-                booksJson.append(book)
+                booksJson['items'].append(book)
             Finished = my_dict['report']['QueryResult']['IsFinished']
             if(Finished == "true"):
                 IsFinished = True
@@ -244,8 +246,9 @@ def getAnalyticsJson(latestPOL):
     print("Finished getting Analytics data")
     logging.warning("Finished getting Analytics data")
     
-    print(f"Found {len(booksJson)} books in {pages} api calls.")
-    logging.warning(f"Found {len(booksJson)} books in {pages} api calls.")
+    print(f"Found {len(booksJson['items'])} books in {pages} api calls.")
+    logging.warning(f"Found {len(booksJson['items'])} books in {pages} api calls.")
+    booksJson['totalItems'] = len(booksJson['items'])
     return booksJson
             
 def main():
@@ -259,13 +262,13 @@ def main():
     logging.warning(f"Latest POL: {latestPOL}")
     
     analyticsJson = getAnalyticsJson(latestPOL)
-    if analyticsJson:
-        newLatestPOL = analyticsJson[0]['POL']
+    if analyticsJson['totalItems'] > 0:
+        newLatestPOL = analyticsJson['items'][0]['POL']
     else:
         newLatestPOL = latestPOL
     
-    print(f"Number of new books to process: {len(analyticsJson)}")
-    logging.warning(f"Number of new books to process: {len(analyticsJson)}")
+    print(f"Number of new books to process: {len(analyticsJson['items'])}")
+    logging.warning(f"Number of new books to process: {len(analyticsJson['items'])}")
     
     print("\n-------Checking Previously Unreceived Books------------")
     logging.critical("-------Checking Previously Unreceived Books------------")
@@ -273,16 +276,16 @@ def main():
     with open('notReceivedBooks.json', 'r') as NotReceivedBooksJson:
         notReceivedBooks = json.load(NotReceivedBooksJson)
     
-    print(f"Books in not received file: {len(notReceivedBooks)}")
-    logging.warning(f"Books in not received file: {len(notReceivedBooks)}")
+    print(f"Books in not received file: {len(notReceivedBooks['items'])}")
+    logging.warning(f"Books in not received file: {len(notReceivedBooks['items'])}")
     
-    if len(notReceivedBooks) > 0:
+    if len(notReceivedBooks['items']) > 0:
     
         print(f"Getting unreceived books created after 2024-02-01")
         logging.warning(f"Getting unreceived books created after 2024-02-01")
         
         pols = []
-        for b in notReceivedBooks:
+        for b in notReceivedBooks['items']:
             if (datetime.strptime(b['TitleCreationDate'], '%Y-%m-%d') > datetime.strptime('2024-02-01', '%Y-%m-%d')):
                 pols.append(b['POL'])
         pols.sort()
@@ -296,17 +299,17 @@ def main():
             unreceivedMatch = 0
             newReceivedCount = 0
             notReceivedCount = 0
-            for book in unreceivedJson:
+            for book in unreceivedJson['items']:
                 if book['POL'] in pols:
                     unreceivedMatch += 1
                     if book['SortDate'] != '0000-00-00':
                         print(f"{book['POL']} has been received...")
-                        analyticsJson.append(book)
-                        notReceivedBooks = [i for i in notReceivedBooks if not (i['POL'] == book['POL'])]
+                        analyticsJson['items'].append(book)
+                        notReceivedBooks['items'] = [i for i in notReceivedBooks['items'] if not (i['POL'] == book['POL'])]
                         newReceivedCount += 1
                     else:
                         notReceivedCount += 1
-                notReceivedBooksCount = len(notReceivedBooks)
+                notReceivedBooksCount = len(notReceivedBooks['items'])
             print(f"Found {unreceivedMatch} unreceived books in Analytics data")
             logging.warning(f"Found {unreceivedMatch} unreceived books in Analytics data")
             print(f"{newReceivedCount} previously unreceived books have been received and added to analyticsJson")
@@ -315,18 +318,19 @@ def main():
             logging.warning(f"{notReceivedCount} previously unreceived books still not received.")
             print(f"Writing {notReceivedBooksCount} Unreceived Books back to notReceivedBooks.json...")
             logging.warning(f"Writing {notReceivedBooksCount} Unreceived Books back to notReceivedBooks.json...")
+            notReceivedBooks['totalItems'] = notReceivedBooksCount
             with open('notReceivedBooks.json', "w") as f:
                 json.dump(notReceivedBooks, f, indent=4)
                 
         else:
             print("No unreceived books found")
-        print(f"Number of Books to Process after unreceived books added: {len(analyticsJson)}")
-        logging.warning(f"Number of Books to Process after unreceived books added: {len(analyticsJson)}")
+        print(f"Number of Books to Process after unreceived books added: {len(analyticsJson['items'])}")
+        logging.warning(f"Number of Books to Process after unreceived books added: {len(analyticsJson['items'])}")
 
     if analyticsJson:
         print("\n------------STARTING METADATA ENHANCEMENT------------")
         logging.critical("------------STARTING METADATA ENHANCEMENT------------")
-        analyticsDataLength = len(analyticsJson)
+        analyticsDataLength = len(analyticsJson['items'])
         print(f"Attempting to match {analyticsDataLength} new titles from Analytics report with enhanced metadata.")
         logging.warning(f"Attempting to match {analyticsDataLength} new titles from Analytics report with enhanced metadata.")
         newBooks = []
@@ -337,24 +341,24 @@ def main():
         nr = 0
         
         print(f"Opening Existing Dataset...")
-        with open('../api/static/newbooks.json', 'r') as seenBooksJson:
-            seenBooks = json.load(seenBooksJson)
+        with open('../api/static/dataset.json', 'r') as datasetJson:
+            dataset = json.load(datasetJson)
             
-        seenDataCount = len(seenBooks)
-        print(f"Existing Dataset has {seenDataCount} enhanced records")
-        logging.warning(f"Existing Dataset has {seenDataCount} enhanced records")
+        datasetCount = len(dataset['items'])
+        print(f"Existing Dataset has {datasetCount} enhanced records")
+        logging.warning(f"Existing Dataset has {datasetCount} enhanced records")
         
         with open('notReceivedBooks.json', 'r') as startNotReceivedBooksJson:
             startNotReceivedBooks = json.load(startNotReceivedBooksJson)
-        startNotReceivedBooksCount = len(startNotReceivedBooks)
+        startNotReceivedBooksCount = len(startNotReceivedBooks['items'])
             
-        with open('missingCovers.json', 'r') as startMissingCoversJson:
-            startMissingCovers = json.load(startMissingCoversJson)
-        startMissingCoversCount = len(startMissingCovers)
+        with open('missingCovers.json', 'r') as missingCoversJson:
+            missingCovers = json.load(missingCoversJson)
+        startMissingCoversCount = len(missingCovers['items'])
         
         print("Starting matching process...")
         logging.warning("Starting matching process...")
-        for book in tqdm(analyticsJson):
+        for book in tqdm(analyticsJson['items']):
             sleep(0.5)
             counter+=1
             logging.warning("------------------------------------------------------------")
@@ -362,19 +366,19 @@ def main():
             pol = book['POL']
             logging.info(pol)
             logging.info(book['Title'])
-            if any(d.get('POL') == pol for d in seenBooks):
+            if any(d.get('POL') == pol for d in dataset['items']):
                 logging.info("FOUND BOOK in SEEN DATA")
                 dupes += 1
-                startNotReceivedBooks = [i for i in startNotReceivedBooks if not (i['POL'] == book['POL'])]
+                startNotReceivedBooks['items'] = [i for i in startNotReceivedBooks['items'] if not (i['POL'] == book['POL'])]
                 continue
             if book['SortDate'] == '0000-00-00':
                 logging.info("BOOK NOT YET RECEIVED")
                 nr += 1
-                if any(d.get('POL') == pol for d in startNotReceivedBooks):
+                if any(d.get('POL') == pol for d in startNotReceivedBooks['items']):
                     logging.info("BOOK ALREADY IN NOT RECEIVED FILE")
                 else:
                     logging.info("APPENDING BOOK TO NOT RECEIVED FILE")
-                    startNotReceivedBooks.append(book)
+                    startNotReceivedBooks['items'].append(book)
                 continue
             try:
                 isbn13 = book['isbn13']
@@ -403,12 +407,11 @@ def main():
                             else:
                                 logging.info("No suitable Open Library book cover found")
                                 logging.info("Skipping title")
-                                # missingbook = {'mmsId': book['mmsId'], 'isbn13': book['isbn13'], 'SortDate': '9999-99-99', 'error': 'No suitable book cover found'}
-                                if any(d.get('POL') == pol for d in startMissingCovers):
+                                if any(d.get('POL') == pol for d in missingCovers['items']):
                                     logging.info("BOOK ALREADY IN NOT MISSING COVERS FILE")
                                 else:
                                     logging.info("ADDING BOOK MISSING COVERS FILE")
-                                    startMissingCovers.append(book)
+                                    missingCovers['items'].append(book)
                                 misses += 1
                                 continue      
                     else:
@@ -421,11 +424,11 @@ def main():
                             logging.info(f"No suitable Open Library book cover found")
                             logging.info("Skipping title")
                             # missingbook = {'mmsId': book['mmsId'], 'isbn13': book['isbn13'], 'SortDate': '9999-99-99', 'error': 'No suitable book cover found'}
-                            if any(d.get('POL') == pol for d in startMissingCovers):
+                            if any(d.get('POL') == pol for d in missingCovers['items']):
                                 logging.info("BOOK ALREADY IN NOT MISSING COVERS FILE")
                             else:
                                 logging.info("ADDING BOOK MISSING COVERS FILE")
-                                startMissingCovers.append(book)
+                                missingCovers['items'].append(book)
                             misses += 1
                             continue
                     hits += 1
@@ -434,80 +437,72 @@ def main():
                     logging.info('NO GOOGLE METADATA')
                     logging.info("Skipping title")
                     # missingbook = {'mmsId': book['mmsId'], 'isbn13': book['isbn13'], 'SortDate': '9999-99-99', 'error': 'NO GOOGLE METADATA'}
-                    if any(d.get('POL') == pol for d in startMissingCovers):
+                    if any(d.get('POL') == pol for d in missingCovers['items']):
                         logging.info("BOOK ALREADY IN NOT MISSING COVERS FILE")
                     else:
                         logging.info("ADDING BOOK MISSING COVERS FILE")
-                        startMissingCovers.append(book)
+                        missingCovers['items'].append(book)
                     misses += 1
                     continue
             except:
                 logging.info("No ISBN13")
                 # missingbook = {'mmsId': book['mmsId'], 'isbn13': book['isbn13'], 'SortDate': '9999-99-99', 'error': 'No ISBN13'}
-                if any(d.get('POL') == pol for d in startMissingCovers):
+                if any(d.get('POL') == pol for d in missingCovers['items']):
                     logging.info("BOOK ALREADY IN NOT MISSING COVERS FILE")
                 else:
                     logging.info("ADDING BOOK TO MISSING COVERS FILE")
-                    startMissingCovers.append(book)
+                    missingCovers['items'].append(book)
                 misses += 1
                 logging.info("Skipping title")
 
-        cleanNewBooks = replace_null_with_empty_string(newBooks)
         newBooksCount = len(newBooks)
-
-        print("\n------------SUMMARY------------")
-        logging.warning("------------SUMMARY------------")
+        cleanNewBooks = replace_null_with_empty_string(newBooks)
+        sortedNewBooks = sorted(cleanNewBooks, key=operator.itemgetter('SortDate'), reverse=True)
+        logging.info(f"Writing {newBooksCount} New Books Matched to newFoundBooks.json...")
+        with open('newFoundBooks.json', "w") as f:
+            json.dump(sortedNewBooks, f, indent=4)
         
         print(f"Found {dupes} titles already in Dataset...")
         print(f"Matched {newBooksCount} titles with usable covers. Appending to Dataset...")
         
         for b in cleanNewBooks:
-            seenBooks.append(b)
-            
-        print(f"Sorting Dataset...")
-        sortedSeenBooks = sorted(seenBooks, key=operator.itemgetter('SortDate'), reverse=True)
-        sortedSeenBooksCount = len(sortedSeenBooks)
+            dataset['items'].append(b)
         
-        print(f"New Dataset size: {sortedSeenBooksCount}")
+        sortedItems = sorted(dataset['items'], key=operator.itemgetter('SortDate'), reverse=True)
+        dataset['items'] = sortedItems
+        
+        datasetSize = len(dataset['items'])
+        dataset['totalItems'] = datasetSize
+        
+        print(f"New Dataset size: {datasetSize}")
+        print(f"Writing New Dataset to datasetTemp.json...")
+        with open('datasetTemp.json', "w") as nb:
+            json.dump(dataset, nb, indent=4)
 
-        print(f"Writing New Dataset to tempNewbooks.json...")
-        with open('newbooksTemp.json', "w") as nb:
-            json.dump(sortedSeenBooks, nb, indent=4)
+        print("\n------------SUMMARY------------")
+        logging.warning("------------SUMMARY------------")
         
-        sortedNewBooks = sorted(cleanNewBooks, key=operator.itemgetter('SortDate'), reverse=True)
-        sortedNewBooksCount = len(sortedNewBooks)
-        
-        logging.info(f"Writing {newBooksCount} New Books Matched to newFoundBooks.json...")
-        with open('newFoundBooks.json', "w") as f:
-            json.dump(sortedNewBooks, f, indent=4)
-        
-        endMissingCoversCount = len(startMissingCovers)
+        endMissingCoversCount = len(missingCovers['items'])
         print(f"Writing {endMissingCoversCount} Unmatched Books to missingCovers.json...")
+        missingCovers['totalItems'] = endMissingCoversCount
         with open('missingCovers.json', "w") as f:
-            json.dump(startMissingCovers, f, indent=4)
+            json.dump(missingCovers, f, indent=4)
         print(f"Titles in missingCovers.json changed from {startMissingCoversCount} to {endMissingCoversCount}")
             
-        endNotReceivedBooksCount = len(startNotReceivedBooks)
+        endNotReceivedBooksCount = len(startNotReceivedBooks['items'])
         print(f"Writing {endNotReceivedBooksCount} Non-Received Books to notReceivedBooks.json...")
+        startNotReceivedBooks['totalItems'] = endNotReceivedBooksCount
         with open('notReceivedBooks.json', "w") as f:
             json.dump(startNotReceivedBooks, f, indent=4)
         print(f"Titles in notReceivedBooks.json changed from {startNotReceivedBooksCount} to {endNotReceivedBooksCount}")
-        
-        
-        logging.info("------------------------------------")
-        logging.info(f"Found {dupes} titles in existing dataset")
-        logging.info(f"Matched {sortedNewBooksCount} titles with usable covers. Adding to Dataset and writing to newbooks.json.")
-        logging.info(f"New Dataset size: {sortedSeenBooksCount}")
-        logging.info(f"{nr} titles not yet received and skipped")
-        logging.info(f"Unable to match {misses} titles with usable covers")
             
         print(f"Moving new dataset to API directory...")
         currentPath = Path.cwd()
-        source = currentPath / f"newbooksTemp.json"
+        source = currentPath / f"datasetTemp.json"
         dest = currentPath.parent / f"api/static/"
-        oldfile = dest / f"newbooks.json"
-        oldfile.replace(f"{dest}/newbooks.json.bak")
-        source.replace(f"{dest}/newbooks.json")
+        oldfile = dest / f"dataset.json"
+        oldfile.replace(f"{dest}/dataset.json.bak")
+        source.replace(f"{dest}/dataset.json")
         print(f"Last POL Processed: {newLatestPOL}. Writing to lastRecord.txt")
         
         f = open("lastRecord.txt", "w")
