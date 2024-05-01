@@ -202,13 +202,18 @@ def mapRow(row):
 
 def getAnalyticsJson(latestPOL):
     # Process Delta
+    print(f"Getting Analytics Report Data after {latestPOL}...")
+    logging.critical(f"Getting Analytics Report Data after {latestPOL}...")
     almaUrl = f"https://api-na.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?path=%2Fshared%2FNortheastern%20University%2FJohnShared%2FAPI%2FAcq-Analysis&limit={records}&apikey={almaKey}&filter=%3Csawx%3Aexpr%20xsi%3Atype%3D%22sawx%3Acomparison%22%20op%3D%22greater%22%0A%20%20xmlns%3Asaw%3D%22com.siebel.analytics.web%2Freport%2Fv1.1%22%20%0A%20%20xmlns%3Asawx%3D%22com.siebel.analytics.web%2Fexpression%2Fv1.1%22%20%0A%20%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20%0A%20%20xmlns%3Axsd%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%22%0A%3E%0A%20%20%3Csawx%3Aexpr%20xsi%3Atype%3D%22sawx%3AsqlExpression%22%3E%22Funds%20Expenditure%22.%22PO%20Line%20Reference%22%3C%2Fsawx%3Aexpr%3E%0A%20%20%3Csawx%3Aexpr%20xsi%3Atype%3D%22xsd%3Astring%22%3E{latestPOL}%3C%2Fsawx%3Aexpr%3E%0A%3C%2Fsawx%3Aexpr%3E"
     
     # Process Full Dataset
+    # print(f"Getting complete analytics dataset...")
+    # logging.critical(f"Getting complete analytics dataset...")
     # almaUrl = f"https://api-na.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?path=%2Fshared%2FNortheastern%20University%2FJohnShared%2FAPI%2FAcq-Analysis&limit={records}&apikey={almaKey}"
-    print(f"Getting Analytics Report Data after {latestPOL}...")
+   
     booksJson = []
     IsFinished = False
+    pages = 0
     while not IsFinished:
         response = requests.get(almaUrl)
         if response.status_code == 200:
@@ -226,24 +231,32 @@ def getAnalyticsJson(latestPOL):
             Finished = my_dict['report']['QueryResult']['IsFinished']
             if(Finished == "true"):
                 IsFinished = True
-                print("Finished getting Analytics data")
-                print("-------------------------------")
             else:
                 try:
                     ResumptionToken = my_dict['report']['QueryResult']['ResumptionToken']
                     print(f"Found resumption token. Paginating API...")
+                    pages += 1
                 except:
-                    print(f"Paginating API...")
+                    pages += 1
                 almaUrl = f"https://api-na.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?token={ResumptionToken}&limit=25&apikey=l8xx5852c9867ab64264901d17af13574837"
         else:
             print(f"ERROR GETTING ANALYTICS API - {almaUrl}")
+    print("Finished getting Analytics data")
+    logging.warning("Finished getting Analytics data")
+    
+    print(f"Found {len(booksJson)} books in {pages} api calls.")
+    logging.warning(f"Found {len(booksJson)} books in {pages} api calls.")
     return booksJson
             
 def main():
+    print("\n------------------GETTING NEW BOOKS-----------------")
+    logging.critical("------------------GETTING NEW BOOKS-----------------")
     print("getting Latest POL processed...")
+    logging.warning("getting Latest POL processed...")
     f = open("lastRecord.txt", "r")
     latestPOL = f.read()
     print(f"Latest POL: {latestPOL}")
+    logging.warning(f"Latest POL: {latestPOL}")
     
     analyticsJson = getAnalyticsJson(latestPOL)
     if analyticsJson:
@@ -251,44 +264,71 @@ def main():
     else:
         newLatestPOL = latestPOL
     
-    print(f"Number of Books to Process before unreceived books added: {len(analyticsJson)}")
+    print(f"Number of new books to process: {len(analyticsJson)}")
+    logging.warning(f"Number of new books to process: {len(analyticsJson)}")
     
-    print(f"Refreshing Analytics Report Data for unreceived books...")
+    print("\n-------Checking Previously Unreceived Books------------")
+    logging.critical("-------Checking Previously Unreceived Books------------")
+
     with open('notReceivedBooks.json', 'r') as NotReceivedBooksJson:
         notReceivedBooks = json.load(NotReceivedBooksJson)
-    pols = []
-    for b in notReceivedBooks:
-        if (datetime.strptime(b['TitleCreationDate'], '%Y-%m-%d') > datetime.strptime('2024-02-01', '%Y-%m-%d')):
-            pols.append(b['POL'])
-    pols.sort()
-    print(f"Found {len(pols)} recently ordered unreceived books. Checking if they have been received...")
-    lowestUnreceivedPOL = pols[0]
     
-    unreceivedJson = getAnalyticsJson(lowestUnreceivedPOL)
+    print(f"Books in not received file: {len(notReceivedBooks)}")
+    logging.warning(f"Books in not received file: {len(notReceivedBooks)}")
     
-    print("adding newly received books to analyticsJson")
-    if unreceivedJson:
-        newReceivedCount = 0
-        for book in unreceivedJson:
-            if book['POL'] in pols:
-                if book['SortDate'] != '0000-00-00':
-                    analyticsJson.append(book)
-                    newReceivedCount += 1
-                else:
-                    newNotReceivedBooks = [i for i in notReceivedBooks if not (i['POL'] == book['POL'])]
-                    newNotReceivedBooksCount = len(newNotReceivedBooks)
-        print(f"Found {newReceivedCount} newly received books to add to analyticsJson")
-        print(f"Writing {newNotReceivedBooksCount} Unreceived Books back to notReceivedBooks.json...")
-        with open('notReceivedBooks.json', "w") as f:
-            json.dump(newNotReceivedBooks, f, indent=4)
-            
-    else:
-        print("No unreceived books found")
-    print(f"Number of Books to Process after unreceived books added: {len(analyticsJson)}")
+    if len(notReceivedBooks) > 0:
+    
+        print(f"Getting unreceived books created after 2024-02-01")
+        logging.warning(f"Getting unreceived books created after 2024-02-01")
+        
+        pols = []
+        for b in notReceivedBooks:
+            if (datetime.strptime(b['TitleCreationDate'], '%Y-%m-%d') > datetime.strptime('2024-02-01', '%Y-%m-%d')):
+                pols.append(b['POL'])
+        pols.sort()
+        print(f"Found {len(pols)} recently ordered unreceived books. Checking if they have been received...")
+        logging.warning(f"Found {len(pols)} recently ordered unreceived books. Checking if they have been received...")
+        lowestUnreceivedPOL = pols[0]
+        
+        unreceivedJson = getAnalyticsJson(lowestUnreceivedPOL)
+        
+        if unreceivedJson:
+            unreceivedMatch = 0
+            newReceivedCount = 0
+            notReceivedCount = 0
+            for book in unreceivedJson:
+                if book['POL'] in pols:
+                    unreceivedMatch += 1
+                    if book['SortDate'] != '0000-00-00':
+                        print(f"{book['POL']} has been received...")
+                        analyticsJson.append(book)
+                        notReceivedBooks = [i for i in notReceivedBooks if not (i['POL'] == book['POL'])]
+                        newReceivedCount += 1
+                    else:
+                        notReceivedCount += 1
+                notReceivedBooksCount = len(notReceivedBooks)
+            print(f"Found {unreceivedMatch} unreceived books in Analytics data")
+            logging.warning(f"Found {unreceivedMatch} unreceived books in Analytics data")
+            print(f"{newReceivedCount} previously unreceived books have been received and added to analyticsJson")
+            logging.warning(f"{newReceivedCount} previously unreceived books have been received and added to analyticsJson")
+            print(f"{notReceivedCount} previously unreceived books still not received.")
+            logging.warning(f"{notReceivedCount} previously unreceived books still not received.")
+            print(f"Writing {notReceivedBooksCount} Unreceived Books back to notReceivedBooks.json...")
+            logging.warning(f"Writing {notReceivedBooksCount} Unreceived Books back to notReceivedBooks.json...")
+            with open('notReceivedBooks.json', "w") as f:
+                json.dump(notReceivedBooks, f, indent=4)
+                
+        else:
+            print("No unreceived books found")
+        print(f"Number of Books to Process after unreceived books added: {len(analyticsJson)}")
+        logging.warning(f"Number of Books to Process after unreceived books added: {len(analyticsJson)}")
 
     if analyticsJson:
+        print("\n------------STARTING METADATA ENHANCEMENT------------")
+        logging.critical("------------STARTING METADATA ENHANCEMENT------------")
         analyticsDataLength = len(analyticsJson)
         print(f"Attempting to match {analyticsDataLength} new titles from Analytics report with enhanced metadata.")
+        logging.warning(f"Attempting to match {analyticsDataLength} new titles from Analytics report with enhanced metadata.")
         newBooks = []
         counter = 0
         hits = 0
@@ -302,6 +342,7 @@ def main():
             
         seenDataCount = len(seenBooks)
         print(f"Existing Dataset has {seenDataCount} enhanced records")
+        logging.warning(f"Existing Dataset has {seenDataCount} enhanced records")
         
         with open('notReceivedBooks.json', 'r') as startNotReceivedBooksJson:
             startNotReceivedBooks = json.load(startNotReceivedBooksJson)
@@ -312,6 +353,7 @@ def main():
         startMissingCoversCount = len(startMissingCovers)
         
         print("Starting matching process...")
+        logging.warning("Starting matching process...")
         for book in tqdm(analyticsJson):
             sleep(0.5)
             counter+=1
@@ -412,6 +454,9 @@ def main():
 
         cleanNewBooks = replace_null_with_empty_string(newBooks)
         newBooksCount = len(newBooks)
+
+        print("\n------------SUMMARY------------")
+        logging.warning("------------SUMMARY------------")
         
         print(f"Found {dupes} titles already in Dataset...")
         print(f"Matched {newBooksCount} titles with usable covers. Appending to Dataset...")
