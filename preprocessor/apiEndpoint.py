@@ -24,6 +24,7 @@ googleKey = env.googleKey
 almaKey = env.almaKey
 # records = sys.argv[1]
 records = 25
+    
 
 def replace_null_with_empty_string(obj):
     if isinstance(obj, dict):
@@ -158,12 +159,54 @@ def getGoogleCover(googleBook):
         logging.info("No Google image links found")
         return None
 
+def mapRow(row):
+    book = {}
+    book['POL'] = row['Column15']
+    book['mmsId'] = row['Column13']
+    if row['Column9'] == "E":
+        sortDate = row['Column14']
+    else:
+        sortDate = row['Column18']
+    book['SortDate'] = sortDate
+    book['AccessModel'] = row['Column1']
+    book['AcquisitionMethod'] = row['Column6']
+    book['AuthorContributor'] = row['Column7']
+    book['Author'] = row['Column8']
+    book['Format'] = row['Column9']
+    
+    isbns = row['Column10']
+    isbn13 = getIsbn13(isbns)
+    book['isbn13'] = isbn13
+    
+    book['ISBNS'] = row['Column10']
+    book['MaterialType'] = row['Column12']
+    book['POLineTypeName'] = row['Column17']
+    book['ReceivingDate'] = row['Column18']
+    book['PortfolioActivationDate'] = row['Column4']
+    book['ExpPortfolioActivationDate'] = row['Column5']
+    book['ReportingCode'] = row['Column20']
+    title = titlecase(row['Column22'])
+    book['Title'] = title
+    POtitle = titlecase(row['Column16'])
+    book['POtitle'] = POtitle
+    book['VendorName'] = row['Column23']
+    book['LibraryName'] = row['Column11']
+    book['Description'] = row['Column25']
+    book['LocationName'] = row['Column26']
+    book['TemporaryLocationName'] = row['Column29']
+    book['PermanentCallNumber'] = row['Column27']
+    book['TitleCreationDate'] = row['Column14']
+    book['Barcode'] = row['Column24']
+    book['PhysicalItemId'] = row['Column28']
+    return book
+
 def getAnalyticsJson(latestPOL):
     # Process Delta
-    #almaUrl = f"https://api-na.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?path=%2Fshared%2FNortheastern%20University%2FJohnShared%2FAPI%2FAcq-Analysis&limit={records}&apikey={almaKey}&filter=%3Csawx%3Aexpr%20xsi%3Atype%3D%22sawx%3Acomparison%22%20op%3D%22greater%22%0A%20%20xmlns%3Asaw%3D%22com.siebel.analytics.web%2Freport%2Fv1.1%22%20%0A%20%20xmlns%3Asawx%3D%22com.siebel.analytics.web%2Fexpression%2Fv1.1%22%20%0A%20%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20%0A%20%20xmlns%3Axsd%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%22%0A%3E%0A%20%20%3Csawx%3Aexpr%20xsi%3Atype%3D%22sawx%3AsqlExpression%22%3E%22Funds%20Expenditure%22.%22PO%20Line%20Reference%22%3C%2Fsawx%3Aexpr%3E%0A%20%20%3Csawx%3Aexpr%20xsi%3Atype%3D%22xsd%3Astring%22%3E{latestPOL}%3C%2Fsawx%3Aexpr%3E%0A%3C%2Fsawx%3Aexpr%3E"
+    almaUrl = f"https://api-na.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?path=%2Fshared%2FNortheastern%20University%2FJohnShared%2FAPI%2FAcq-Analysis&limit={records}&apikey={almaKey}&filter=%3Csawx%3Aexpr%20xsi%3Atype%3D%22sawx%3Acomparison%22%20op%3D%22greater%22%0A%20%20xmlns%3Asaw%3D%22com.siebel.analytics.web%2Freport%2Fv1.1%22%20%0A%20%20xmlns%3Asawx%3D%22com.siebel.analytics.web%2Fexpression%2Fv1.1%22%20%0A%20%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20%0A%20%20xmlns%3Axsd%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%22%0A%3E%0A%20%20%3Csawx%3Aexpr%20xsi%3Atype%3D%22sawx%3AsqlExpression%22%3E%22Funds%20Expenditure%22.%22PO%20Line%20Reference%22%3C%2Fsawx%3Aexpr%3E%0A%20%20%3Csawx%3Aexpr%20xsi%3Atype%3D%22xsd%3Astring%22%3E{latestPOL}%3C%2Fsawx%3Aexpr%3E%0A%3C%2Fsawx%3Aexpr%3E"
     
     # Process Full Dataset
-    almaUrl = f"https://api-na.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?path=%2Fshared%2FNortheastern%20University%2FJohnShared%2FAPI%2FAcq-Analysis&limit={records}&apikey={almaKey}"
+    # almaUrl = f"https://api-na.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?path=%2Fshared%2FNortheastern%20University%2FJohnShared%2FAPI%2FAcq-Analysis&limit={records}&apikey={almaKey}"
+    print(f"Getting Analytics Report Data after {latestPOL}...")
     booksJson = []
     IsFinished = False
     while not IsFinished:
@@ -172,51 +215,14 @@ def getAnalyticsJson(latestPOL):
             my_dict = xmltodict.parse(response.content)
             try:
                 rows = my_dict['report']['QueryResult']['ResultXml']['rowset']['Row']
-                if not isinstance(rows, list):
-                    rows = [rows]
-                for row in rows:
-                    book = {}
-                    book['POL'] = row['Column15']
-                    book['mmsId'] = row['Column13']
-                    if row['Column9'] == "E":
-                        sortDate = row['Column14']
-                    else:
-                        sortDate = row['Column18']
-                    book['SortDate'] = sortDate
-                    book['AccessModel'] = row['Column1']
-                    book['AcquisitionMethod'] = row['Column6']
-                    book['AuthorContributor'] = row['Column7']
-                    book['Author'] = row['Column8']
-                    book['Format'] = row['Column9']
-                    
-                    isbns = row['Column10']
-                    isbn13 = getIsbn13(isbns)
-                    book['isbn13'] = isbn13
-                    
-                    book['ISBNS'] = row['Column10']
-                    book['MaterialType'] = row['Column12']
-                    book['POLineTypeName'] = row['Column17']
-                    book['ReceivingDate'] = row['Column18']
-                    book['PortfolioActivationDate'] = row['Column4']
-                    book['ExpPortfolioActivationDate'] = row['Column5']
-                    book['ReportingCode'] = row['Column20']
-                    title = titlecase(row['Column22'])
-                    book['Title'] = title
-                    POtitle = titlecase(row['Column16'])
-                    book['POtitle'] = POtitle
-                    book['VendorName'] = row['Column23']
-                    book['LibraryName'] = row['Column11']
-                    book['Description'] = row['Column25']
-                    book['LocationName'] = row['Column26']
-                    book['TemporaryLocationName'] = row['Column29']
-                    book['PermanentCallNumber'] = row['Column27']
-                    book['TitleCreationDate'] = row['Column14']
-                    book['Barcode'] = row['Column24']
-                    book['PhysicalItemId'] = row['Column28']
-                    booksJson.append(book)
             except KeyError:
                 print("No new records")
                 return booksJson
+            if not isinstance(rows, list):
+                rows = [rows]
+            for row in rows:
+                book = mapRow(row)
+                booksJson.append(book)
             Finished = my_dict['report']['QueryResult']['IsFinished']
             if(Finished == "true"):
                 IsFinished = True
@@ -225,9 +231,9 @@ def getAnalyticsJson(latestPOL):
             else:
                 try:
                     ResumptionToken = my_dict['report']['QueryResult']['ResumptionToken']
-                    print(f"Found resumption token. Paginating...")
+                    print(f"Found resumption token. Paginating API...")
                 except:
-                    print(f"Paginating...")
+                    print(f"Paginating API...")
                 almaUrl = f"https://api-na.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?token={ResumptionToken}&limit=25&apikey=l8xx5852c9867ab64264901d17af13574837"
         else:
             print(f"ERROR GETTING ANALYTICS API - {almaUrl}")
@@ -239,10 +245,48 @@ def main():
     latestPOL = f.read()
     print(f"Latest POL: {latestPOL}")
     
-    print(f"Getting Analytics Report Data after {latestPOL}...")
     analyticsJson = getAnalyticsJson(latestPOL)
     if analyticsJson:
         newLatestPOL = analyticsJson[0]['POL']
+    else:
+        newLatestPOL = latestPOL
+    
+    print(f"Number of Books to Process before unreceived books added: {len(analyticsJson)}")
+    
+    print(f"Refreshing Analytics Report Data for unreceived books...")
+    with open('notReceivedBooks.json', 'r') as NotReceivedBooksJson:
+        notReceivedBooks = json.load(NotReceivedBooksJson)
+    pols = []
+    for b in notReceivedBooks:
+        if (datetime.strptime(b['TitleCreationDate'], '%Y-%m-%d') > datetime.strptime('2024-02-01', '%Y-%m-%d')):
+            pols.append(b['POL'])
+    pols.sort()
+    print(f"Found {len(pols)} recently ordered unreceived books. Checking if they have been received...")
+    lowestUnreceivedPOL = pols[0]
+    
+    unreceivedJson = getAnalyticsJson(lowestUnreceivedPOL)
+    
+    print("adding newly received books to analyticsJson")
+    if unreceivedJson:
+        newReceivedCount = 0
+        for book in unreceivedJson:
+            if book['POL'] in pols:
+                if book['SortDate'] != '0000-00-00':
+                    analyticsJson.append(book)
+                    newReceivedCount += 1
+                else:
+                    newNotReceivedBooks = [i for i in notReceivedBooks if not (i['POL'] == book['POL'])]
+                    newNotReceivedBooksCount = len(newNotReceivedBooks)
+        print(f"Found {newReceivedCount} newly received books to add to analyticsJson")
+        print(f"Writing {newNotReceivedBooksCount} Unreceived Books back to notReceivedBooks.json...")
+        with open('notReceivedBooks.json', "w") as f:
+            json.dump(newNotReceivedBooks, f, indent=4)
+            
+    else:
+        print("No unreceived books found")
+    print(f"Number of Books to Process after unreceived books added: {len(analyticsJson)}")
+
+    if analyticsJson:
         analyticsDataLength = len(analyticsJson)
         print(f"Attempting to match {analyticsDataLength} new titles from Analytics report with enhanced metadata.")
         newBooks = []
@@ -279,6 +323,7 @@ def main():
             if any(d.get('POL') == pol for d in seenBooks):
                 logging.info("FOUND BOOK in SEEN DATA")
                 dupes += 1
+                startNotReceivedBooks = [i for i in startNotReceivedBooks if not (i['POL'] == book['POL'])]
                 continue
             if book['SortDate'] == '0000-00-00':
                 logging.info("BOOK NOT YET RECEIVED")
