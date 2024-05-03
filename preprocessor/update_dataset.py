@@ -356,6 +356,8 @@ def main():
         misses = 0
         dupes = 0
         nr = 0
+        inMissingCovers = 0
+        addedToMissingCovers = 0
         
         print(f"Opening Existing Dataset...")
         logging.info(f"Opening Existing Dataset...")
@@ -427,9 +429,11 @@ def main():
                                 logging.info("Skipping title")
                                 if any(d.get('POL') == pol for d in missingCovers['items']):
                                     logging.info("BOOK ALREADY IN NOT MISSING COVERS FILE")
+                                    inMissingCovers += 1
                                 else:
                                     logging.info("ADDING BOOK MISSING COVERS FILE")
                                     missingCovers['items'].append(book)
+                                    addedToMissingCovers += 1
                                 misses += 1
                                 continue      
                     else:
@@ -444,9 +448,11 @@ def main():
                             # missingbook = {'mmsId': book['mmsId'], 'isbn13': book['isbn13'], 'SortDate': '9999-99-99', 'error': 'No suitable book cover found'}
                             if any(d.get('POL') == pol for d in missingCovers['items']):
                                 logging.info("BOOK ALREADY IN NOT MISSING COVERS FILE")
+                                inMissingCovers += 1
                             else:
                                 logging.info("ADDING BOOK MISSING COVERS FILE")
                                 missingCovers['items'].append(book)
+                                addedToMissingCovers += 1
                             misses += 1
                             continue
                     hits += 1
@@ -457,9 +463,11 @@ def main():
                     # missingbook = {'mmsId': book['mmsId'], 'isbn13': book['isbn13'], 'SortDate': '9999-99-99', 'error': 'NO GOOGLE METADATA'}
                     if any(d.get('POL') == pol for d in missingCovers['items']):
                         logging.info("BOOK ALREADY IN NOT MISSING COVERS FILE")
+                        inMissingCovers += 1
                     else:
                         logging.info("ADDING BOOK MISSING COVERS FILE")
                         missingCovers['items'].append(book)
+                        addedToMissingCovers += 1
                     misses += 1
                     continue
             except:
@@ -467,9 +475,11 @@ def main():
                 # missingbook = {'mmsId': book['mmsId'], 'isbn13': book['isbn13'], 'SortDate': '9999-99-99', 'error': 'No ISBN13'}
                 if any(d.get('POL') == pol for d in missingCovers['items']):
                     logging.info("BOOK ALREADY IN NOT MISSING COVERS FILE")
+                    inMissingCovers += 1
                 else:
                     logging.info("ADDING BOOK TO MISSING COVERS FILE")
                     missingCovers['items'].append(book)
+                    addedToMissingCovers += 1
                 misses += 1
                 logging.info("Skipping title")
 
@@ -484,6 +494,17 @@ def main():
         newBooksCount = len(newBooks)
         cleanNewBooks = replace_null_with_empty_string(newBooks)
         sortedNewBooks = sorted(cleanNewBooks, key=operator.itemgetter('SortDate'), reverse=True)
+        
+        print(f"Unable to match {misses} titles with usable covers. Writing to missingCovers.json")
+        logging.info(f"Unable to match {misses} titles with usable covers. Writing to missingCovers.json")
+        
+        with open('missingCovers.json', "w") as f:
+            json.dump(missingCovers, f, indent=4)
+            
+        print(f"{inMissingCovers} titles without usable covers already in missingCovers.json")
+        logging.info(f"{inMissingCovers} titles without usable covers already in missingCovers.json")
+        print(f"{addedToMissingCovers} titles without usable covers added to missingCovers.json")
+        logging.info(f"{addedToMissingCovers} titles without usable covers added to missingCovers.json")
         
         print(f"Matched {newBooksCount} titles with usable covers. Writing to newFoundBooks.json and appending to Dataset...")
         logging.info(f"Matched {newBooksCount} titles with usable covers. Writing to newFoundBooks.json and appending to Dataset...")
@@ -514,8 +535,6 @@ def main():
         print(f"Writing {endMissingCoversCount} Unmatched Books to missingCovers.json...")
         logging.info(f"Writing {endMissingCoversCount} Unmatched Books to missingCovers.json...")
         missingCovers['totalItems'] = endMissingCoversCount
-        with open('missingCovers.json', "w") as f:
-            json.dump(missingCovers, f, indent=4)
         print(f"Titles in missingCovers.json changed from {startMissingCoversCount} to {endMissingCoversCount}")
         logging.info(f"Titles in missingCovers.json changed from {startMissingCoversCount} to {endMissingCoversCount}")
             
