@@ -16,7 +16,7 @@ def get_books():
     with app.open_resource('static/dataset.json') as f:
         d = json.load(f)
         
-    data = d['items'][0 : 3000]
+    data = d['items'][0 : 500]
     
     if 'date' in request.args:
         date_limiter = request.args.get('date')
