@@ -292,11 +292,12 @@ def main():
     
     if len(notReceivedBooks['items']) > 0:
     
-        print(f"Getting unreceived books created after 2024-02-01")
-        logging.warning(f"Getting unreceived books created after 2024-02-01")
+        print(f"Limiting unreceived books created after 2024-02-01")
+        logging.warning(f"Limiting unreceived books created after 2024-02-01")
         
         pols = []
         for b in notReceivedBooks['items']:
+            # pols.append(b['POL'])
             if (datetime.strptime(b['TitleCreationDate'], '%Y-%m-%d') > datetime.strptime('2024-02-01', '%Y-%m-%d')):
                 pols.append(b['POL'])
         pols.sort()
@@ -491,6 +492,9 @@ def main():
         print(f"Found and discarded {dupes} titles already in Dataset...")
         logging.info(f"Found and discarded {dupes} titles already in Dataset...")
         
+        print(f"Found {nr} titles that have not yet been received...")
+        logging.info(f"Found {nr} titles that have not yet been received...")
+        
         newBooksCount = len(newBooks)
         cleanNewBooks = replace_null_with_empty_string(newBooks)
         sortedNewBooks = sorted(cleanNewBooks, key=operator.itemgetter('SortDate'), reverse=True)
@@ -501,10 +505,10 @@ def main():
         with open('missingCovers.json', "w") as f:
             json.dump(missingCovers, f, indent=4)
             
-        print(f"{inMissingCovers} titles without usable covers already in missingCovers.json")
-        logging.info(f"{inMissingCovers} titles without usable covers already in missingCovers.json")
-        print(f"{addedToMissingCovers} titles without usable covers added to missingCovers.json")
-        logging.info(f"{addedToMissingCovers} titles without usable covers added to missingCovers.json")
+        print(f"   {inMissingCovers} titles without usable covers already in missingCovers.json")
+        logging.info(f"   {inMissingCovers} titles without usable covers already in missingCovers.json")
+        print(f"   {addedToMissingCovers} titles without usable covers added to missingCovers.json")
+        logging.info(f"   {addedToMissingCovers} titles without usable covers added to missingCovers.json")
         
         print(f"Matched {newBooksCount} titles with usable covers. Writing to newFoundBooks.json and appending to Dataset...")
         logging.info(f"Matched {newBooksCount} titles with usable covers. Writing to newFoundBooks.json and appending to Dataset...")
@@ -527,6 +531,19 @@ def main():
         logging.info(f"Writing New Dataset to datasetTemp.json...")
         with open('datasetTemp.json', "w") as nb:
             json.dump(dataset, nb, indent=4)
+            
+        print(f"\nMoving new dataset to API directory...")
+        logging.info(f"Moving new dataset to API directory...")
+        currentPath = Path.cwd()
+        source = currentPath / f"datasetTemp.json"
+        dest = currentPath.parent / f"api/static/"
+        oldfile = dest / f"dataset.json"
+        oldfile.replace(f"{dest}/dataset.json.bak")
+        source.replace(f"{dest}/dataset.json")
+        print(f"Last POL Processed: {newLatestPOL}. Writing to lastRecord.txt")
+        logging.info(f"Last POL Processed: {newLatestPOL}. Writing to lastRecord.txt")
+        sleep(0.5)
+        print("DONE")
 
         print("\n------------SUMMARY------------")
         logging.warning("------------SUMMARY------------")
@@ -546,17 +563,9 @@ def main():
             json.dump(startNotReceivedBooks, f, indent=4)
         print(f"Titles in notReceivedBooks.json changed from {startNotReceivedBooksCount} to {endNotReceivedBooksCount}")
         logging.info(f"Titles in notReceivedBooks.json changed from {startNotReceivedBooksCount} to {endNotReceivedBooksCount}")
-            
-        print(f"Moving new dataset to API directory...")
-        logging.info(f"Moving new dataset to API directory...")
-        currentPath = Path.cwd()
-        source = currentPath / f"datasetTemp.json"
-        dest = currentPath.parent / f"api/static/"
-        oldfile = dest / f"dataset.json"
-        oldfile.replace(f"{dest}/dataset.json.bak")
-        source.replace(f"{dest}/dataset.json")
-        print(f"Last POL Processed: {newLatestPOL}. Writing to lastRecord.txt")
-        logging.info(f"Last POL Processed: {newLatestPOL}. Writing to lastRecord.txt")
+        
+        print(f"Dataset changed from {datasetCount} books to {datasetSize} books")
+        logging.info(f"Dataset changed from {datasetCount} books to {datasetSize} books")
         
         f = open("lastRecord.txt", "w")
         f.write(newLatestPOL)

@@ -34667,6 +34667,36 @@
             "TitleCreationDate": "2024-02-22",
             "Barcode": "37190001223995",
             "PhysicalItemId": "23464111040001401"
+        },
+        {
+            "POL": "POL-139932",
+            "mmsId": "9952353644601401",
+            "SortDate": "2024-05-02",
+            "AccessModel": null,
+            "AcquisitionMethod": "VENDOR_SYSTEM",
+            "AuthorContributor": null,
+            "Author": "Bellin, Jeffrey, author.",
+            "Format": "P",
+            "isbn13": "9781009267595",
+            "ISBNS": "100926754X; 9781009267540; 1009267558; 9781009267557; 9781009267564; 1009267566; 9781009267595; 1009267590",
+            "MaterialType": "Book",
+            "POLineTypeName": "Print Book - One Time",
+            "ReceivingDate": "2024-05-02",
+            "PortfolioActivationDate": "0000-00-00",
+            "ExpPortfolioActivationDate": "0000-00-00",
+            "ReportingCode": "Default",
+            "Title": "Mass Incarceration Nation : How The United States Became Addicted To Prisons And Jails And How It Can Recover /",
+            "POtitle": "Mass Incarceration Nation : How The United States Became Addicted To Prisons And Jails And How It Can Recover / Jeffrey Bellin.",
+            "VendorName": "YBP",
+            "LibraryName": "School of Law Library",
+            "Description": null,
+            "LocationName": "Stacks",
+            "TemporaryLocationName": "New Books",
+            "PermanentCallNumber": "KF9223 .B45 2023",
+            "TitleCreationDate": "2023-08-11",
+            "Barcode": "37190001224019",
+            "PhysicalItemId": "23449016890001401",
+            "summary": "\"A former prosecutor turned law professor explains the rise of Mass Incarceration and the path to reform. The book offers an in-the-trenches perspective that solves the riddle of how thousands of local police, prosecutors, and judges, acting independently, produced the world's highest incarceration rates, while solving a shockingly low percentage of even serious crimes\"--"
         }
     ]
 }
