@@ -96,6 +96,30 @@ def get_libraries():
 
     return jsonify(libraries)
 
+@app.route("/api/feed", methods=["GET"])
+def get_feed():
+    
+    with app.open_resource('static/dataset.json') as f:
+        d = json.load(f)
+    
+    data = d['items'][0 : 100]
+    for pol in data:
+        pol['id'] = pol.pop('POL')
+        
+    for coverurl in data:
+        coverurl['image'] = coverurl.pop('coverurl')
+        coverurl['image'] = coverurl['image'][0]
+        
+    for Title in data:
+        Title['title'] = Title.pop('Title')
+    
+    feed = {}
+    feed["version"] = "https://jsonfeed.org/version/1.1"
+    feed["items"] = data
+    feed["title"] = "My Feed"
+    
+    return jsonify(feed)
+
 @app.route("/api/healthchecker", methods=["GET"])
 def healthchecker():
     return {"status": "success", "message": "Integrate Flask Framework with Next.js"}
