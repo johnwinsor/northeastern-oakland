@@ -40,7 +40,7 @@ def get_books_library(lib, subj):
             subject = urllib.parse.unquote(subj)
             books = [book for book in data['items'] if book["ReportingCode"] == subject]
         else:
-            books = data['items']
+            books = data['items'][0 : 500]
     else:
         if subj:
             subject = urllib.parse.unquote(subj)
