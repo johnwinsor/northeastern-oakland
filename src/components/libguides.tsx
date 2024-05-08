@@ -27,8 +27,8 @@ export const Libguides = ({ data }: {data: any}, props: any) => {
                 <div className="embla__viewport" ref={emblaRef}>
                     <div className="embla__container h-full grid grid-flow-col auto-cols-100 sm:auto-cols-33 lg:auto-cols-20">
                         {data.map((src: any, i: any) => {
-                            const library = src.library;
-                            const subject = src.subject;
+                            const library = src.LibraryName;
+                            const subject = src.ReportingCode;
                             let callnoStatus = src.PermanentCallNumber.replace(/Unknown/g, "In Processing");
                             if (src.LocationName == "On order") {
                                 callnoStatus = "In Processing";
@@ -37,7 +37,7 @@ export const Libguides = ({ data }: {data: any}, props: any) => {
                                 callnoStatus = src.location + ": " + callnoStatus
                             }
                             let callno = callnoStatus.replace(/ - 2nd Floor/g, "");
-                            const format = src.format;
+                            const format = src.Format;
                             if (format == "E") {
                                 callno = "Ebook"
                             }
