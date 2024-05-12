@@ -213,14 +213,14 @@ def mapRow(row):
 
 def getAnalyticsJson(latestPOL):
     # Process Delta
-    print(f"Getting Analytics Report Data after {latestPOL}...")
-    logging.critical(f"Getting Analytics Report Data after {latestPOL}...")
-    almaUrl = f"https://api-na.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?path=%2Fshared%2FNortheastern%20University%2FJohnShared%2FAPI%2FAcq-Analysis&limit={records}&apikey={almaKey}&filter=%3Csawx%3Aexpr%20xsi%3Atype%3D%22sawx%3Acomparison%22%20op%3D%22greater%22%0A%20%20xmlns%3Asaw%3D%22com.siebel.analytics.web%2Freport%2Fv1.1%22%20%0A%20%20xmlns%3Asawx%3D%22com.siebel.analytics.web%2Fexpression%2Fv1.1%22%20%0A%20%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20%0A%20%20xmlns%3Axsd%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%22%0A%3E%0A%20%20%3Csawx%3Aexpr%20xsi%3Atype%3D%22sawx%3AsqlExpression%22%3E%22Funds%20Expenditure%22.%22PO%20Line%20Reference%22%3C%2Fsawx%3Aexpr%3E%0A%20%20%3Csawx%3Aexpr%20xsi%3Atype%3D%22xsd%3Astring%22%3E{latestPOL}%3C%2Fsawx%3Aexpr%3E%0A%3C%2Fsawx%3Aexpr%3E"
+    # print(f"Getting Analytics Report Data after {latestPOL}...")
+    # logging.critical(f"Getting Analytics Report Data after {latestPOL}...")
+    # almaUrl = f"https://api-na.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?path=%2Fshared%2FNortheastern%20University%2FJohnShared%2FAPI%2FAcq-Analysis&limit={records}&apikey={almaKey}&filter=%3Csawx%3Aexpr%20xsi%3Atype%3D%22sawx%3Acomparison%22%20op%3D%22greater%22%0A%20%20xmlns%3Asaw%3D%22com.siebel.analytics.web%2Freport%2Fv1.1%22%20%0A%20%20xmlns%3Asawx%3D%22com.siebel.analytics.web%2Fexpression%2Fv1.1%22%20%0A%20%20xmlns%3Axsi%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema-instance%22%20%0A%20%20xmlns%3Axsd%3D%22http%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%22%0A%3E%0A%20%20%3Csawx%3Aexpr%20xsi%3Atype%3D%22sawx%3AsqlExpression%22%3E%22Funds%20Expenditure%22.%22PO%20Line%20Reference%22%3C%2Fsawx%3Aexpr%3E%0A%20%20%3Csawx%3Aexpr%20xsi%3Atype%3D%22xsd%3Astring%22%3E{latestPOL}%3C%2Fsawx%3Aexpr%3E%0A%3C%2Fsawx%3Aexpr%3E"
     
     # Process Full Dataset
-    # print(f"Getting complete analytics dataset...")
-    # logging.critical(f"Getting complete analytics dataset...")
-    # almaUrl = f"https://api-na.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?path=%2Fshared%2FNortheastern%20University%2FJohnShared%2FAPI%2FAcq-Analysis&limit={records}&apikey={almaKey}"
+    print(f"Getting complete analytics dataset...")
+    logging.critical(f"Getting complete analytics dataset...")
+    almaUrl = f"https://api-na.hosted.exlibrisgroup.com/almaws/v1/analytics/reports?path=%2Fshared%2FNortheastern%20University%2FJohnShared%2FAPI%2FAcq-Analysis&limit={records}&apikey={almaKey}"
    
     booksJson = {}
     booksJson['items'] = []
@@ -319,7 +319,7 @@ def main():
             for book in unreceivedJson['items']:
                 if book['POL'] in pols:
                     unreceivedMatch += 1
-                    if book['SortDate'] != '0000-00-00':
+                    if book['LocationName'] != 'On order':
                         print(f"{book['POL']} has been received...")
                         analyticsJson['items'].append(book)
                         notReceivedBooks['items'] = [i for i in notReceivedBooks['items'] if not (i['POL'] == book['POL'])]
@@ -392,13 +392,18 @@ def main():
                 dupes += 1
                 startNotReceivedBooks['items'] = [i for i in startNotReceivedBooks['items'] if not (i['POL'] == book['POL'])]
                 continue
-            if book['SortDate'] == '0000-00-00':
-                logging.info("BOOK NOT YET RECEIVED")
+            if book['LocationName'] == 'On order':
+                logging.info("**** BOOK NOT YET RECEIVED ****")
+                logging.info(f"   {book['LibraryName']}")
+                logging.info(f"   {book['LocationName']}")
+                logging.info(f"   {book['PermanentCallNumber']}")
+                logging.info(f"   {book['ReceivingDate']}")
+                logging.info(f"   {book['TitleCreationDate']}")
                 nr += 1
                 if any(d.get('POL') == pol for d in startNotReceivedBooks['items']):
-                    logging.info("BOOK ALREADY IN NOT RECEIVED FILE")
+                    logging.info("   BOOK ALREADY IN NOT RECEIVED FILE")
                 else:
-                    logging.info("APPENDING BOOK TO NOT RECEIVED FILE")
+                    logging.info("   APPENDING BOOK TO NOT RECEIVED FILE")
                     startNotReceivedBooks['items'].append(book)
                 continue
             try:
