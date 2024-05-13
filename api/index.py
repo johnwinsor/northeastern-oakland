@@ -62,17 +62,19 @@ def get_books_library(lib, subj):
 def get_books_monitor():
     
     with app.open_resource('static/dataset.json') as f:
-        data = json.load(f)
+        d = json.load(f)
+        
+    data = d['items'][0 : 100]
     
-    books = [book for book in data['items'] if book["LibraryName"] == "F.W. Olin Library"]
+    books = [book for book in data if book["LibraryName"] == "F.W. Olin Library"]
     # app.logger.warning(books)
     
-    date_limiter = datetime.now() - timedelta(days=90, hours=0)
-    app.logger.warning(date_limiter)
-    b = [bk for bk in books if datetime.strptime(bk["SortDate"] , urlDateFormat) > date_limiter]
+    # date_limiter = datetime.now() - timedelta(days=90, hours=0)
+    # app.logger.warning(date_limiter)
+    # b = [bk for bk in books if datetime.strptime(bk["SortDate"] , urlDateFormat) > date_limiter]
     # app.logger.warning(books[1]["recDate"])
 
-    return jsonify(b)
+    return jsonify(books)
 
 @app.route("/api/subjects", methods=["GET"])
 def get_subjects():
