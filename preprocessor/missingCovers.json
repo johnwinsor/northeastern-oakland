@@ -33409,6 +33409,36 @@
             "TitleCreationDate": "2023-05-15",
             "Barcode": "39358015809525",
             "PhysicalItemId": "23437765920001401"
+        },
+        {
+            "POL": "POL-144109",
+            "mmsId": "9952449677201401",
+            "SortDate": "2024-05-12",
+            "AccessModel": "None",
+            "AcquisitionMethod": "APPROVAL",
+            "AuthorContributor": "Pen\u0303alosa M., Javier, 1981-; Myers, Robin, 1987- translator.",
+            "Author": "Pen\u0303alosa M., Javier, 1981- author.",
+            "Format": "E",
+            "isbn13": "9781556596841",
+            "ISBNS": "161932296X; 9781619322967; 9781556596841; 1556596847",
+            "MaterialType": "Book",
+            "POLineTypeName": "Electronic Book - One Time",
+            "ReceivingDate": "0000-00-00",
+            "PortfolioActivationDate": "2024-05-12",
+            "ExpPortfolioActivationDate": "2024-05-12",
+            "ReportingCode": "Modern Language Studies",
+            "Title": "What Comes Back /",
+            "POtitle": "What Comes Back / Javier Pen\u0303alosa M. ; Translated By Robin Myers.",
+            "VendorName": "GOBI - Library Solutions from EBSCO",
+            "LibraryName": "Snell Library",
+            "Description": null,
+            "LocationName": null,
+            "TemporaryLocationName": null,
+            "PermanentCallNumber": null,
+            "TitleCreationDate": "2024-05-12",
+            "Barcode": null,
+            "PhysicalItemId": null,
+            "summary": "Veering between past and present, between ecological destruction and human violence, What Comes Back is a search for what has vanished and what remains. Javier Pe\u00f1alosa M.'s What Comes Back is a procession, a journey, a search for a body of water that has disappeared or gone elsewhere. Featured in separate sections, original Spanish poems and Robin Myers' English translations highlight tender ruminations on loss, memory, and communion. Just as landscapes witness and \"preserve what happens along the length of them,\" so do people. We watch as travelers navigate realms between the living and the dead, past mountains and dried up rivers to map, trace, and remember the past and future. Several sections, each bearing the title \"What Comes Back,\" guide readers on a looping voyage where they are \"orbited around the gravity of what had come to be\"--the absence of Mexico City's rivers, and other absences wrought by war, climate change, and forced migration. Rattled between ecological destruction and human violence, What Comes Back, what remains, is a desire to name the missing, to render belonging out of dispossession, endurance out of erasure--the spiritual urge toward connection and community."
         }
     ]
 }
