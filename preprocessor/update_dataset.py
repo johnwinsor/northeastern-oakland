@@ -386,6 +386,7 @@ def main():
             logging.critical(counter)
             pol = book['POL']
             logging.info(pol)
+            logging.info(f"Sort Date: {book['SortDate']}")
             logging.info(book['Title'])
             if any(d.get('POL') == pol for d in dataset['items']):
                 logging.info("FOUND BOOK in SEEN DATA")

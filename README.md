@@ -28,8 +28,15 @@ Next JS + Flask
 - `npm run dev`
 
 Enhance Analytics data and setup api endpoint
-   - Run apiEndpoint.py
+   - Run update_dataset.py
      - Start in /preprocessor
        - Full Set
          - `python update_dataset.py`
        - Partial Set (send last MMS ID as filter)
+         - `python update_dataset.py`
+     - Check output logfile in logs/
+   - Check local dev site for changes
+     - cd back to the site root
+     - `npm run dev`
+     - http://localhost:3000/newbooks
+       - The new books just processed should show up in the center of the carousel.
