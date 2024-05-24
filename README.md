@@ -32,7 +32,7 @@ Enhance Analytics data and setup api endpoint
      - Start in /preprocessor
        - Full Set
          - `python update_dataset.py`
-       - Partial Set (send last MMS ID as filter)
+       - Weekly Partial Set (send last MMS ID as filter)
          - `python update_dataset.py`
      - Check output logfile in logs/
    - Check local dev site for changes
@@ -40,3 +40,19 @@ Enhance Analytics data and setup api endpoint
      - `npm run dev`
      - http://localhost:3000/newbooks
        - The new books just processed should show up in the center of the carousel.
+   - Add and commit changes to repo then push to Github
+     - `git add .`
+     - `git commit -m "weekly update."`
+     - `git push`
+   - Check Vercel site deploy
+   - Update librarystage
+     - ssh jwinsor@144.91.2.73
+     - cd /var/www/projects/northeastern-oakland
+     - Pull repo from remote
+       - `git pull`
+     - https://librarystage.mills.edu/newbooks
+       - Check for newly processed books.
+   - Optional rebult static site files and restart servers
+     - `npm run build`
+     - `pm2 restart northeastern-oakland`
+     - `pm2 restart Flask`
